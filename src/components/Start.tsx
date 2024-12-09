@@ -15,7 +15,7 @@ const Start: React.FC = () => {
   }
 
   return (
-    <div css={startCss}>
+    <div css={startCss(startClicked)}>
       <TitleImage css={titleImageCss} />
       <h1 css={titleCss}>脱出ゲーム</h1>
       <div css={btnBoxCss}>
@@ -34,11 +34,13 @@ const Start: React.FC = () => {
 
 export default Start
 
-const startCss = css`
+const startCss = (startClicked: boolean) => css`
   position: relative;
   padding-top: 40px;
   text-align: center;
   min-height: 100vh;
+  opacity: ${startClicked ? 0 : 1};
+  transition: opacity 5s;
 `
 
 const titleCss = css`
