@@ -1,17 +1,12 @@
-/** @jsxImportSource @emotion/react */
-import "./App.css"
-import { css } from "@emotion/react"
+import Container from "./components/Container"
 
 function App() {
   return (
     <>
-      <h1
-        css={css`
-          color: red;
-        `}
-      >
-        Hello, World!
-      </h1>
+      <Container>
+        <h1>脱出ゲーム</h1>
+        <button>スタート</button>
+      </Container>
     </>
   )
 }
