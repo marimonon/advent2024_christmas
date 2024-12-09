@@ -1,8 +1,11 @@
-import React from "react"
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
 
-const Container: React.FC = ({ children }) => {
+type ContainerProps = {
+  children: React.ReactNode
+}
+
+const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
     <div
       css={css`
