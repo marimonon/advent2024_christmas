@@ -4,8 +4,16 @@ import Btn from "./Btn"
 import TitleImage from "./Images/TitleImage"
 import SantaImage from "./Images/SantaImage"
 import ChimneyImage from "./Images/ChimneyImage"
+import { useState } from "react"
 
 const Start: React.FC = () => {
+  const [startClicked, setStartClicked] = useState(false)
+
+  const clickStart = () => {
+    setStartClicked(true)
+    console.log("startClick", startClicked)
+  }
+
   return (
     <div css={startCss}>
       <TitleImage />
@@ -13,7 +21,7 @@ const Start: React.FC = () => {
       <div css={btnBoxCss}>
         <Btn onClick={clickStart}>スタート</Btn>
       </div>
-      <div css={santaCss}>
+      <div css={santaCss(startClicked)}>
         <SantaImage />
       </div>
       <div css={chimneyCss}>
@@ -51,12 +59,15 @@ const santaFallAnime = keyframes`
   }
 `
 
-const santaCss = css`
+const santaCss = (startClicked: boolean) => css`
   position: absolute;
   bottom: 182px;
   left: calc(50% - 150px);
   z-index: 1;
-  animation: ${santaFallAnime} 3s forwards;
+  ${startClicked &&
+  css`
+    animation: ${santaFallAnime} 3s forwards;
+  `}
 `
 
 const chimneyCss = css`
@@ -65,7 +76,3 @@ const chimneyCss = css`
   left: calc(50% - 150px);
   z-index: 2;
 `
-
-const clickStart = () => {
-  console.log("start")
-}
