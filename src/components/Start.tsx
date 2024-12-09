@@ -18,6 +18,7 @@ const Start: React.FC = () => {
 export default Start
 
 const start = css`
+  padding-top: 40px;
   text-align: center;
 `
 

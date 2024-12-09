@@ -1,7 +1,7 @@
 const TitleImage: React.FC = () => {
   return (
     <svg
-      width="100%"
+      width="50%"
       height="auto"
       viewBox="0 0 706 194"
       fill="none"

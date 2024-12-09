@@ -16,9 +16,9 @@ const btn = css`
   padding: 8px;
   border-radius: 4px;
   text-align: center;
-  color: #fff;
+  color: #045662;
   border: none;
-  background: #3498db;
+  background: #fff;
   box-shadow: 0 4px 0 #2880b9;
   cursor: pointer;
   &:hover {
