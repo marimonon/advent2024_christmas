@@ -52,7 +52,7 @@ const btnBoxCss = css`
 
 const santaFallAnime = keyframes`
   0% {
-    bottom: 182px;
+    bottom: 196px;
   }
   100% {
     bottom: -100px;
@@ -61,8 +61,8 @@ const santaFallAnime = keyframes`
 
 const santaCss = (startClicked: boolean) => css`
   position: absolute;
-  bottom: 182px;
-  left: calc(50% - 150px);
+  bottom: 196px;
+  left: calc(50% - 65px);
   z-index: 1;
   ${startClicked &&
   css`
@@ -73,22 +73,22 @@ const santaCss = (startClicked: boolean) => css`
 const chimneyCss = css`
   position: absolute;
   bottom: -20px;
-  left: calc(50% - 150px);
+  left: calc(50% - 75px);
   z-index: 2;
 `
 
 // svgのCSS
 const titleImageCss = css`
-  width: 300px;
-  height: 100px;
+  width: 50%;
+  height: auto;
 `
 
 const santaImageCss = css`
-  width: 300px;
-  height: 300px;
+  width: 140px;
+  height: auto;
 `
 
 const chimneyImageCss = css`
-  width: 300px;
-  height: 300px;
+  width: 160px;
+  height: auto;
 `
