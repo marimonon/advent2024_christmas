@@ -7,11 +7,10 @@ function App() {
   return (
     <>
       <Container>
+        {/* StartとEscapeとEndingの３シーンはだし分ける */}
         <Start />
         <Escape />
         <Ending />
-        <h1>脱出ゲーム</h1>
-        <button>スタート</button>
       </Container>
     </>
   )
