@@ -8,7 +8,7 @@ const Container: React.FC = ({ children }) => {
       css={css`
         max-width: 600px;
         margin: 0px auto;
-        background-color: #00f;
+        background-color: #045662;
         overflow: hidden;
       `}
     >
