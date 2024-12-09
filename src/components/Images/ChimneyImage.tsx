@@ -1,8 +1,8 @@
 const ChimneyImage: React.FC = () => {
   return (
     <svg
-      width="50%"
-      height="auto"
+      width="570"
+      height="774"
       viewBox="0 0 570 774"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

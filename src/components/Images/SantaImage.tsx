@@ -1,13 +1,13 @@
 const SantaImage: React.FC = () => {
   return (
     <svg
-      width="40%"
-      height="auto"
+      width="479"
+      height="368"
       viewBox="0 0 479 368"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_257_203)">
+      <g clipPath="url(#clip0_257_203)">
         <path
           d="M238.245 147.5C290.574 147.5 354.552 158.49 374.629 147.5C432.165 116.026 395.681 62.7202 394.932 44.4934C394.407 32.4976 393.283 19.8886 392.609 12.8481C392.272 9.68359 388.264 7.23049 383.432 7.23049C381.454 7.22738 379.527 7.64392 377.94 8.41779C376.353 9.19165 375.192 10.2812 374.629 11.5235C374.629 11.5235 376 79.001 356 71.001C336 63.001 285.898 40.1663 238.245 39.001C193.33 43.0035 102.3 73.001 97.4998 139.001C97.4998 188.898 142.203 147.5 238.245 147.5Z"
           fill="#DC352F"
@@ -76,9 +76,9 @@ const SantaImage: React.FC = () => {
           y2="370.876"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F44336" />
-          <stop offset="0.359" stop-color="#E73B32" />
-          <stop offset="1" stop-color="#C62828" />
+          <stop stopColor="#F44336" />
+          <stop offset="0.359" stopColor="#E73B32" />
+          <stop offset="1" stopColor="#C62828" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_257_203"
@@ -88,8 +88,8 @@ const SantaImage: React.FC = () => {
           y2="114.676"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.488" stop-color="#F5F5F5" />
-          <stop offset="0.831" stop-color="#BDBDBD" />
+          <stop offset="0.488" stopColor="#F5F5F5" />
+          <stop offset="0.831" stopColor="#BDBDBD" />
         </linearGradient>
         <radialGradient
           id="paint2_radial_257_203"
@@ -99,8 +99,8 @@ const SantaImage: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(240.804 248.443) scale(181.884 119.116)"
         >
-          <stop offset="0.706" stop-color="white" stop-opacity="0" />
-          <stop offset="1" stop-color="#BDBDBD" />
+          <stop offset="0.706" stopColor="white" stopOpacity="0" />
+          <stop offset="1" stopColor="#BDBDBD" />
         </radialGradient>
         <clipPath id="clip0_257_203">
           <rect width="479" height="368" fill="white" />
