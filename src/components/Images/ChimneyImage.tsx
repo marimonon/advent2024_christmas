@@ -1,4 +1,7 @@
-const ChimneyImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const ChimneyImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="570"
@@ -6,6 +9,7 @@ const ChimneyImage: React.FC = () => {
       viewBox="0 0 570 774"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <rect x="33" y="61" width="504" height="713" rx="20" fill="#D9D9D9" />
       <rect

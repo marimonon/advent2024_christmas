@@ -1,4 +1,7 @@
-const SantaImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const SantaImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="479"
@@ -6,6 +9,7 @@ const SantaImage: React.FC = () => {
       viewBox="0 0 479 368"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g clipPath="url(#clip0_257_203)">
         <path

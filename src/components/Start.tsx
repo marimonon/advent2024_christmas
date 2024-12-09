@@ -16,16 +16,16 @@ const Start: React.FC = () => {
 
   return (
     <div css={startCss}>
-      <TitleImage />
+      <TitleImage css={titleImageCss} />
       <h1 css={titleCss}>脱出ゲーム</h1>
       <div css={btnBoxCss}>
         <Btn onClick={clickStart}>スタート</Btn>
       </div>
       <div css={santaCss(startClicked)}>
-        <SantaImage />
+        <SantaImage css={santaImageCss} />
       </div>
       <div css={chimneyCss}>
-        <ChimneyImage />
+        <ChimneyImage css={chimneyImageCss} />
       </div>
     </div>
   )
@@ -75,4 +75,20 @@ const chimneyCss = css`
   bottom: -20px;
   left: calc(50% - 150px);
   z-index: 2;
+`
+
+// svgのCSS
+const titleImageCss = css`
+  width: 300px;
+  height: 100px;
+`
+
+const santaImageCss = css`
+  width: 300px;
+  height: 300px;
+`
+
+const chimneyImageCss = css`
+  width: 300px;
+  height: 300px;
 `
