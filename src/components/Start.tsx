@@ -43,6 +43,15 @@ const btnBox = css`
 `
 
 const santa = css`
+const santaFallAnime = keyframes`
+  0% {
+    bottom: 182px;
+  }
+  100% {
+    bottom: -100px;
+  }
+`
+
   position: absolute;
   bottom: 182px;
   left: calc(50% - 150px);
