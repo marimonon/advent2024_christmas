@@ -24,6 +24,7 @@ const Start: React.FC = () => {
       <div css={santaCss(startClicked)}>
         <SantaImage css={santaImageCss} />
       </div>
+      <p css={textCss(startClicked)}>どどーん</p>
       <div css={chimneyCss}>
         <ChimneyImage css={chimneyImageCss} />
       </div>
@@ -68,6 +69,15 @@ const santaCss = (startClicked: boolean) => css`
   css`
     animation: ${santaFallAnime} 3s forwards;
   `}
+`
+
+const textCss = (startClicked: boolean) => css`
+  position: absolute;
+  bottom: 220px;
+  left: calc(50% - 25px);
+  color: #fff;
+  visibility: ${startClicked ? "visible" : "hidden"};
+  transition: visibility 0s ${startClicked ? "1s" : "0s"};
 `
 
 const chimneyCss = css`
