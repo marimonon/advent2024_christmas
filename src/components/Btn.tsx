@@ -19,7 +19,6 @@ const btn = css`
   color: #045662;
   border: none;
   background: #fff;
-  box-shadow: 0 4px 0 #2880b9;
   cursor: pointer;
   &:hover {
     opacity: 0.7;

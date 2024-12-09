@@ -2,6 +2,8 @@
 import { css } from "@emotion/react"
 import Btn from "./Btn"
 import TitleImage from "./Images/TitleImage"
+import SantaImage from "./Images/SantaImage"
+import ChimneyImage from "./Images/ChimneyImage"
 
 const Start: React.FC = () => {
   return (
@@ -11,6 +13,12 @@ const Start: React.FC = () => {
       <div css={btnBox}>
         <Btn onClick={clickStart}>スタート</Btn>
       </div>
+      <div css={santa}>
+        <SantaImage />
+      </div>
+      <div css={chimney}>
+        <ChimneyImage />
+      </div>
     </div>
   )
 }
@@ -18,8 +26,10 @@ const Start: React.FC = () => {
 export default Start
 
 const start = css`
+  position: relative;
   padding-top: 40px;
   text-align: center;
+  min-height: 100vh;
 `
 
 const title = css`
@@ -30,6 +40,20 @@ const title = css`
 const btnBox = css`
   margin: 20px auto 0;
   width: 200px;
+`
+
+const santa = css`
+  position: absolute;
+  bottom: 182px;
+  left: calc(50% - 150px);
+  z-index: 1;
+`
+
+const chimney = css`
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 150px);
+  z-index: 2;
 `
 
 const clickStart = () => {
