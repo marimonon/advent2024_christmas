@@ -1,7 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
 
-const Btn: React.FC = ({ children, onClick }) => {
+type BtnProps = {
+  children: React.ReactNode
+  onClick: () => void
+}
+
+const Btn: React.FC<BtnProps> = ({ children, onClick }) => {
   return (
     <button onClick={onClick} css={btn}>
       {children}
