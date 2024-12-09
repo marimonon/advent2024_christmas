@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
 import Btn from "./Btn"
 import TitleImage from "./Images/TitleImage"
 import SantaImage from "./Images/SantaImage"
@@ -7,16 +7,16 @@ import ChimneyImage from "./Images/ChimneyImage"
 
 const Start: React.FC = () => {
   return (
-    <div css={start}>
+    <div css={startCss}>
       <TitleImage />
-      <h1 css={title}>脱出ゲーム</h1>
-      <div css={btnBox}>
+      <h1 css={titleCss}>脱出ゲーム</h1>
+      <div css={btnBoxCss}>
         <Btn onClick={clickStart}>スタート</Btn>
       </div>
-      <div css={santa}>
+      <div css={santaCss}>
         <SantaImage />
       </div>
-      <div css={chimney}>
+      <div css={chimneyCss}>
         <ChimneyImage />
       </div>
     </div>
@@ -25,24 +25,23 @@ const Start: React.FC = () => {
 
 export default Start
 
-const start = css`
+const startCss = css`
   position: relative;
   padding-top: 40px;
   text-align: center;
   min-height: 100vh;
 `
 
-const title = css`
+const titleCss = css`
   font-size: 24px;
   color: #fff;
 `
 
-const btnBox = css`
+const btnBoxCss = css`
   margin: 20px auto 0;
   width: 200px;
 `
 
-const santa = css`
 const santaFallAnime = keyframes`
   0% {
     bottom: 182px;
@@ -52,13 +51,15 @@ const santaFallAnime = keyframes`
   }
 `
 
+const santaCss = css`
   position: absolute;
   bottom: 182px;
   left: calc(50% - 150px);
   z-index: 1;
+  animation: ${santaFallAnime} 3s forwards;
 `
 
-const chimney = css`
+const chimneyCss = css`
   position: absolute;
   bottom: -20px;
   left: calc(50% - 150px);
