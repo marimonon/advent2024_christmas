@@ -1,7 +1,13 @@
-import React from "react"
+import ItemBox from "./ItemBox"
+import StoveRoom from "./Rooms/StoveRoom"
 
 const Escape: React.FC = () => {
-  return <div>{/* Add your component content here */}</div>
+  return (
+    <>
+      <StoveRoom />
+      <ItemBox />
+    </>
+  )
 }
 
 export default Escape
