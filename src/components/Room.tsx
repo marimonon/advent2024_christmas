@@ -15,7 +15,8 @@ const Room: React.FC = () => {
       {/* <StoveRoom /> */}
       {/* <TreeRoom /> */}
       {/* <DiningRoom /> */}
-      <EntranceRoom />
+      {/* <EntranceRoom /> */}
+      <WindowRoom />
     </div>
   )
 }
