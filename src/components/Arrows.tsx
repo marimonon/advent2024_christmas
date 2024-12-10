@@ -23,6 +23,7 @@ export default Arrows
 const leftCss = css`
   position: absolute;
   top: 48%;
+  z-index: 100;
 `
 
 const rightCss = css`
@@ -30,6 +31,7 @@ const rightCss = css`
   top: 48%;
   right: 0;
   transform: rotate(180deg);
+  z-index: 100;
 `
 
 const bottomCss = css`
@@ -37,4 +39,5 @@ const bottomCss = css`
   bottom: 0;
   left: 48%;
   transform: rotate(-90deg);
+  z-index: 100;
 `
