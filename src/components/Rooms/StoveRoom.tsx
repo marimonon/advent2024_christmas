@@ -5,6 +5,9 @@ import BigSnowmanImage from "../Images/Stove/BigSnowmanImage"
 import StrawberryImage from "../Images/Stove/StrawberryImage"
 import FireImage from "../Images/Stove/FireImage"
 import FirewoodImage from "../Images/Stove/FirewoodImage"
+import SnowmanImage from "../Images/Stove/SnowmanImage"
+import DoorCloseImage from "../Images/Stove/DoorCloseImage"
+import DoorOpenImage from "../Images/Stove/DoorOpenImage"
 
 const StoveRoom: React.FC = () => {
   return (
@@ -13,6 +16,9 @@ const StoveRoom: React.FC = () => {
       <BigSnowmanImage css={bigSnowCss} />
       <FirewoodImage css={fireWoodCss} />
       <FireImage css={fireCss} />
+      <SnowmanImage css={smallSnowCss} />
+      <DoorCloseImage css={doorCloseCss} />
+      <DoorOpenImage css={doorOpenCss} />
       <StoveRoomBg css={stoveBgCss} />
     </div>
   )
@@ -54,6 +60,34 @@ const fireCss = css`
   right: 6%;
   z-index: 2;
 `
+
+const smallSnowCss = css`
+  position: absolute;
+  width: 36%;
+  height: auto;
+  bottom: 15%;
+  left: 32%;
+  z-index: 3;
+`
+
+const doorCloseCss = css`
+  position: absolute;
+  width: 32%;
+  height: auto;
+  top: 28%;
+  left: 0%;
+  z-index: 2;
+`
+
+const doorOpenCss = css`
+  position: absolute;
+  width: 32%;
+  height: auto;
+  top: 28%;
+  left: 0%;
+  z-index: 2;
+`
+
 const stoveBgCss = css`
   width: 100%;
   height: 100%;
