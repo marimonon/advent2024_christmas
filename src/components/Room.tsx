@@ -17,9 +17,8 @@ const Room: React.FC = () => {
 export default Room
 
 const roomCss = css`
-  porition: relative;
-  width: 100vw;
-  maw-width: 600px;
+  position: relative;
+  width: 100%;
   height: 124vw;
   max-height: 744px;
 `

@@ -5,13 +5,36 @@ import ArrowImage from "./Images/ArrowImage"
 const Arrows: React.FC = () => {
   return (
     <>
-      <div>
+      <div css={leftCss}>
         <ArrowImage />
       </div>
-      <div>右</div>
-      <div>下</div>
+      <div css={rightCss}>
+        <ArrowImage />
+      </div>
+      <div css={bottomCss}>
+        <ArrowImage />
+      </div>
     </>
   )
 }
 
 export default Arrows
+
+const leftCss = css`
+  position: absolute;
+  top: 48%;
+`
+
+const rightCss = css`
+  position: absolute;
+  top: 48%;
+  right: 0;
+  transform: rotate(180deg);
+`
+
+const bottomCss = css`
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  transform: rotate(-90deg);
+`
