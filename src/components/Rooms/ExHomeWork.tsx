@@ -29,12 +29,14 @@ const ExHomeWork: React.FC = () => {
           <option>具体的に実践しやすい内容で</option>
         </select>
         <select css={paperLineCss}>
+          <option></option>
           <option>設計の細かい会話ができて</option>
           <option>みんなでワイワイ話し合えて</option>
           <option>すぐに実務に生かすことが出来</option>
           <option>考えてなかったことを知れるので</option>
         </select>
         <select css={paperLineCss}>
+          <option></option>
           <option>すごく勉強になります</option>
           <option>大変おすすめな本です。</option>
           <option>とてもためになります。</option>
