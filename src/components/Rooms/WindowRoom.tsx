@@ -7,11 +7,13 @@ import SweatDeerImage from "../Images/Window/SweatDeerImage"
 import EatingDogImage from "../Images/Window/EatingDogImage"
 import WindowBarImage from "../Images/Window/WindowBarImage"
 import CurtainImage from "../Images/Window/CurtainImage"
+import SantaBagImage from "../Images/Window/SantaBagImage"
 
 const WindowRoom: React.FC = () => {
   return (
     <div>
       <CurtainImage css={curtainCss} />
+      <SantaBagImage css={bagCss} />
       <WindowBarImage css={barCss} />
       <EatingDogImage css={eatingCss} />
       <SweatDeerImage css={sweatCss} />
@@ -31,6 +33,15 @@ const curtainCss = css`
   width: 70%;
   height: auto;
   z-index: 6;
+`
+
+const bagCss = css`
+  position: absolute;
+  top: 47%;
+  left: 16%;
+  width: 38%;
+  height: auto;
+  z-index: 7;
 `
 
 const barCss = css`
