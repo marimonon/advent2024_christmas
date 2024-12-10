@@ -3,12 +3,16 @@ import { css } from "@emotion/react"
 import StoveRoomBg from "../Images/Stove/StoveRoomBg"
 import BigSnowmanImage from "../Images/Stove/BigSnowmanImage"
 import StrawberryImage from "../Images/Stove/StrawberryImage"
+import FireImage from "../Images/Stove/FireImage"
+import FirewoodImage from "../Images/Stove/FirewoodImage"
 
 const StoveRoom: React.FC = () => {
   return (
     <div>
       <StrawberryImage css={strawCss} />
       <BigSnowmanImage css={bigSnowCss} />
+      <FirewoodImage css={fireWoodCss} />
+      <FireImage css={fireCss} />
       <StoveRoomBg css={stoveBgCss} />
     </div>
   )
@@ -32,6 +36,23 @@ const bigSnowCss = css`
   top: 0%;
   left: 5%;
   z-index: 4;
+`
+const fireWoodCss = css`
+  position: absolute;
+  width: 20%;
+  height: auto;
+  bottom: 16%;
+  right: 10%;
+  z-index: 3;
+`
+
+const fireCss = css`
+  position: absolute;
+  width: 30%;
+  height: auto;
+  bottom: 16%;
+  right: 6%;
+  z-index: 2;
 `
 const stoveBgCss = css`
   width: 100%;
