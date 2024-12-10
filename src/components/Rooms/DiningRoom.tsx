@@ -15,10 +15,28 @@ const DiningRoom: React.FC = () => {
 }
 
 export default DiningRoom
+
 const offDiningCss = css`
   // opacity: 0.1;
   pointer-events: none;
 `
+
+const cakeCss = css`
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  width: 20%;
+  z-index: 3;
+`
+
+const cakeFullCss = css`
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  width: 20%;
+  z-index: 4;
+`
+
 const diningBgCss = css`
   width: 100%;
   height: 100%;
