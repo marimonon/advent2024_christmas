@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
 import Comment from "../Comment"
 import StoveRoomBg from "../Images/Stove/StoveRoomBg"
 import BigSnowmanImage from "../Images/Stove/BigSnowmanImage"
@@ -54,6 +54,21 @@ const fireWoodCss = css`
   z-index: 3;
 `
 
+const fireMoveAnime = keyframes`
+  0% {
+    transform: translateY(0);
+    transform: scale(1);
+  }
+  50% {
+    transform: translateY(30%);
+    transform: scale(1.1);
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(1);
+  }
+`
+
 const fireCss = css`
   position: absolute;
   width: 30%;
@@ -61,6 +76,7 @@ const fireCss = css`
   bottom: 16%;
   right: 6%;
   z-index: 2;
+  animation: ${fireMoveAnime} 2s infinite;
 `
 
 const smallSnowCss = css`
