@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import Comment from "../Comment"
 import StoveRoomBg from "../Images/Stove/StoveRoomBg"
 import BigSnowmanImage from "../Images/Stove/BigSnowmanImage"
 import StrawberryImage from "../Images/Stove/StrawberryImage"
@@ -12,6 +13,7 @@ import DoorOpenImage from "../Images/Stove/DoorOpenImage"
 const StoveRoom: React.FC = () => {
   return (
     <div>
+      <Comment>暖炉の前には大きな雪だるまがいる</Comment>
       <StrawberryImage css={strawCss} />
       <BigSnowmanImage css={bigSnowCss} />
       <FirewoodImage css={fireWoodCss} />

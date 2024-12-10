@@ -18,7 +18,7 @@ const Room: React.FC = () => {
   return (
     <div css={roomCss}>
       <Arrows />
-      {/* <StoveRoom /> */}
+      <StoveRoom />
       {/* <TreeRoom /> */}
       {/* <DiningRoom /> */}
       {/* <EntranceRoom /> */}
@@ -27,7 +27,7 @@ const Room: React.FC = () => {
       {/* <ChildRoom /> */}
       {/* <ExTree /> */}
       {/* <ExCake /> */}
-      <ExHomeWork />
+      {/* <ExHomeWork /> */}
     </div>
   )
 }
