@@ -6,7 +6,6 @@ import StoveRoom from "./Rooms/StoveRoom"
 import Arrows from "./Arrows"
 import TreeRoom from "./Rooms/TreeRoom"
 import DiningRoom from "./Rooms/DiningRoom"
-import EntranceRoom from "./Rooms/EntranceRoom"
 
 const Room: React.FC = () => {
   return (
@@ -14,8 +13,7 @@ const Room: React.FC = () => {
       <Arrows />
       {/* <StoveRoom /> */}
       {/* <TreeRoom /> */}
-      {/* <DiningRoom /> */}
-      <EntranceRoom />
+      <DiningRoom />
     </div>
   )
 }
