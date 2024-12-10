@@ -1,6 +1,7 @@
-import React from "react"
-
-const EatingDogImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const EatingDogImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="110"
@@ -8,6 +9,7 @@ const EatingDogImage: React.FC = () => {
       viewBox="0 0 110 115"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g opacity="0.6">
         <g filter="url(#filter0_d_279_2905)">

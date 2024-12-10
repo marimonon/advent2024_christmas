@@ -1,6 +1,7 @@
-import React from "react"
-
-const CurtainImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const CurtainImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="750"
@@ -8,6 +9,7 @@ const CurtainImage: React.FC = () => {
       viewBox="0 0 750 583"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M615.691 0C571.891 28.4575 540.98 11.8573 531 0V564.896C540.98 576.753 571.891 593.354 615.691 564.896C619.969 578.558 640.671 597.684 689.262 564.896C691.828 575.207 707.569 589.642 750 564.896V0C707.569 24.7456 691.828 10.3107 689.262 0C640.671 32.7879 619.969 13.6616 615.691 0Z"

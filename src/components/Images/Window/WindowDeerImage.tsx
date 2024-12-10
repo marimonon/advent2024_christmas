@@ -1,6 +1,7 @@
-import React from "react"
-
-const WindowDeerImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const WindowDeerImage: React.FC<Props> = ({ className }) => {
   return (
     <div>
       <svg
@@ -9,6 +10,7 @@ const WindowDeerImage: React.FC = () => {
         viewBox="0 0 305 256"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className={className}
       >
         <g clip-path="url(#clip0_279_2903)">
           <path

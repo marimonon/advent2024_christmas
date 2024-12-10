@@ -1,6 +1,7 @@
-import React from "react"
-
-const SweatDeerImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const SweatDeerImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="76"
@@ -8,6 +9,7 @@ const SweatDeerImage: React.FC = () => {
       viewBox="0 0 76 85"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M8 36C5.2767 36.6233 0.0915341 38.5429 1.13728 41.2353C2.18303 43.9278 6.14816 38.867 8 36Z"

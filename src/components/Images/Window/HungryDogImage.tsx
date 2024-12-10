@@ -1,6 +1,7 @@
-import React from "react"
-
-const HungryDogImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const HungryDogImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="408"
@@ -8,6 +9,7 @@ const HungryDogImage: React.FC = () => {
       viewBox="0 0 408 306"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g clip-path="url(#clip0_279_2831)">
         <path
