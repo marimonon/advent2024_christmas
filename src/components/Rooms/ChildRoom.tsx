@@ -16,9 +16,9 @@ export default ChildRoom
 
 const homeWorkCss = css`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20%;
+  top: 76%;
+  left: 36%;
+  width: 40%;
   z-index: 2;
 `
 
