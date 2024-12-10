@@ -4,10 +4,12 @@ import ChildRoomBg from "../Images/Child/ChildRoomBg"
 import HomeWorkImage from "../Images/Child/HomeWorkImage"
 import ChildSleepImage from "../Images/Child/ChildSleepImage"
 import BootImage from "../Images/Child/BootImage"
+import BootEmptyImage from "../Images/Child/BootEmptyImage"
 
 const ChildRoom: React.FC = () => {
   return (
     <div>
+      <BootEmptyImage css={bootEmptyCss} />
       <BootImage css={bootCss} />
       <ChildSleepImage css={childSleepCss} />
       <HomeWorkImage css={homeWorkCss} />
@@ -17,6 +19,15 @@ const ChildRoom: React.FC = () => {
 }
 
 export default ChildRoom
+
+const bootEmptyCss = css`
+  position: absolute;
+  top: 18%;
+  left: 47%;
+  width: 13%;
+  height: auto;
+  z-index: 2;
+`
 
 const bootCss = css`
   position: absolute;
