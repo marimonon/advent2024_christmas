@@ -2,14 +2,15 @@
 import { css } from "@emotion/react"
 
 import React from "react"
-import StoveRoom from "./Rooms/StoveRoom"
 import Arrows from "./Arrows"
+import StoveRoom from "./Rooms/StoveRoom"
 import TreeRoom from "./Rooms/TreeRoom"
 import DiningRoom from "./Rooms/DiningRoom"
 import EntranceRoom from "./Rooms/EntranceRoom"
 import WindowRoom from "./Rooms/WindowRoom"
 import StepRoom from "./Rooms/StepRoom"
 import ChildRoom from "./Rooms/ChildRoom"
+import ExTree from "./Rooms/ExTree"
 
 const Room: React.FC = () => {
   return (
@@ -21,7 +22,8 @@ const Room: React.FC = () => {
       {/* <EntranceRoom /> */}
       {/* <WindowRoom /> */}
       {/* <StepRoom /> */}
-      <ChildRoom />
+      {/* <ChildRoom /> */}
+      <ExTree />
     </div>
   )
 }
