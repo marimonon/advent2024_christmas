@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
 import TreeRoomBg from "../Images/Tree/TreeRoomBg"
 import TreeImage from "../Images/Tree/TreeImage"
 import TreeLightImage from "../Images/Tree/TreeLightImage"
@@ -50,6 +50,18 @@ const treeSwitchCss = css`
   z-index: 4;
 `
 
+const lightWhiteAnime = keyframes`
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+`
+
 const treeWhiteCss = css`
   position: absolute;
   width: 60%;
@@ -57,6 +69,19 @@ const treeWhiteCss = css`
   right: 8%;
   bottom: 20%;
   z-index: 3;
+  animation: ${lightWhiteAnime} 3s infinite;
+`
+
+const lightAnime = keyframes`
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
 `
 
 const treeLightCss = css`
@@ -66,6 +91,7 @@ const treeLightCss = css`
   right: 4%;
   bottom: 16%;
   z-index: 2;
+  animation: ${lightAnime} 2s infinite;
 `
 
 const treeCss = css`
