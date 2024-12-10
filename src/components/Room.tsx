@@ -12,6 +12,7 @@ import StepRoom from "./Rooms/StepRoom"
 import ChildRoom from "./Rooms/ChildRoom"
 import ExTree from "./Rooms/ExTree"
 import ExCake from "./Rooms/ExCake"
+import ExHomeWork from "./Rooms/ExHomeWork"
 
 const Room: React.FC = () => {
   return (
@@ -25,7 +26,8 @@ const Room: React.FC = () => {
       {/* <StepRoom /> */}
       {/* <ChildRoom /> */}
       {/* <ExTree /> */}
-      <ExCake />
+      {/* <ExCake /> */}
+      <ExHomeWork />
     </div>
   )
 }
