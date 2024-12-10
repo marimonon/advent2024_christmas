@@ -1,7 +1,7 @@
 type Props = {
   className?: string
 }
-const CakeFull: React.FC<Props> = ({ className }) => {
+const CakeFullImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="185"
@@ -198,4 +198,4 @@ const CakeFull: React.FC<Props> = ({ className }) => {
   )
 }
 
-export default CakeFull
+export default CakeFullImage

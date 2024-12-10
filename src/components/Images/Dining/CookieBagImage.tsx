@@ -1,7 +1,7 @@
 type Props = {
   className?: string
 }
-const CookieBag: React.FC<Props> = ({ className }) => {
+const CookieBagImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="110"
@@ -605,4 +605,4 @@ const CookieBag: React.FC<Props> = ({ className }) => {
   )
 }
 
-export default CookieBag
+export default CookieBagImage
