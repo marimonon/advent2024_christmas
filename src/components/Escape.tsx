@@ -1,12 +1,12 @@
 import Arrows from "./Arrows"
 import ItemBox from "./ItemBox"
-import StoveRoom from "./Rooms/StoveRoom"
+import Room from "./Room"
 
 const Escape: React.FC = () => {
   return (
     <>
       <Arrows />
-      <StoveRoom />
+      <Room />
       <ItemBox />
     </>
   )
