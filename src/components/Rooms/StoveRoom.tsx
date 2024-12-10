@@ -2,10 +2,12 @@
 import { css } from "@emotion/react"
 import StoveRoomBg from "../Images/Stove/StoveRoomBg"
 import BigSnowmanImage from "../Images/Stove/BigSnowmanImage"
+import StrawberryImage from "../Images/Stove/StrawberryImage"
 
 const StoveRoom: React.FC = () => {
   return (
     <div>
+      <StrawberryImage css={strawCss} />
       <BigSnowmanImage css={bigSnowCss} />
       <StoveRoomBg css={stoveBgCss} />
     </div>
@@ -13,6 +15,15 @@ const StoveRoom: React.FC = () => {
 }
 
 export default StoveRoom
+
+const strawCss = css`
+  position: absolute;
+  width: 6%;
+  height: auto;
+  top: 40%;
+  left: 28%;
+  z-index: 5;
+`
 
 const bigSnowCss = css`
   position: absolute;
