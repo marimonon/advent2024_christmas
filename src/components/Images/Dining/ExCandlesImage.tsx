@@ -1,6 +1,7 @@
-import React from "react"
-
-const ExCandlesImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const ExCandlesImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="584"
@@ -8,6 +9,7 @@ const ExCandlesImage: React.FC = () => {
       viewBox="0 0 584 422"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M584 298.5C584 274.074 566.874 250.197 534.789 229.887C502.704 209.578 457.1 193.748 403.744 184.401C350.388 175.053 291.676 172.608 235.034 177.373C178.391 182.138 126.362 193.901 85.5248 211.172C44.6879 228.444 16.8776 250.45 5.6107 274.406C-5.65619 298.363 0.126388 323.195 22.2272 345.761C44.328 368.328 81.7543 387.616 129.773 401.186C177.793 414.757 234.248 422 292 422L292 298.5H584Z"

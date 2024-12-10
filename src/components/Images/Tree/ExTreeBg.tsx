@@ -1,6 +1,7 @@
-import React from "react"
-
-const ExTreeBg: React.FC = () => {
+type Props = {
+  className?: string
+}
+const ExTreeBg: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="1000"
@@ -8,6 +9,7 @@ const ExTreeBg: React.FC = () => {
       viewBox="0 0 1000 1240"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g clip-path="url(#clip0_283_3817)">
         <rect width="1000" height="1240" fill="#045662" />

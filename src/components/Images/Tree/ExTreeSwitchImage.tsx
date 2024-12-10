@@ -1,6 +1,7 @@
-import React from "react"
-
-const ExTreeSwitch: React.FC = () => {
+type Props = {
+  className?: string
+}
+const ExTreeSwitchImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="75"
@@ -8,6 +9,7 @@ const ExTreeSwitch: React.FC = () => {
       viewBox="0 0 75 145"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <rect
         x="0.5"
@@ -35,4 +37,4 @@ const ExTreeSwitch: React.FC = () => {
   )
 }
 
-export default ExTreeSwitch
+export default ExTreeSwitchImage

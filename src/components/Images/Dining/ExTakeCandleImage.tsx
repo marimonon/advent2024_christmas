@@ -1,6 +1,7 @@
-import React from "react"
-
-const ExTakeCandle: React.FC = () => {
+type Props = {
+  className?: string
+}
+const ExTakeCandleImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="94"
@@ -8,6 +9,7 @@ const ExTakeCandle: React.FC = () => {
       viewBox="0 0 94 443"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M13.0557 203.844C10.5898 205.944 9.85923 427.597 11.7771 429.515C13.695 431.433 26.5723 443.032 51.5962 442.393C76.7115 441.753 88.2187 432.712 90.1366 430.794C92.0545 428.876 91.4152 203.844 89.4973 202.565C87.5795 201.195 16.8915 200.556 13.0557 203.844Z"
@@ -34,4 +36,4 @@ const ExTakeCandle: React.FC = () => {
   )
 }
 
-export default ExTakeCandle
+export default ExTakeCandleImage
