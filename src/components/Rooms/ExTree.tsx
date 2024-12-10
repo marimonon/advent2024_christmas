@@ -6,15 +6,15 @@ import ExTreeSwitchImage from "../Images/Tree/ExTreeSwitchImage"
 const ExTree: React.FC = () => {
   return (
     <div>
-      <ExTreeSwitchImage css={ExSwitchCss} />
-      <ExTreeBg css={ExTreeCss} />
+      <ExTreeSwitchImage css={exSwitchCss} />
+      <ExTreeBg css={exTreeCss} />
     </div>
   )
 }
 
 export default ExTree
 
-const ExSwitchCss = css`
+const exSwitchCss = css`
   position: absolute;
   top: 68%;
   left: 49%;
@@ -23,7 +23,7 @@ const ExSwitchCss = css`
   z-index: 2;
 `
 
-const ExTreeCss = css`
+const exTreeCss = css`
   width: 100%;
   height: 100%;
 `
