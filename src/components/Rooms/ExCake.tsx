@@ -9,6 +9,7 @@ const ExCake: React.FC = () => {
     <div>
       <ExDecoImage css={exDecoCss} />
       <ExCandlesImage css={exCandlesCss} />
+      <ExCandlesImage css={exCandlesCss} />
       <ExCakeBg css={exCakeBgCss} />
     </div>
   )
