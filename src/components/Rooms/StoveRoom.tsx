@@ -67,7 +67,7 @@ const smallSnowCss = css`
   height: auto;
   bottom: 15%;
   left: 32%;
-  z-index: 3;
+  z-index: 1;
 `
 
 const doorCloseCss = css`
