@@ -7,6 +7,7 @@ import Arrows from "./Arrows"
 import TreeRoom from "./Rooms/TreeRoom"
 import DiningRoom from "./Rooms/DiningRoom"
 import EntranceRoom from "./Rooms/EntranceRoom"
+import WindowRoom from "./Rooms/WindowRoom"
 
 const Room: React.FC = () => {
   return (
