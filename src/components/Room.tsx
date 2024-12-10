@@ -4,12 +4,14 @@ import { css } from "@emotion/react"
 import React from "react"
 import StoveRoom from "./Rooms/StoveRoom"
 import Arrows from "./Arrows"
+import TreeRoom from "./Rooms/TreeRoom"
 
 const Room: React.FC = () => {
   return (
     <div css={roomCss}>
       <Arrows />
-      <StoveRoom />
+      {/* <StoveRoom /> */}
+      <TreeRoom />
     </div>
   )
 }
