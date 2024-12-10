@@ -1,15 +1,26 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import { useState } from "react"
 
 type CommentProps = {
   children: React.ReactNode
 }
 
 const Comment: React.FC<CommentProps> = ({ children }) => {
+  const [commentClick, setCommentClick] = useState(true)
+
+  const CommentClick = () => {
+    setCommentClick(false)
+  }
+
   return (
-    <div css={commentCss}>
-      <p css={commentTextCss}>{children}</p>
-    </div>
+    <>
+      {commentClick ? (
+        <div onClick={CommentClick} css={commentCss}>
+          <p css={commentTextCss}>{children}</p>
+        </div>
+      ) : null}
+    </>
   )
 }
 
@@ -21,7 +32,7 @@ const commentCss = css`
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 120;
   display: flex;
   justify-content: center;
   align-items: center;

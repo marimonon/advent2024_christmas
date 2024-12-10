@@ -13,7 +13,7 @@ import DoorOpenImage from "../Images/Stove/DoorOpenImage"
 const StoveRoom: React.FC = () => {
   return (
     <div>
-      <Comment>暖炉の前には大きな雪だるまがいる</Comment>
+      <Comment>雪だるま「お外に出たーい！」</Comment>
       <StrawberryImage css={strawCss} />
       <BigSnowmanImage css={bigSnowCss} />
       <FirewoodImage css={fireWoodCss} />
