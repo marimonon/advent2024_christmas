@@ -1,6 +1,7 @@
-import React from "react"
-
-const BearRibbonImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const BearRibbonImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="321"
@@ -8,6 +9,7 @@ const BearRibbonImage: React.FC = () => {
       viewBox="0 0 321 350"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g filter="url(#filter0_d_281_3210)">
         <circle
