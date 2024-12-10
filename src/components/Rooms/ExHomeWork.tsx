@@ -9,33 +9,36 @@ const ExHomeWork: React.FC = () => {
         <h2>感想文</h2>
         <select css={paperLineCss}>
           <option></option>
-          <option></option>
-          <option></option>
-          <option></option>
+          <option>アジャイルサムライの本は</option>
+          <option>コード・コンプリートの本は</option>
+          <option>マスタリングTCP/IPの本は</option>
+          <option>Good Code, Bad Codeの本は</option>
         </select>
         <select css={paperLineCss}>
           <option></option>
-          <option></option>
-          <option></option>
-          <option></option>
+          <option>図表が多く、補足説明も多く、</option>
+          <option>イラストが面白く、</option>
+          <option>値段が高く極めて難解だが、</option>
+          <option>書く理由を詳しく述べてあり、</option>
         </select>
         <select css={paperLineCss}>
           <option></option>
-          <option></option>
-          <option></option>
-          <option></option>
+          <option>合った事例を考えたり</option>
+          <option>身近で意外な発見もあり、</option>
+          <option>リアリティのある事例が多く</option>
+          <option>具体的に実践しやすい内容で</option>
         </select>
         <select css={paperLineCss}>
-          <option></option>
-          <option></option>
-          <option></option>
-          <option></option>
+          <option>設計の細かい会話ができて</option>
+          <option>みんなでワイワイ話し合えて</option>
+          <option>すぐに実務に生かすことが出来</option>
+          <option>考えてなかったことを知れるので</option>
         </select>
         <select css={paperLineCss}>
-          <option></option>
-          <option></option>
-          <option></option>
-          <option></option>
+          <option>すごく勉強になります</option>
+          <option>大変おすすめな本です。</option>
+          <option>とてもためになります。</option>
+          <option>とても楽しいです。</option>
         </select>
       </div>
       <div css={workBtnCss}>
