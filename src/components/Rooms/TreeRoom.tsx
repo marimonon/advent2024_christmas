@@ -5,8 +5,8 @@ import TreeImage from "../Images/Tree/TreeImage"
 import TreeLightImage from "../Images/Tree/TreeLightImage"
 import TreeWhiteImage from "../Images/Tree/TreeWhiteImage"
 import TreeSwitchImage from "../Images/Tree/TreeSwitchImage"
-import DeerballImage from "../Images/Tree/deerballImage"
-import SwitchImage from "../Images/Tree/switchImage"
+import DeerballImage from "../Images/Tree/DeerballImage"
+import SwitchImage from "../Images/Tree/SwitchImage"
 
 const TreeRoom: React.FC = () => {
   return (

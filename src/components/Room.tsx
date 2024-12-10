@@ -5,13 +5,15 @@ import React from "react"
 import StoveRoom from "./Rooms/StoveRoom"
 import Arrows from "./Arrows"
 import TreeRoom from "./Rooms/TreeRoom"
+import DiningRoom from "./Rooms/DiningRoom"
 
 const Room: React.FC = () => {
   return (
     <div css={roomCss}>
       <Arrows />
       {/* <StoveRoom /> */}
-      <TreeRoom />
+      {/* <TreeRoom /> */}
+      <DiningRoom />
     </div>
   )
 }
