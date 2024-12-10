@@ -1,7 +1,7 @@
 type Props = {
   className?: string
 }
-const DiningBg: React.FC<Props> = ({ className }) => {
+const DiningRoomBg: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="1000"
@@ -416,4 +416,4 @@ const DiningBg: React.FC<Props> = ({ className }) => {
   )
 }
 
-export default DiningBg
+export default DiningRoomBg
