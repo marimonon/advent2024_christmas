@@ -1,10 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import StoveRoomBg from "../Images/Stove/StoveRoomBg"
 
 const StoveRoom: React.FC = () => {
   return (
     <div>
-      <h1>Stove Room</h1>
+      <StoveRoomBg />
     </div>
   )
 }

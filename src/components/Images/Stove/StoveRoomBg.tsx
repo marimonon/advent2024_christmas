@@ -1,8 +1,8 @@
 const StoveRoomBg: React.FC = () => {
   return (
     <svg
-      width="1000"
-      height="1240"
+      width="600"
+      height="744"
       viewBox="0 0 1000 1240"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1328,70 +1328,8 @@ const StoveRoomBg: React.FC = () => {
         />
         <rect y="360" width="314" height="690" fill="white" />
         <rect x="673" y="738" width="241" height="312" fill="#662113" />
-        <path
-          d="M907 902.883C907 963.902 841.935 1018 791.222 1018C740.509 1018 676 960.617 676 899.598C676 838.579 739.603 790 790.287 790C840.971 790 907 841.864 907 902.883Z"
-          fill="url(#paint0_radial_276_1110)"
-        />
-        <path
-          d="M802.659 849C807.123 849 813.18 873.746 821.363 887.951C829.546 902.155 860.258 937.443 848.25 967.945C835.178 1001.36 761.107 1007.87 745.06 964.282C733.795 933.779 771.947 902.155 781.724 887.951C788.419 878.157 799.577 849 802.659 849Z"
-          fill="url(#paint1_radial_276_1110)"
-        />
-        <rect
-          x="809.58"
-          y="970.406"
-          width="19.0797"
-          height="126"
-          transform="rotate(60 809.58 970.406)"
-          fill="#483004"
-        />
-        <rect
-          x="877.119"
-          y="970.406"
-          width="19.0797"
-          height="126"
-          transform="rotate(60 877.119 970.406)"
-          fill="#483004"
-        />
-        <rect
-          width="19.0797"
-          height="126"
-          transform="matrix(-0.5 0.866025 0.866025 0.5 747.539 969.406)"
-          fill="#604106"
-        />
-        <rect
-          width="19.0797"
-          height="126"
-          transform="matrix(-0.5 0.866025 0.866025 0.5 796.539 969.406)"
-          fill="#604106"
-        />
       </g>
       <defs>
-        <radialGradient
-          id="paint0_radial_276_1110"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(791.518 903.994) scale(114.065 105.248)"
-        >
-          <stop offset="0.034" stop-color="#FFE265" stop-opacity="0.7" />
-          <stop offset="0.112" stop-color="#FFE575" stop-opacity="0.643" />
-          <stop offset="0.417" stop-color="#FFF0B0" stop-opacity="0.422" />
-          <stop offset="0.677" stop-color="#FFF8DB" stop-opacity="0.234" />
-          <stop offset="0.88" stop-color="#FFFDF5" stop-opacity="0.087" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
-        </radialGradient>
-        <radialGradient
-          id="paint1_radial_276_1110"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(801.905 1005.83) scale(206.464 145.246)"
-        >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
-        </radialGradient>
         <clipPath id="clip0_276_1110">
           <rect width="1000" height="1240" fill="white" />
         </clipPath>
