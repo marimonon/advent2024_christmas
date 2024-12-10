@@ -1,6 +1,7 @@
-import React from "react"
-
-const HomeWorkImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const HomeWorkImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="396"
@@ -8,6 +9,7 @@ const HomeWorkImage: React.FC = () => {
       viewBox="0 0 396 136"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path d="M0 0.515625H287.764L396 135.354H77.5L0 0.515625Z" fill="white" />
       <line x1="31" y1="13.5" x2="274" y2="13.5" stroke="#930606" />

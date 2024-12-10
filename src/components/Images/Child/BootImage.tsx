@@ -1,6 +1,7 @@
-import React from "react"
-
-const BootImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const BootImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="132"
@@ -8,6 +9,7 @@ const BootImage: React.FC = () => {
       viewBox="0 0 132 252"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g filter="url(#filter0_d_283_3518)">
         <g filter="url(#filter1_d_283_3518)">

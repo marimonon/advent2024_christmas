@@ -1,6 +1,7 @@
-import React from "react"
-
-const ChildSleepImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const ChildSleepImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="708"
@@ -8,6 +9,7 @@ const ChildSleepImage: React.FC = () => {
       viewBox="0 0 708 533"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <rect
         x="152.334"

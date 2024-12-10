@@ -1,6 +1,7 @@
-import React from "react"
-
-const ChildRoomBg: React.FC = () => {
+type Props = {
+  className?: string
+}
+const ChildRoomBg: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="1000"
@@ -8,6 +9,7 @@ const ChildRoomBg: React.FC = () => {
       viewBox="0 0 1000 1240"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g clip-path="url(#clip0_283_3470)">
         <rect width="1000" height="1240" fill="#045662" />
