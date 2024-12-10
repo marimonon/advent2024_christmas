@@ -6,10 +6,12 @@ import TreeLightImage from "../Images/Tree/TreeLightImage"
 import TreeWhiteImage from "../Images/Tree/TreeWhiteImage"
 import TreeSwitchImage from "../Images/Tree/TreeSwitchImage"
 import DeerballImage from "../Images/Tree/deerballImage"
+import SwitchImage from "../Images/Tree/switchImage"
 
 const TreeRoom: React.FC = () => {
   return (
     <div>
+      <SwitchImage css={switchCss} />
       <DeerballImage css={deerCss} />
       <TreeSwitchImage css={treeSwitchCss} />
       <TreeWhiteImage css={treeWhiteCss} />
@@ -22,6 +24,14 @@ const TreeRoom: React.FC = () => {
 
 export default TreeRoom
 
+const switchCss = css`
+  position: absolute;
+  width: 10%;
+  height: auto;
+  left: 20%;
+  top: 40%;
+  z-index: 5;
+`
 const deerCss = css`
   position: absolute;
   width: 9%;
@@ -65,6 +75,7 @@ const treeCss = css`
   right: -10%;
   bottom: 8%;
   z-index: 1;
+  filter: drop-shadow(0 0 80px #ff0);
 `
 
 const treeBgCss = css`
