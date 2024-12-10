@@ -1,4 +1,7 @@
-const TreeWhiteImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const TreeWhiteImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="561"
@@ -6,6 +9,7 @@ const TreeWhiteImage: React.FC = () => {
       viewBox="0 0 561 670"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <ellipse
         cx="394.959"

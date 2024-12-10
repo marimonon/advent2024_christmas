@@ -1,4 +1,7 @@
-const SwitchImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const SwitchImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="135"
@@ -6,6 +9,7 @@ const SwitchImage: React.FC = () => {
       viewBox="0 0 135 150"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g opacity="0.3">
         <rect width="135" height="150" rx="10" fill="#D9D9D9" />

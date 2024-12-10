@@ -1,4 +1,7 @@
-const TreeSwitchImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const TreeSwitchImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="100"
@@ -6,6 +9,7 @@ const TreeSwitchImage: React.FC = () => {
       viewBox="0 0 100 122"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <rect
         y="43.6875"

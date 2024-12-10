@@ -1,4 +1,7 @@
-const DeerballImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const DeerballImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="82"
@@ -6,6 +9,7 @@ const DeerballImage: React.FC = () => {
       viewBox="0 0 82 87"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M49.7374 3.1892C43.8038 3.53869 44.9381 10.5186 46.247 13.9649L58.0268 18.3334C63.1654 13.8192 72.6281 4.06296 69.3705 1.15061C66.1128 -1.76173 57.639 5.95595 53.8093 10.1788C54.9243 7.70333 55.671 2.83972 49.7374 3.1892Z"

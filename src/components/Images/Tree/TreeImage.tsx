@@ -1,4 +1,7 @@
-const TreeImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const TreeImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="904"
@@ -6,6 +9,7 @@ const TreeImage: React.FC = () => {
       viewBox="0 0 904 1010"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g clip-path="url(#clip0_277_1654)">
         <path
