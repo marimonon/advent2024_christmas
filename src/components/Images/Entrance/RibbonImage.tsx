@@ -1,6 +1,7 @@
-import React from "react"
-
-const RibbonImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const RibbonImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="466"
@@ -8,6 +9,7 @@ const RibbonImage: React.FC = () => {
       viewBox="0 0 466 461"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M98.6768 265.857L182.483 208.494L320.251 120.165L319.606 153.047L373.539 185.677L224.326 223.328L173.167 333.479C137.781 323.837 117.347 304.558 98.6768 265.857Z"

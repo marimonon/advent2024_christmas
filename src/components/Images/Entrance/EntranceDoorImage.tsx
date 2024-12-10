@@ -1,6 +1,7 @@
-import React from "react"
-
-const EntranceDoorImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const EntranceDoorImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="447"
@@ -8,6 +9,7 @@ const EntranceDoorImage: React.FC = () => {
       viewBox="0 0 447 825"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <rect width="435" height="805" fill="#604106" />
       <rect x="99" y="90" width="55" height="625" fill="#045662" />
