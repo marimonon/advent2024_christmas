@@ -5,10 +5,14 @@ import HomeWorkImage from "../Images/Child/HomeWorkImage"
 import ChildSleepImage from "../Images/Child/ChildSleepImage"
 import BootImage from "../Images/Child/BootImage"
 import BootEmptyImage from "../Images/Child/BootEmptyImage"
+import ChildImage from "../Images/Child/ChildImage"
+import MasterKeyImage from "../Images/Child/MasterKeyImage"
 
 const ChildRoom: React.FC = () => {
   return (
     <div>
+      <MasterKeyImage css={masterKeyCss} />
+      <ChildImage css={childCss} />
       <BootEmptyImage css={bootEmptyCss} />
       <BootImage css={bootCss} />
       <ChildSleepImage css={childSleepCss} />
@@ -19,6 +23,24 @@ const ChildRoom: React.FC = () => {
 }
 
 export default ChildRoom
+
+const masterKeyCss = css`
+  position: absolute;
+  top: 39%;
+  left: 14%;
+  width: 14%;
+  height: auto;
+  z-index: 4;
+`
+
+const childCss = css`
+  position: absolute;
+  top: 16%;
+  left: 32%;
+  width: 32%;
+  height: auto;
+  z-index: 3;
+`
 
 const bootEmptyCss = css`
   position: absolute;
