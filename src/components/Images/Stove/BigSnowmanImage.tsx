@@ -1,4 +1,7 @@
-const BigSnowmanImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const BigSnowmanImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="512"
@@ -6,6 +9,7 @@ const BigSnowmanImage: React.FC = () => {
       viewBox="0 0 512 999"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <rect
         width="19.0797"

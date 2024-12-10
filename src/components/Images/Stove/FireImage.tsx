@@ -1,4 +1,7 @@
-const FireImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const FireImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="231"
@@ -6,6 +9,7 @@ const FireImage: React.FC = () => {
       viewBox="0 0 231 228"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M231 112.883C231 173.902 165.935 228 115.222 228C64.5093 228 0 170.617 0 109.598C0 48.5787 63.6032 0 114.287 0C164.971 0 231 51.864 231 112.883Z"

@@ -1,4 +1,7 @@
-const FirewoodImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const FirewoodImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="206"
@@ -6,6 +9,7 @@ const FirewoodImage: React.FC = () => {
       viewBox="0 0 206 81"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <rect
         x="109.119"

@@ -1,4 +1,7 @@
-const DoorCloseImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const DoorCloseImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="314"
@@ -6,6 +9,7 @@ const DoorCloseImage: React.FC = () => {
       viewBox="0 0 314 765"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <rect width="314" height="690" fill="#C47908" />
       <circle cx="266.5" cy="346.5" r="23.5" fill="#E2A610" />
