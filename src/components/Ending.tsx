@@ -6,6 +6,13 @@ import NightImage from "./Images/Ending/NightImage"
 import LightImage from "./Images/Ending/LightImage"
 import WhiteLightImage from "./Images/Ending/WhiteLightImage"
 import RollSantaImage from "./Images/Ending/RollSantaImage"
+import RollBallImage from "./Images/Ending/RollBallImage"
+import RollCakeImage from "./Images/Ending/RollCakeImage"
+import RollCatImage from "./Images/Ending/RollCatImage"
+import RollBearImage from "./Images/Ending/RollBearImage"
+import RollDeerImage from "./Images/Ending/RollDeerImage"
+import RollDogImage from "./Images/Ending/RollDogImage"
+import RollWreathImage from "./Images/Ending/RollWreathImage"
 
 const Ending: React.FC = () => {
   return (
@@ -26,7 +33,7 @@ const Ending: React.FC = () => {
             </p>
           </li>
           <li css={rollItemCss}>
-            <RollSantaImage css={rollImageCss} />
+            <RollBallImage css={rollImageCss} />
             <p>
               制作・イラスト・企画
               <br />
@@ -34,7 +41,7 @@ const Ending: React.FC = () => {
             </p>
           </li>
           <li css={rollItemCss}>
-            <RollSantaImage css={rollImageCss} />
+            <RollCakeImage css={rollImageCss} />
             <p>
               制作・イラスト・企画
               <br />
@@ -42,7 +49,7 @@ const Ending: React.FC = () => {
             </p>
           </li>
           <li css={rollItemCss}>
-            <RollSantaImage css={rollImageCss} />
+            <RollCatImage css={rollImageCss} />
             <p>
               制作・イラスト・企画
               <br />
@@ -50,7 +57,7 @@ const Ending: React.FC = () => {
             </p>
           </li>
           <li css={rollItemCss}>
-            <RollSantaImage css={rollImageCss} />
+            <RollBearImage css={rollImageCss} />
             <p>
               制作・イラスト・企画
               <br />
@@ -58,7 +65,7 @@ const Ending: React.FC = () => {
             </p>
           </li>
           <li css={rollItemCss}>
-            <RollSantaImage css={rollImageCss} />
+            <RollDeerImage css={rollImageCss} />
             <p>
               制作・イラスト・企画
               <br />
@@ -66,7 +73,7 @@ const Ending: React.FC = () => {
             </p>
           </li>
           <li css={rollItemCss}>
-            <RollSantaImage css={rollImageCss} />
+            <RollDogImage css={rollImageCss} />
             <p>
               制作・イラスト・企画
               <br />
@@ -74,20 +81,17 @@ const Ending: React.FC = () => {
             </p>
           </li>
           <li css={rollItemCss}>
-            <RollSantaImage css={rollImageCss} />
+            <RollWreathImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              カレンダー：
               <br />
-              マッピー
+              フィヨルドブートキャンプ
+              <br />
+              Advent Calendar 2024
             </p>
           </li>
-          <li css={rollItemCss}>
-            <RollSantaImage css={rollImageCss} />
-            <p>
-              制作・イラスト・企画
-              <br />
-              マッピー
-            </p>
+          <li>
+            <a>https://adventar.org/calendars/10807</a>
           </li>
         </ul>
       </div>
@@ -197,20 +201,20 @@ const rollAnime = keyframes`
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-80%);
+    transform: translateY(-90%);
   }
 `
 
 const rollCss = css`
   padding: 10%;
-  animation: ${rollAnime} 30s linear;
+  animation: ${rollAnime} 3s forwards;
 `
 
 const rollItemCss = css`
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 100px;
 `
 
 const rollImageCss = css`
