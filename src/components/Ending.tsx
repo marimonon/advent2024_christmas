@@ -13,6 +13,7 @@ import RollBearImage from "./Images/Ending/RollBearImage"
 import RollDeerImage from "./Images/Ending/RollDeerImage"
 import RollDogImage from "./Images/Ending/RollDogImage"
 import RollWreathImage from "./Images/Ending/RollWreathImage"
+import FinImage from "./Images/Ending/FinImage"
 
 const Ending: React.FC = () => {
   return (
@@ -91,7 +92,12 @@ const Ending: React.FC = () => {
             </p>
           </li>
           <li>
-            <a>https://adventar.org/calendars/10807</a>
+            <a href="https://adventar.org/calendars/10807">
+              https://adventar.org/calendars/10807
+            </a>
+          </li>
+          <li css={finCss}>
+            <FinImage />
           </li>
         </ul>
       </div>
@@ -189,9 +195,9 @@ const nightCss = css`
 
 const rollBox = css`
   position: relative;
-  top: 60%;
+  top: 50%;
   width: 100%;
-  height: 40%;
+  height: 50%;
   z-index: 10;
   overflow: hidden;
 `
@@ -201,23 +207,29 @@ const rollAnime = keyframes`
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-90%);
+    transform: translateY(-76%);
   }
 `
 
 const rollCss = css`
   padding: 10%;
-  animation: ${rollAnime} 3s forwards;
+  animation: ${rollAnime} 30s forwards;
 `
 
 const rollItemCss = css`
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-top: 100px;
+  margin-top: 20%;
+  color: #045662;
 `
 
 const rollImageCss = css`
   width: 20%;
   height: auto;
+`
+
+const finCss = css`
+  margin-top: 20%;
+  text-align: center;
 `
