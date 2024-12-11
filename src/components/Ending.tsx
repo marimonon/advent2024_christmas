@@ -39,49 +39,51 @@ const Ending: React.FC = () => {
           <li css={rollItemCss}>
             <RollBallImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              手取り足取りフォロー
               <br />
-              マッピー
+              Yuto(だんな)
             </p>
           </li>
           <li css={rollItemCss}>
             <RollCakeImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              Special Thanks
               <br />
-              マッピー
+              マスタリングTCP/IP輪読会の方々
+              <br />
+              コード・コンプリート輪読会の方々
             </p>
           </li>
           <li css={rollItemCss}>
             <RollCatImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              火付役
               <br />
-              マッピー
-            </p>
-          </li>
-          <li css={rollItemCss}>
-            <RollBearImage css={rollImageCss} />
-            <p>
-              制作・イラスト・企画
-              <br />
-              マッピー
+              きたろうさん　しばいぬろうさん
             </p>
           </li>
           <li css={rollItemCss}>
             <RollDeerImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              テストや応援
               <br />
-              マッピー
+              いねたぬさん
+            </p>
+          </li>
+          <li css={rollItemCss}>
+            <RollBearImage css={rollImageCss} />
+            <p>
+              テストや応援
+              <br />
+              なかまるさん　うつぼさん
             </p>
           </li>
           <li css={rollItemCss}>
             <RollDogImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              モデル？
               <br />
-              マッピー
+              タロさん（大家さんの犬）
             </p>
           </li>
           <li css={rollItemCss}>
