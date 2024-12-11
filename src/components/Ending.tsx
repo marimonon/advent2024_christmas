@@ -19,8 +19,11 @@ const Ending: React.FC = () => {
   return (
     <div css={endBgCss}>
       <EndTextImage css={endTextCss} />
-      <SantasImage css={santasCss} />
+      <div css={expandCss}>
+        <SantasImage css={santasCss} />
+      </div>
       <WhiteLightImage css={whiteCss} />
+      <WhiteLightImage css={whiteLightCss} />
       <LightImage css={lightCss} />
       <NightImage css={nightCss} />
       <div css={rollBox}>
@@ -36,49 +39,51 @@ const Ending: React.FC = () => {
           <li css={rollItemCss}>
             <RollBallImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              手取り足取りフォロー
               <br />
-              マッピー
+              Yuto(だんな)
             </p>
           </li>
           <li css={rollItemCss}>
             <RollCakeImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              Special Thanks
               <br />
-              マッピー
+              マスタリングTCP/IP輪読会の方々
+              <br />
+              コード・コンプリート輪読会の方々
             </p>
           </li>
           <li css={rollItemCss}>
             <RollCatImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              火付役
               <br />
-              マッピー
-            </p>
-          </li>
-          <li css={rollItemCss}>
-            <RollBearImage css={rollImageCss} />
-            <p>
-              制作・イラスト・企画
-              <br />
-              マッピー
+              きたろうさん　しばいぬろうさん
             </p>
           </li>
           <li css={rollItemCss}>
             <RollDeerImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              テストや応援
               <br />
-              マッピー
+              いねたぬさん
+            </p>
+          </li>
+          <li css={rollItemCss}>
+            <RollBearImage css={rollImageCss} />
+            <p>
+              テストや応援
+              <br />
+              なかまるさん　うつぼさん
             </p>
           </li>
           <li css={rollItemCss}>
             <RollDogImage css={rollImageCss} />
             <p>
-              制作・イラスト・企画
+              モデル？
               <br />
-              マッピー
+              タロさん（大家さんの犬）
             </p>
           </li>
           <li css={rollItemCss}>
@@ -123,6 +128,14 @@ const endTextCss = css`
   z-index: 5;
 `
 
+const SantasExpandAnime = keyframes`
+  0% {
+    transform: scale(4);
+  }
+  100% {
+    transform: scale(1);
+  }
+`
 const santasAnime = keyframes`
   0%, 100% {
     transform: translateY(0);
@@ -131,28 +144,42 @@ const santasAnime = keyframes`
     transform: translateY(-20px);
   }
 `
+
+const expandCss = css`
+  position: relative;
+  top: 10%;
+  animation: ${SantasExpandAnime} 2s forwards;
+  z-index: 5;
+`
 const santasCss = css`
   position: absolute;
   top: 10%;
   left: -10%;
   width: 100%;
   height: auto;
-  z-index: 5;
   animation: ${santasAnime} 5s infinite linear;
 `
 
 const whiteAnime = keyframes`
   0% {
     opacity: 0;
+    transform: translateY(-50%);
+  }
+  25% {
+    opacity: 1;
   }
   50% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  75% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+    transform: translateY(0);
   }
 `
-
 const whiteCss = css`
   position: absolute;
   top: 0%;
@@ -160,17 +187,30 @@ const whiteCss = css`
   width: 100%;
   height: auto;
   z-index: 4;
-  animation: ${whiteAnime} 3s infinite;
+  animation: ${whiteAnime} 8s infinite linear;
+`
+
+const whiteLightCss = css`
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 4;
+  animation: ${whiteAnime} 8s infinite linear;
+  animation-delay: -2s;
 `
 const lightAnime = keyframes`
   0% {
-    opacity: 0.5;
+    opacity: 1;
   }
   50% {
-    opacity: 0.1;
+    opacity: 0.5;
+    transform: translateX(-2%);
   }
   100% {
-    opacity: 0.5;
+    opacity: 1;
+    transform: translateX(0);
   }
 `
 
@@ -213,7 +253,7 @@ const rollAnime = keyframes`
 
 const rollCss = css`
   padding: 10%;
-  animation: ${rollAnime} 30s forwards;
+  animation: ${rollAnime} 45s forwards;
 `
 
 const rollItemCss = css`

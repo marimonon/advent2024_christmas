@@ -275,7 +275,7 @@ const BearRibbonImage: React.FC<Props> = ({ className }) => {
         <path
           d="M151.219 185.109L156.433 219.003"
           stroke="#C47908"
-          stroke-dasharray="2 2"
+          strokeDasharray="2 2"
         />
       </g>
       <defs>

@@ -423,7 +423,7 @@ const SantasImage: React.FC<Props> = ({ className }) => {
         <path
           d="M639.19 288.292C731.394 278.944 927.01 246.483 969.722 172.799C854.945 268.836 601.297 453.005 507.041 440.007"
           stroke="#FF0000"
-          stroke-width="2"
+          strokeWidth="2"
         />
         <path
           d="M778.285 562.736C778.285 557.164 778.587 551.648 779.172 546.501C779.758 541.354 780.616 536.677 781.698 532.738C782.78 528.799 784.064 525.674 785.478 523.542C786.891 521.41 788.406 520.313 789.937 520.313C791.467 520.313 792.982 521.41 794.395 523.542C795.809 525.674 797.093 528.799 798.175 532.738C799.257 536.677 800.115 541.354 800.701 546.501C801.286 551.648 801.588 557.164 801.588 562.736L789.937 562.736L778.285 562.736Z"
@@ -724,7 +724,7 @@ const SantasImage: React.FC<Props> = ({ className }) => {
         <path
           d="M834.812 273.183C889.228 255.866 1006.96 211.69 1042.53 173.523C1005.17 261.661 904.654 439.655 801.482 446.527"
           stroke="#FF0000"
-          stroke-width="2"
+          strokeWidth="2"
         />
       </g>
       <defs>
@@ -735,9 +735,9 @@ const SantasImage: React.FC<Props> = ({ className }) => {
           width="1104.11"
           height="748.186"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -771,8 +771,8 @@ const SantasImage: React.FC<Props> = ({ className }) => {
           y2="252.485"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D7F2F6" />
-          <stop offset="1" stop-color="#37BED0" />
+          <stop stopColor="#D7F2F6" />
+          <stop offset="1" stopColor="#37BED0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_299_1045"
@@ -782,8 +782,8 @@ const SantasImage: React.FC<Props> = ({ className }) => {
           y2="228.966"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#D7F2F6" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#D7F2F6" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_299_1045"
@@ -793,9 +793,9 @@ const SantasImage: React.FC<Props> = ({ className }) => {
           y2="165.912"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F44336" />
-          <stop offset="0.359" stop-color="#E73B32" />
-          <stop offset="1" stop-color="#C62828" />
+          <stop stopColor="#F44336" />
+          <stop offset="0.359" stopColor="#E73B32" />
+          <stop offset="1" stopColor="#C62828" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_299_1045"
@@ -805,8 +805,8 @@ const SantasImage: React.FC<Props> = ({ className }) => {
           y2="101.039"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.488" stop-color="#F5F5F5" />
-          <stop offset="0.831" stop-color="#BDBDBD" />
+          <stop offset="0.488" stopColor="#F5F5F5" />
+          <stop offset="0.831" stopColor="#BDBDBD" />
         </linearGradient>
         <radialGradient
           id="paint4_radial_299_1045"
@@ -816,8 +816,8 @@ const SantasImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(1020.16 134.911) scale(47.237 30.1618)"
         >
-          <stop offset="0.706" stop-color="white" stop-opacity="0" />
-          <stop offset="1" stop-color="#BDBDBD" />
+          <stop offset="0.706" stopColor="white" stopOpacity="0" />
+          <stop offset="1" stopColor="#BDBDBD" />
         </radialGradient>
         <linearGradient
           id="paint5_linear_299_1045"
@@ -827,8 +827,8 @@ const SantasImage: React.FC<Props> = ({ className }) => {
           y2="258.282"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D7F2F6" />
-          <stop offset="1" stop-color="#37BED0" />
+          <stop stopColor="#D7F2F6" />
+          <stop offset="1" stopColor="#37BED0" />
         </linearGradient>
         <radialGradient
           id="paint6_radial_299_1045"
@@ -838,8 +838,8 @@ const SantasImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(448.522 438.113) rotate(78.7063) scale(342.413 350.116)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint7_radial_299_1045"
@@ -849,8 +849,8 @@ const SantasImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(1032.35 234.685) rotate(90) scale(41.3955 42.4575)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint8_radial_299_1045"
@@ -860,8 +860,8 @@ const SantasImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(940.424 222.886) rotate(90) scale(41.3955 42.4575)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
       </defs>
     </svg>

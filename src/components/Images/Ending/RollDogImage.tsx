@@ -93,7 +93,7 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
         <path
           d="M161.755 150.226C165.602 149.862 166.563 152.805 167.525 155.232C190.606 151.136 190.606 167.519 167.525 163.424C166.563 165.851 165.602 167.883 161.755 167.519C156.946 167.064 160.793 163.879 156.946 163.424C153.099 162.969 149.701 167.386 147.329 166.609C133.438 162.058 148.291 160.662 148.291 158.842C148.291 157.022 133.866 154.322 147.329 151.136C149.91 150.526 153.099 154.777 156.946 154.322C160.793 153.867 156.946 150.681 161.755 150.226Z"
           fill="#FFE4BB"
-          fill-opacity="0.44"
+          fillOpacity="0.44"
         />
       </g>
       <path
@@ -220,7 +220,7 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
         <path
           d="M78.5417 61.3239C72.9855 58.7789 72.0458 48.934 76.4427 39.3347C80.8397 29.7354 86.1936 24.7273 88.4097 25.7424C93.9659 28.2874 100.961 38.9518 96.5636 48.5511C92.1666 58.1503 84.0979 63.869 78.5417 61.3239Z"
           fill="black"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <path
           d="M147.384 72.0772C153.494 71.9465 158.264 63.2833 158.038 52.7273C157.812 42.1713 154.886 35.4496 152.449 35.5017C146.339 35.6324 135.686 42.6445 135.912 53.2005C136.138 63.7564 141.274 72.2078 147.384 72.0772Z"
@@ -229,7 +229,7 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
         <path
           d="M147.384 72.0772C153.494 71.9465 158.264 63.2833 158.038 52.7273C157.812 42.1713 154.886 35.4496 152.449 35.5017C146.339 35.6324 135.686 42.6445 135.912 53.2005C136.138 63.7564 141.274 72.2078 147.384 72.0772Z"
           fill="black"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <ellipse
           cx="53.7768"
@@ -246,7 +246,7 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           ry="49.6401"
           transform="matrix(-1 0 0 1 161.994 47.5)"
           fill="url(#paint15_radial_301_2137)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <ellipse
           cx="22.1055"
@@ -271,12 +271,12 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
         <path
           d="M61.1583 122.44C59.3009 137.556 77.1326 143.031 99.8092 145.818C122.486 148.604 141.42 147.647 143.277 132.53C145.135 117.414 128.258 102.901 105.581 100.115C82.9045 97.3285 63.0157 107.324 61.1583 122.44Z"
           fill="white"
-          fill-opacity="0.5"
+          fillOpacity="0.5"
         />
         <path
           d="M61.1583 122.44C59.3009 137.556 77.1326 143.031 99.8092 145.818C122.486 148.604 141.42 147.647 143.277 132.53C145.135 117.414 128.258 102.901 105.581 100.115C82.9045 97.3285 63.0157 107.324 61.1583 122.44Z"
           fill="url(#paint17_radial_301_2137)"
-          fill-opacity="0.3"
+          fillOpacity="0.3"
         />
         <path
           d="M99.0509 104.433C104.172 101.174 115.131 102.765 117.542 106.555C119.16 109.764 114.367 111.201 111.743 112.137C104.171 112.472 104.328 112.046 102.25 110.67C99.9265 109.133 98.7502 106.907 99.0509 104.433Z"
@@ -285,7 +285,7 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
         <path
           d="M99.0509 104.433C104.172 101.174 115.131 102.765 117.542 106.555C119.16 109.764 114.367 111.201 111.743 112.137C104.171 112.472 104.328 112.046 102.25 110.67C99.9265 109.133 98.7502 106.907 99.0509 104.433Z"
           fill="black"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
       </g>
       <path
@@ -396,8 +396,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
       </g>
       <g filter="url(#filter8_d_301_2137)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M118.281 150.36C118.595 152.04 116.795 153.315 115.315 152.46L110.137 149.471L113.76 165.129C114.154 166.833 112.326 168.186 110.811 167.312L72.9836 145.472C71.4691 144.598 71.7271 142.338 73.3997 141.827L88.7711 137.135L82.4425 133.481C81.2013 132.765 81.0946 131.014 82.2396 130.151L88.1477 125.704C89.1438 124.954 90.5819 125.401 90.9762 126.584C91.499 128.153 93.6712 128.273 94.364 126.772L96.4435 122.267C96.7557 121.59 97.4181 121.143 98.1624 121.107L110.932 120.487C111.93 120.439 112.811 121.134 112.995 122.117L118.281 150.36Z"
           fill="url(#paint22_radial_301_2137)"
         />
@@ -454,9 +454,9 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           width="38.4277"
           height="24.5547"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -489,9 +489,9 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           width="37.2344"
           height="22.4297"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -524,9 +524,9 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           width="34.9453"
           height="21.3164"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -559,9 +559,9 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           width="46.7949"
           height="28.8203"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -594,9 +594,9 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           width="38.4277"
           height="24.5547"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -629,9 +629,9 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           width="51.4414"
           height="25.3672"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -664,9 +664,9 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           width="154.205"
           height="168.477"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -699,9 +699,9 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           width="30.7441"
           height="25.2852"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -734,9 +734,9 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           width="54.334"
           height="55.1016"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -770,8 +770,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(178.231 167.996) rotate(-180) scale(19.8316 9.11739)"
         >
-          <stop offset="0.4375" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.4375" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_301_2137"
@@ -781,8 +781,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(127.778 167.645) rotate(-141.47) scale(13.6843 13.5855)"
         >
-          <stop offset="0.760417" stop-color="#C47908" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.760417" stopColor="#C47908" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_301_2137"
@@ -792,8 +792,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(141.4 151.067) rotate(90) scale(13.2211 6.07826)"
         >
-          <stop offset="0.723958" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.723958" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_301_2137"
@@ -803,8 +803,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(133.845 155.406) rotate(90) scale(13.2211 6.07826)"
         >
-          <stop offset="0.723958" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.723958" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_301_2137"
@@ -814,8 +814,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(127.235 150.629) rotate(-180) scale(19.8316 9.11739)"
         >
-          <stop offset="0.4375" stop-color="#C47908" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.4375" stopColor="#C47908" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_301_2137"
@@ -825,8 +825,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(163.426 158.879) rotate(-180) scale(21.41 8.68323)"
         >
-          <stop offset="0.630208" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.630208" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <linearGradient
           id="paint6_linear_301_2137"
@@ -836,8 +836,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           y2="93.7428"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D18C0C" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop stopColor="#D18C0C" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_301_2137"
@@ -847,8 +847,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           y2="36.1461"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_301_2137"
@@ -858,8 +858,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           y2="127.444"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="0.27" stop-color="#C47908" />
+          <stop stopColor="white" />
+          <stop offset="0.27" stopColor="#C47908" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_301_2137"
@@ -869,8 +869,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           y2="42.6396"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_301_2137"
@@ -880,8 +880,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           y2="101.962"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C47908" />
-          <stop offset="0.305" stop-color="#FFE4BB" />
+          <stop stopColor="#C47908" />
+          <stop offset="0.305" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_301_2137"
@@ -891,8 +891,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           y2="76.1621"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C47908" />
-          <stop offset="0.305" stop-color="#FFE4BB" />
+          <stop stopColor="#C47908" />
+          <stop offset="0.305" stopColor="#FFE4BB" />
         </linearGradient>
         <radialGradient
           id="paint12_radial_301_2137"
@@ -902,8 +902,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(57.723 69.3751) rotate(-155.39) scale(11.0656 19.1176)"
         >
-          <stop offset="0.6875" stop-color="#C47908" />
-          <stop offset="1" stop-color="#C47908" />
+          <stop offset="0.6875" stopColor="#C47908" />
+          <stop offset="1" stopColor="#C47908" />
         </radialGradient>
         <radialGradient
           id="paint13_radial_301_2137"
@@ -913,8 +913,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(163.297 87.7302) rotate(-1.22509) scale(11.0656 19.1176)"
         >
-          <stop offset="0.6875" stop-color="#C47908" />
-          <stop offset="1" stop-color="#C47908" />
+          <stop offset="0.6875" stopColor="#C47908" />
+          <stop offset="1" stopColor="#C47908" />
         </radialGradient>
         <radialGradient
           id="paint14_radial_301_2137"
@@ -924,9 +924,9 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(53.7768 40.6273) rotate(90) scale(58.653 63.5408)"
         >
-          <stop stop-color="#CF8D29" />
-          <stop offset="0.55" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop stopColor="#CF8D29" />
+          <stop offset="0.55" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </radialGradient>
         <radialGradient
           id="paint15_radial_301_2137"
@@ -937,7 +937,7 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientTransform="translate(53.7768 49.6401) rotate(87.6141) scale(35.488 38.4453)"
         >
           <stop offset="0.3" />
-          <stop offset="0.645" stop-opacity="0" />
+          <stop offset="0.645" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint16_radial_301_2137"
@@ -947,8 +947,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(102.218 127.485) rotate(97.0052) scale(27.5762 41.3684)"
         >
-          <stop stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </radialGradient>
         <radialGradient
           id="paint17_radial_301_2137"
@@ -958,8 +958,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(101.999 133.981) rotate(106.458) scale(32.3379 48.879)"
         >
-          <stop stop-color="#FFE4BB" />
-          <stop offset="0.77" stop-color="white" />
+          <stop stopColor="#FFE4BB" />
+          <stop offset="0.77" stopColor="white" />
         </radialGradient>
         <linearGradient
           id="paint18_linear_301_2137"
@@ -969,8 +969,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           y2="184.135"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint19_linear_301_2137"
@@ -980,8 +980,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           y2="182.627"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint20_linear_301_2137"
@@ -991,8 +991,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           y2="179.617"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <radialGradient
           id="paint21_radial_301_2137"
@@ -1002,8 +1002,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(135.386 169.355) rotate(120) scale(8.91512 15.8366)"
         >
-          <stop offset="0.4375" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.4375" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint22_radial_301_2137"
@@ -1013,8 +1013,8 @@ const RollDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(95.222 150.222) rotate(-60) scale(29.9797 20.1075)"
         >
-          <stop offset="0.796875" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.796875" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
       </defs>
     </svg>

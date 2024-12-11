@@ -188,8 +188,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(584.818 451.021) rotate(90) scale(52.3999)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_299_1213"
@@ -199,8 +199,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(94.8452 800.806) rotate(90) scale(52.3999)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_299_1213"
@@ -210,8 +210,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(507.864 976.989) rotate(90) scale(81.5908 81.6066)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_299_1213"
@@ -221,8 +221,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(969.607 1468.59) rotate(90) scale(81.5908 81.6066)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_299_1213"
@@ -232,8 +232,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(81.6066 1440.59) rotate(90) scale(81.5908 81.6066)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_299_1213"
@@ -243,8 +243,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(361.608 444.216) rotate(90) scale(45.5947)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint6_radial_299_1213"
@@ -254,8 +254,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(218.999 681.597) rotate(90) scale(81.5908 81.6066)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint7_radial_299_1213"
@@ -265,8 +265,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(498.97 686.618) rotate(90) scale(81.5908 81.6066)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint8_radial_299_1213"
@@ -276,8 +276,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(829.123 410.189) rotate(90) scale(70.0933 70.7738)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint9_radial_299_1213"
@@ -287,8 +287,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(948.435 933.901) rotate(90) scale(81.5908 81.6066)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint10_radial_299_1213"
@@ -298,8 +298,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(922.354 626.595) rotate(90) scale(55.1219)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint11_radial_299_1213"
@@ -309,8 +309,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(465.122 280.122) rotate(90) scale(55.1219)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint12_radial_299_1213"
@@ -320,8 +320,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(644.122 55.1219) rotate(90) scale(55.1219)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint13_radial_299_1213"
@@ -331,8 +331,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(850.122 204.122) rotate(90) scale(55.1219)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint14_radial_299_1213"
@@ -342,8 +342,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(187.122 225.122) rotate(90) scale(55.1219)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint15_radial_299_1213"
@@ -353,8 +353,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(840.462 748.126) rotate(90) scale(81.5908 81.6066)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint16_radial_299_1213"
@@ -364,8 +364,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(137.663 398.55) rotate(90) scale(81.5908 81.6066)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint17_radial_299_1213"
@@ -375,8 +375,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(168.342 976.383) rotate(90) scale(51.0388)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint18_radial_299_1213"
@@ -386,8 +386,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(714.116 1006.32) rotate(90) scale(37.4285)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint19_radial_299_1213"
@@ -397,8 +397,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(91.4285 1205.43) rotate(90) scale(37.4285)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint20_radial_299_1213"
@@ -408,8 +408,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(916.428 1226.43) rotate(90) scale(37.4285)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint21_radial_299_1213"
@@ -419,8 +419,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(536.428 1443.43) rotate(90) scale(37.4285)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint22_radial_299_1213"
@@ -430,8 +430,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(345.276 838.917) rotate(90) scale(37.4285)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint23_radial_299_1213"
@@ -441,8 +441,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(328.944 1043.75) rotate(90) scale(28.5817 27.9012)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint24_radial_299_1213"
@@ -452,8 +452,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(888.901 1099.58) rotate(90) scale(28.5817 27.9012)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint25_radial_299_1213"
@@ -463,8 +463,8 @@ const LightImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(692.339 600.054) rotate(90) scale(28.5817 27.9012)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
       </defs>
     </svg>

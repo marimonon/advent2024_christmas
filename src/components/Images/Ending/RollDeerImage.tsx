@@ -11,7 +11,7 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_301_2136)">
+      <g clipPath="url(#clip0_301_2136)">
         <path
           d="M118.611 172.463C118.611 167.597 118.829 162.78 119.252 158.285C119.675 153.79 120.296 149.705 121.078 146.265C121.859 142.825 122.788 140.096 123.809 138.234C124.831 136.372 125.926 135.414 127.031 135.414C128.137 135.414 129.232 136.372 130.254 138.234C131.275 140.096 132.203 142.825 132.985 146.265C133.767 149.705 134.387 153.79 134.811 158.285C135.234 162.78 135.451 167.597 135.451 172.463L127.031 172.463L118.611 172.463Z"
           fill="url(#paint0_linear_301_2136)"
@@ -119,7 +119,7 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           ry="8.17074"
           fill="white"
         />
-        <g clip-path="url(#clip1_301_2136)">
+        <g clipPath="url(#clip1_301_2136)">
           <path
             d="M33.6098 125.183C36.3203 124.873 37.963 125.914 38.1947 127.604C38.2452 127.97 38.6959 128.293 39.0392 128.581C40.1912 129.552 41.3727 130.568 42.5816 131.517C43.6304 132.338 44.5297 133.228 45.4521 134.108C47.3707 135.947 48.1289 137.37 47.059 139.555C46.8253 140.035 46.2903 140.821 45.3279 140.791C44.3654 140.762 44.2138 139.968 44.039 139.516C43.9505 139.284 43.8452 139.008 43.5504 138.841C43.3924 138.753 43.2597 138.781 43.0828 138.75C42.9038 138.719 42.8891 138.695 42.748 138.628C42.3541 138.441 42.2467 138.531 41.9435 138.724C41.5075 139.001 40.7851 138.979 40.2334 138.908C39.9111 138.867 39.8058 138.822 39.6142 138.667C39.4078 138.497 39.0919 138.387 38.9087 138.206C38.7191 138.02 38.7128 137.955 38.3632 137.88C37.6176 137.72 37.4134 138.056 36.8805 138.292C36.3582 138.525 35.6485 138.615 35.0314 138.522C34.7324 138.477 34.646 138.423 34.4986 138.265C34.3238 138.075 34.0963 137.947 33.8857 137.775C33.6541 137.583 33.4687 137.467 33.1507 137.337C32.8622 137.22 32.6032 137.168 32.2767 137.101C31.6786 136.978 31.1016 136.807 30.5076 136.679C29.7347 136.511 28.9618 136.343 28.1889 136.174C26.6683 135.837 25.152 135.495 23.6483 135.133C22.789 134.926 21.8265 134.762 21.6033 134.112C21.5275 133.892 21.4706 133.669 21.4348 133.445C21.041 131.008 23.2671 128.846 26.1397 127.392C27.5929 126.657 29.2314 126.067 30.9626 125.652C31.626 125.495 32.5905 125.301 33.6098 125.183Z"
             fill="#FFE082"
@@ -205,8 +205,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="172.463"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.615" stop-color="#D18C0C" />
-          <stop offset="1" stop-color="#6B4706" />
+          <stop offset="0.615" stopColor="#D18C0C" />
+          <stop offset="1" stopColor="#6B4706" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_301_2136"
@@ -216,8 +216,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="123.282"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D18C0C" />
-          <stop offset="1" stop-color="#6B4706" />
+          <stop stopColor="#D18C0C" />
+          <stop offset="1" stopColor="#6B4706" />
         </linearGradient>
         <radialGradient
           id="paint2_radial_301_2136"
@@ -227,8 +227,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(123.5 111) rotate(90) scale(55 60.266)"
         >
-          <stop offset="0.705" stop-color="#D18C0C" />
-          <stop offset="1" stop-color="#6B4706" />
+          <stop offset="0.705" stopColor="#D18C0C" />
+          <stop offset="1" stopColor="#6B4706" />
         </radialGradient>
         <linearGradient
           id="paint3_linear_301_2136"
@@ -238,8 +238,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="156"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FCECCF" />
-          <stop offset="1" stop-color="white" stop-opacity="0.5" />
+          <stop stopColor="#FCECCF" />
+          <stop offset="1" stopColor="white" stopOpacity="0.5" />
         </linearGradient>
         <radialGradient
           id="paint4_radial_301_2136"
@@ -249,8 +249,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(84 78.5) rotate(90) scale(62.5 61.8687)"
         >
-          <stop offset="0.62" stop-color="#D18C0C" />
-          <stop offset="1" stop-color="#6B4706" />
+          <stop offset="0.62" stopColor="#D18C0C" />
+          <stop offset="1" stopColor="#6B4706" />
         </radialGradient>
         <linearGradient
           id="paint5_linear_301_2136"
@@ -260,8 +260,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="55"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6B4706" />
-          <stop offset="1" stop-color="#D18C0C" />
+          <stop stopColor="#6B4706" />
+          <stop offset="1" stopColor="#D18C0C" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_301_2136"
@@ -271,8 +271,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="55"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6B4706" />
-          <stop offset="1" stop-color="#D18C0C" />
+          <stop stopColor="#6B4706" />
+          <stop offset="1" stopColor="#D18C0C" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_301_2136"
@@ -282,8 +282,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="122"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FCECCF" />
-          <stop offset="1" stop-color="white" stop-opacity="0.5" />
+          <stop stopColor="#FCECCF" />
+          <stop offset="1" stopColor="white" stopOpacity="0.5" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_301_2136"
@@ -293,8 +293,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="95"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6B4706" />
-          <stop offset="1" stop-color="#D18C0C" />
+          <stop stopColor="#6B4706" />
+          <stop offset="1" stopColor="#D18C0C" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_301_2136"
@@ -304,8 +304,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="95.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF0000" />
-          <stop offset="1" stop-color="#FFC0CB" />
+          <stop stopColor="#FF0000" />
+          <stop offset="1" stopColor="#FFC0CB" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_301_2136"
@@ -315,8 +315,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="95.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF0000" />
-          <stop offset="1" stop-color="#FFC0CB" />
+          <stop stopColor="#FF0000" />
+          <stop offset="1" stopColor="#FFC0CB" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_301_2136"
@@ -326,8 +326,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="144.271"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.615" stop-color="#D18C0C" />
-          <stop offset="1" stop-color="#6B4706" />
+          <stop offset="0.615" stopColor="#D18C0C" />
+          <stop offset="1" stopColor="#6B4706" />
         </linearGradient>
         <linearGradient
           id="paint12_linear_301_2136"
@@ -337,8 +337,8 @@ const RollDeerImage: React.FC<Props> = ({ className }) => {
           y2="121.003"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.615" stop-color="#D18C0C" />
-          <stop offset="1" stop-color="#6B4706" />
+          <stop offset="0.615" stopColor="#D18C0C" />
+          <stop offset="1" stopColor="#6B4706" />
         </linearGradient>
         <clipPath id="clip0_301_2136">
           <rect width="200" height="200" fill="white" />

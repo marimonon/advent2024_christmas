@@ -11,7 +11,7 @@ const RollWreathImage: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_301_2138)">
+      <g clipPath="url(#clip0_301_2138)">
         <path
           d="M136.31 61.9948C157.518 78.0058 165.235 107.691 153.297 132.816C139.831 161.157 106.458 172.964 78.7565 159.188C51.0545 145.412 39.5135 111.27 52.979 82.93C64.9169 57.8046 92.5018 45.6743 117.91 52.8448"
           stroke="black"
@@ -179,7 +179,7 @@ const RollWreathImage: React.FC<Props> = ({ className }) => {
         <path
           d="M113.007 49.5586C139.384 54.5609 159.359 78.2217 159.359 106.655C159.359 138.727 133.945 164.727 102.595 164.727C71.2459 164.727 45.832 138.727 45.832 106.655C45.832 78.2217 65.807 54.5609 92.1841 49.5586"
           stroke="#176E1C"
-          stroke-width="20"
+          strokeWidth="20"
         />
         <path
           d="M94.8243 47.8686C98.0235 46.3073 102.789 49.6996 105.468 55.4454C108.147 61.1912 107.725 67.1148 104.526 68.676C101.327 70.2372 96.5617 66.845 93.8826 61.0992C91.2035 55.3534 91.6251 49.4298 94.8243 47.8686Z"
@@ -353,7 +353,7 @@ const RollWreathImage: React.FC<Props> = ({ className }) => {
           d="M88.9217 36.7868C88.9296 35.8281 89.6179 35.0076 90.5628 34.8451C98.6795 33.4486 103.867 33.3837 111.994 35.0067C112.924 35.1924 113.585 36.0186 113.577 36.9667L113.417 56.3924C113.406 57.6488 112.252 58.5819 111.015 58.3611C103.577 57.0336 98.5494 57.0594 91.1099 58.2194C89.8764 58.4117 88.7511 57.4617 88.7614 56.2133L88.9217 36.7868Z"
           fill="url(#paint2_radial_301_2138)"
         />
-        <g clip-path="url(#clip1_301_2138)">
+        <g clipPath="url(#clip1_301_2138)">
           <path
             d="M81.9789 88.2465C75.1053 84.278 70.3928 79.5722 71.4531 77.7356C72.5135 75.899 78.9452 77.6272 85.8187 81.5957C92.6923 85.5641 97.4049 90.27 96.3445 92.1066C95.2842 93.9432 88.8525 92.215 81.9789 88.2465Z"
             fill="#A06C33"
@@ -371,7 +371,7 @@ const RollWreathImage: React.FC<Props> = ({ className }) => {
             fill="#FFD469"
           />
         </g>
-        <g clip-path="url(#clip2_301_2138)">
+        <g clipPath="url(#clip2_301_2138)">
           <path
             d="M123.334 88.9145C116.461 92.883 110.029 94.6112 108.969 92.7746C107.908 90.938 112.621 86.2322 119.495 82.2637C126.368 78.2952 132.8 76.567 133.86 78.4036C134.921 80.2401 130.208 84.9461 123.334 88.9145Z"
             fill="#A06C33"
@@ -399,8 +399,8 @@ const RollWreathImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(99.7132 57.9502) rotate(53.0601) scale(53.1517 34.3299)"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_301_2138"
@@ -410,8 +410,8 @@ const RollWreathImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(89.5604 67.835) rotate(122.783) scale(59.992 37.9965)"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_301_2138"
@@ -421,8 +421,8 @@ const RollWreathImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(102.61 38.4137) rotate(94.161) scale(21.3577 22.398)"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#FF0000" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#FF0000" />
         </radialGradient>
         <clipPath id="clip0_301_2138">
           <rect width="200" height="200" fill="white" />
