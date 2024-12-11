@@ -5,6 +5,7 @@ import SantasImage from "./Images/Ending/SantasImage"
 import NightImage from "./Images/Ending/NightImage"
 import LightImage from "./Images/Ending/LightImage"
 import WhiteLightImage from "./Images/Ending/WhiteLightImage"
+import RollSantaImage from "./Images/Ending/RollSantaImage"
 
 const Ending: React.FC = () => {
   return (
@@ -14,6 +15,82 @@ const Ending: React.FC = () => {
       <WhiteLightImage css={whiteCss} />
       <LightImage css={lightCss} />
       <NightImage css={nightCss} />
+      <div css={rollBox}>
+        <ul css={rollCss}>
+          <li css={rollItemCss}>
+            <RollSantaImage css={rollImageCss} />
+            <p>
+              制作・イラスト・企画
+              <br />
+              マッピー
+            </p>
+          </li>
+          <li css={rollItemCss}>
+            <RollSantaImage css={rollImageCss} />
+            <p>
+              制作・イラスト・企画
+              <br />
+              マッピー
+            </p>
+          </li>
+          <li css={rollItemCss}>
+            <RollSantaImage css={rollImageCss} />
+            <p>
+              制作・イラスト・企画
+              <br />
+              マッピー
+            </p>
+          </li>
+          <li css={rollItemCss}>
+            <RollSantaImage css={rollImageCss} />
+            <p>
+              制作・イラスト・企画
+              <br />
+              マッピー
+            </p>
+          </li>
+          <li css={rollItemCss}>
+            <RollSantaImage css={rollImageCss} />
+            <p>
+              制作・イラスト・企画
+              <br />
+              マッピー
+            </p>
+          </li>
+          <li css={rollItemCss}>
+            <RollSantaImage css={rollImageCss} />
+            <p>
+              制作・イラスト・企画
+              <br />
+              マッピー
+            </p>
+          </li>
+          <li css={rollItemCss}>
+            <RollSantaImage css={rollImageCss} />
+            <p>
+              制作・イラスト・企画
+              <br />
+              マッピー
+            </p>
+          </li>
+          <li css={rollItemCss}>
+            <RollSantaImage css={rollImageCss} />
+            <p>
+              制作・イラスト・企画
+              <br />
+              マッピー
+            </p>
+          </li>
+          <li css={rollItemCss}>
+            <RollSantaImage css={rollImageCss} />
+            <p>
+              制作・イラスト・企画
+              <br />
+              マッピー
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   )
 }
@@ -104,4 +181,39 @@ const nightCss = css`
   width: 100%;
   height: auto;
   z-index: 0;
+`
+
+const rollBox = css`
+  position: relative;
+  top: 60%;
+  width: 100%;
+  height: 40%;
+  z-index: 10;
+  overflow: hidden;
+`
+
+const rollAnime = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-80%);
+  }
+`
+
+const rollCss = css`
+  padding: 10%;
+  animation: ${rollAnime} 30s linear;
+`
+
+const rollItemCss = css`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+`
+
+const rollImageCss = css`
+  width: 20%;
+  height: auto;
 `
