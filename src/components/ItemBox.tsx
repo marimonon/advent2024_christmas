@@ -1,14 +1,26 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import ItemBerry from "./Images/Item/ItemBerry"
+import ItemCookie from "./Images/Item/ItemCookie"
+import ItemCandle from "./Images/Item/ItemCandle"
+import ItemRibbon from "./Images/Item/ItemRibbon"
+import ItemBag from "./Images/Item/ItemBag"
+import ItemMaster from "./Images/Item/ItemMaster"
 
 const ItemBox: React.FC = () => {
   return (
     <div css={itemBoxCss}>
       <p css={itemTextCss}>アイテムを選択できるよ</p>
       <ul css={itemListCss}>
-        <li css={itemCss}></li>
-        <li css={itemCss}></li>
-        <li css={itemCss}></li>
+        <li css={itemCss}>
+          <ItemBerry />
+        </li>
+        <li css={itemCss}>
+          <ItemCookie />
+        </li>
+        <li css={itemCss}>
+          <ItemCandle />
+        </li>
       </ul>
     </div>
   )
@@ -38,7 +50,12 @@ const itemListCss = css`
 `
 
 const itemCss = css`
-  width: 50px;
-  height: 50px;
-  background-color: #0ff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: #0ff;
+  }
 `
