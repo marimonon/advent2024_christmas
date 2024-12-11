@@ -9,7 +9,7 @@ function App() {
       <Container>
         {/* StartとEscapeとEndingの３シーンはだし分ける */}
         {/* <Start /> */}
-        <Escape />
+        {/* <Escape /> */}
         <Ending />
       </Container>
     </>
