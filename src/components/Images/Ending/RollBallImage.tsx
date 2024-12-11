@@ -11,7 +11,7 @@ const RollBallImage: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_301_2132)">
+      <g clipPath="url(#clip0_301_2132)">
         <path
           d="M117.52 6.24385C103.693 7.05824 106.337 23.3234 109.387 31.3542L136.837 41.534C148.811 31.0148 170.862 8.27993 163.271 1.49336C155.68 -5.29322 135.933 12.6911 127.009 22.5316C129.607 16.763 131.347 5.42946 117.52 6.24385Z"
           fill="#604106"
@@ -78,9 +78,9 @@ const RollBallImage: React.FC<Props> = ({ className }) => {
           width="170.125"
           height="174.344"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"

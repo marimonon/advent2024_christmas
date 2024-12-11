@@ -243,7 +243,7 @@ const BearImage: React.FC<Props> = ({ className }) => {
           <path
             d="M151.219 185.105L156.433 218.999"
             stroke="#C47908"
-            stroke-dasharray="2 2"
+            strokeDasharray="2 2"
           />
         </g>
       </g>

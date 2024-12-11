@@ -11,7 +11,7 @@ const RollCakeImage: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_301_2133)">
+      <g clipPath="url(#clip0_301_2133)">
         <path
           d="M26.2061 126.996C26.2061 126.996 23.1608 132.62 22.9279 136.131C22.6949 139.643 25.0412 168.231 30.1832 174.555C35.3251 180.878 51.0339 197.519 97.4113 197.985C143.789 198.45 167.452 177.367 170.031 173.157C172.61 168.947 175.888 149.261 176.121 133.802C176.354 118.343 93.9001 129.109 93.9001 129.109L26.2061 126.996Z"
           fill="#FBB75A"
@@ -82,11 +82,11 @@ const RollCakeImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(102.198 91.3782) rotate(91.1173) scale(76.1884 165.857)"
         >
-          <stop offset="0.445" stop-color="#FEEAC9" />
-          <stop offset="0.565" stop-color="#FEE7C2" />
-          <stop offset="0.741" stop-color="#FEDEAE" />
-          <stop offset="0.952" stop-color="#FFCF8D" />
-          <stop offset="1" stop-color="#FFCB85" />
+          <stop offset="0.445" stopColor="#FEEAC9" />
+          <stop offset="0.565" stopColor="#FEE7C2" />
+          <stop offset="0.741" stopColor="#FEDEAE" />
+          <stop offset="0.952" stopColor="#FFCF8D" />
+          <stop offset="1" stopColor="#FFCB85" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_301_2133"
@@ -96,12 +96,12 @@ const RollCakeImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(101.324 30.7386) scale(64.9384 39.9826)"
         >
-          <stop offset="0.034" stop-color="#FFE265" stop-opacity="0.7" />
-          <stop offset="0.112" stop-color="#FFE575" stop-opacity="0.643" />
-          <stop offset="0.417" stop-color="#FFF0B0" stop-opacity="0.422" />
-          <stop offset="0.677" stop-color="#FFF8DB" stop-opacity="0.234" />
-          <stop offset="0.88" stop-color="#FFFDF5" stop-opacity="0.087" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop offset="0.034" stopColor="#FFE265" stopOpacity="0.7" />
+          <stop offset="0.112" stopColor="#FFE575" stopOpacity="0.643" />
+          <stop offset="0.417" stopColor="#FFF0B0" stopOpacity="0.422" />
+          <stop offset="0.677" stopColor="#FFF8DB" stopOpacity="0.234" />
+          <stop offset="0.88" stopColor="#FFFDF5" stopOpacity="0.087" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_301_2133"
@@ -111,8 +111,8 @@ const RollCakeImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(101.521 46.8696) scale(32.3294 32.3294)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_301_2133"
@@ -122,8 +122,8 @@ const RollCakeImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(121.992 38.2966) scale(31.6904 31.6904)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_301_2133"
@@ -133,8 +133,8 @@ const RollCakeImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(81.4077 38.2911) scale(31.3726 31.3726)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
         <clipPath id="clip0_301_2133">
           <rect width="200" height="200" fill="white" />

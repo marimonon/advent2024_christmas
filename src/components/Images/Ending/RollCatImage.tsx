@@ -11,7 +11,7 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_301_2134)">
+      <g clipPath="url(#clip0_301_2134)">
         <ellipse
           cx="86.9571"
           cy="129.822"
@@ -134,9 +134,9 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
           width="195.326"
           height="240.469"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -169,9 +169,9 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
           width="78.0078"
           height="96.2734"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -205,8 +205,8 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(86.9571 129.822) rotate(90) scale(70.1779 70.1915)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint1_linear_301_2134"
@@ -216,8 +216,8 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
           y2="175.24"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0970F" />
-          <stop offset="1" stop-color="#7A5208" />
+          <stop stopColor="#E0970F" />
+          <stop offset="1" stopColor="#7A5208" />
         </linearGradient>
         <radialGradient
           id="paint2_radial_301_2134"
@@ -227,9 +227,9 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(104.726 113.659) rotate(29.6148) scale(76.6631 51.4149)"
         >
-          <stop stop-color="white" />
-          <stop offset="0.825" stop-color="#C6850C" />
-          <stop offset="1" stop-color="#604106" />
+          <stop stopColor="white" />
+          <stop offset="0.825" stopColor="#C6850C" />
+          <stop offset="1" stopColor="#604106" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_301_2134"
@@ -239,10 +239,10 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(93.5009 94.0166) rotate(99.2602) scale(65.396 80.5853)"
         >
-          <stop stop-color="#604106" />
-          <stop offset="0.12" stop-color="#D18C0C" />
-          <stop offset="0.46" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#604106" />
+          <stop offset="0.12" stopColor="#D18C0C" />
+          <stop offset="0.46" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="white" />
         </radialGradient>
         <linearGradient
           id="paint4_linear_301_2134"
@@ -252,8 +252,8 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
           y2="156.218"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_301_2134"
@@ -263,8 +263,8 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
           y2="137.79"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_301_2134"
@@ -274,8 +274,8 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
           y2="154.269"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_301_2134"
@@ -285,8 +285,8 @@ const RollCatImage: React.FC<Props> = ({ className }) => {
           y2="130.635"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <clipPath id="clip0_301_2134">
           <rect width="200" height="200" fill="white" />
