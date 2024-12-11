@@ -1,7 +1,7 @@
 type Props = {
   className?: string
 }
-const SantaImage: React.FC<Props> = ({ className }) => {
+const SantasImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="1218"
@@ -868,4 +868,4 @@ const SantaImage: React.FC<Props> = ({ className }) => {
   )
 }
 
-export default SantaImage
+export default SantasImage
