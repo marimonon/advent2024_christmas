@@ -1,6 +1,7 @@
-import React from "react"
-
-const SantaImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const SantaImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="1218"
@@ -8,6 +9,7 @@ const SantaImage: React.FC = () => {
       viewBox="0 0 1218 876"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g filter="url(#filter0_d_299_1045)">
         <path

@@ -1,6 +1,7 @@
-import React from "react"
-
-const LightImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const LightImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="1052"
@@ -8,6 +9,7 @@ const LightImage: React.FC = () => {
       viewBox="0 0 1052 1551"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <circle
         cx="584.818"

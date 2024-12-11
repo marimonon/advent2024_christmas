@@ -1,6 +1,7 @@
-import React from "react"
-
-const RollDogImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const RollDogImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="200"
@@ -8,6 +9,7 @@ const RollDogImage: React.FC = () => {
       viewBox="0 0 200 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g filter="url(#filter0_d_301_2137)">
         <path

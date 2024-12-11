@@ -1,6 +1,7 @@
-import React from "react"
-
-const RollBearImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const RollBearImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="200"
@@ -8,6 +9,7 @@ const RollBearImage: React.FC = () => {
       viewBox="0 0 200 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g clip-path="url(#clip0_301_2135)">
         <g filter="url(#filter0_d_301_2135)">

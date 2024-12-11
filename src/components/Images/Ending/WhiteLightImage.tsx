@@ -1,6 +1,7 @@
-import React from "react"
-
-const WhiteLightImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const WhiteLightImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="1091"
@@ -8,6 +9,7 @@ const WhiteLightImage: React.FC = () => {
       viewBox="0 0 1091 1550"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <circle
         cx="711.272"

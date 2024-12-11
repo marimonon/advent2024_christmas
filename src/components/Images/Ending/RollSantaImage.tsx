@@ -1,6 +1,7 @@
-import React from "react"
-
-const RollSantaImage: React.FC = () => {
+type Props = {
+  className?: string
+}
+const RollSantaImage: React.FC<Props> = ({ className }) => {
   return (
     <svg
       width="200"
@@ -8,6 +9,7 @@ const RollSantaImage: React.FC = () => {
       viewBox="0 0 200 200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g filter="url(#filter0_i_301_2120)">
         <ellipse
