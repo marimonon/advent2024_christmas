@@ -25,9 +25,9 @@ const SantaBagImage: React.FC<Props> = ({ className }) => {
           width="372.203"
           height="410.734"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -61,8 +61,8 @@ const SantaBagImage: React.FC<Props> = ({ className }) => {
           y2="366.663"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#D7F2F6" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#D7F2F6" />
         </linearGradient>
       </defs>
     </svg>

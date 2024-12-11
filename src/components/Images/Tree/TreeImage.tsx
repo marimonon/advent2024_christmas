@@ -11,11 +11,11 @@ const TreeImage: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_277_1654)">
+      <g clipPath="url(#clip0_277_1654)">
         <path
           d="M418.246 160.464V160.879C450.228 224.901 497.811 280.79 555.406 331.461L488.809 324.935L579.462 432.703L535.658 419.6L595.024 510.536L565.839 526.848L681.042 679.566L617.314 679.877L708.569 818.405L596.346 804.939L575.159 858.124L457.858 816.228L477.887 946.107H384.421L403.172 804.939L301.88 839.999L286.651 771.021L265.794 804.939H155.963L198.21 713.33L220.168 709.549L208.198 738.035L194.349 771.021L229.551 758.128L319.429 725.137V784.382L344.422 770.141L466.909 700.54L505.036 735.755L536.869 765.169L533.065 723.376L529.313 682.519L497.201 685.104L480.926 670.037L471.762 661.596L460.784 667.81L352.422 729.383V679.824L329.911 688.06L252.724 716.384L261.714 694.997L272.585 669.053L243.394 674.074L163.117 687.903L224.083 623.373L265.794 646.628L277.602 653.204L286.651 643.47L311.863 616.231L311.478 618.248L343.975 623.584L354.516 566.722L364.668 511.932L325.825 553.932L270.761 613.382L193.24 570.247C236.797 537.861 262.992 514.119 280.915 489.354L279.479 510.327L276.001 561.699L309.105 520.685L369.965 445.388L409.249 522.965L433.691 571.229L440.476 518.147L446.656 470.35L417.467 467.089L388.117 409.138L376.474 386.145L360.09 406.396L315.951 460.976L317.275 441.869L318.874 418.205L295.092 426.384L254.878 440.212L301.003 381.953L399.598 334.102L415.379 367.607L432.427 403.96L446.057 366.362L459.243 330.112L429.281 320.534L422.716 306.551L415.654 291.429L400.039 299.04L312.864 341.347L283.791 332.13C360.452 275.273 397.9 217.976 418.25 160.461L418.246 160.464Z"
           fill="url(#paint0_linear_277_1654)"
-          fill-opacity="0.8"
+          fillOpacity="0.8"
         />
         <path
           d="M440.135 87.8141V88.2561C408.153 156.556 360.567 216.18 302.971 270.237L369.57 263.275L278.914 378.244L322.719 364.265L263.352 461.277L292.538 478.679L177.331 641.601L241.061 641.934L149.803 789.718L262.029 775.352L283.217 832.091L400.522 787.395L380.492 925.953H473.961L462.428 805.353L529.854 834.357L547.84 790.544L626.027 827.616L725.619 790.933L660.178 677.622L638.219 673.588L650.19 703.978L664.039 739.167L628.836 725.413L538.955 690.218V753.422L513.961 738.228L391.471 663.977L353.342 701.545L321.508 732.925L325.313 688.339L329.065 644.752L361.178 647.51L377.454 631.436L386.617 622.43L397.596 629.06L505.961 694.747V641.877L528.473 650.664L605.662 680.88L596.672 658.064L585.801 630.386L614.992 635.743L695.271 650.496L634.304 581.654L592.592 606.463L580.783 613.478L571.734 603.093L546.521 574.035L546.906 576.186L514.408 581.879L503.867 521.217L493.715 462.766L532.559 507.573L587.625 570.996L665.148 524.978C621.59 490.428 595.394 465.1 577.471 438.68L578.906 461.055L582.384 515.859L549.279 472.104L488.418 391.777L449.133 474.537L424.689 526.026L417.904 469.397L411.724 418.406L440.914 414.927L470.265 353.104L481.908 328.575L498.293 350.178L542.434 408.405L541.109 388.022L539.51 362.776L563.293 371.503L603.508 386.254L557.381 324.102L458.784 273.055L443.002 308.798L425.954 347.58L412.323 307.47L399.137 268.797L429.1 258.579L435.664 243.662L442.727 227.53L458.342 235.65L545.52 280.784L574.594 270.951C497.931 210.295 460.482 149.168 440.132 87.8105L440.135 87.8141Z"
@@ -24,12 +24,12 @@ const TreeImage: React.FC<Props> = ({ className }) => {
         <path
           d="M440.135 33.9215V34.3635C408.153 102.664 360.567 162.287 302.971 216.344L369.57 209.382L278.914 324.351L322.719 310.372L263.352 407.385L292.538 424.786L177.331 587.709L241.061 588.041L149.803 735.825L262.029 721.46L283.217 778.198L400.522 733.502L380.492 872.06H473.961L462.428 751.461L529.854 780.465L547.84 736.651L626.027 773.724L725.619 737.04L660.178 623.729L638.219 619.695L650.19 650.085L664.039 685.275L628.836 671.521L538.955 636.326V699.529L513.961 684.336L391.471 610.085L353.342 647.652L321.508 679.032L325.313 634.446L329.065 590.859L361.178 593.617L377.454 577.543L386.617 568.538L397.596 575.167L505.961 640.855V587.985L528.473 596.771L605.662 626.988L596.672 604.171L585.801 576.493L614.992 581.85L695.271 596.603L634.304 527.762L592.592 552.57L580.783 559.585L571.734 549.201L546.521 520.142L546.906 522.294L514.408 527.986L503.867 467.325L493.715 408.873L532.559 453.68L587.625 517.103L665.148 471.085C621.59 436.535 595.394 411.207 577.471 384.788L578.906 407.162L582.384 461.966L549.279 418.211L488.418 337.884L449.133 420.644L424.689 472.134L417.904 415.505L411.724 364.514L440.914 361.034L470.265 299.212L481.908 274.682L498.293 296.286L542.434 354.513L541.109 334.129L539.51 308.884L563.293 317.61L603.508 332.361L557.381 270.21L458.784 219.162L443.002 254.905L425.954 293.687L412.323 253.577L399.137 214.905L429.1 204.687L435.664 189.769L442.727 173.637L458.342 181.757L545.52 226.891L574.594 217.058C497.931 156.402 460.482 95.2759 440.132 33.918L440.135 33.9215Z"
           fill="#49B814"
-          fill-opacity="0.7"
+          fillOpacity="0.7"
         />
         <path
           d="M435.306 61.4899V61.9318C467.289 130.232 514.874 189.856 572.471 243.912L505.871 236.95L596.527 351.919L552.722 337.941L612.09 434.953L582.904 452.354L698.111 615.277L634.381 615.609L725.639 763.394L613.412 749.028L592.224 805.766L474.92 761.071L494.949 899.629H401.48L413.014 779.029L345.588 808.033L327.601 764.219L249.414 801.292L149.822 764.608L215.263 651.298L237.223 647.263L225.252 677.653L211.402 712.843L246.605 699.089L336.486 663.894V727.097L361.48 711.904L483.97 637.653L522.099 675.221L553.933 706.601L550.128 662.015L546.377 618.428L514.263 621.185L497.988 605.112L488.824 596.106L477.846 602.736L369.48 668.423V615.553L346.969 624.339L269.779 654.556L278.77 631.74L289.64 604.062L260.449 609.418L180.17 624.171L241.137 555.33L282.85 580.139L294.658 587.154L303.707 576.769L328.92 547.71L328.535 549.862L361.034 555.555L371.574 494.893L381.727 436.442L342.883 481.249L287.817 544.671L210.293 498.654C253.851 464.104 280.048 438.775 297.971 412.356L296.535 434.73L293.057 489.535L326.162 445.78L387.024 365.452L426.309 448.212L450.752 499.702L457.537 443.073L463.717 392.082L434.528 388.603L405.176 326.78L393.533 302.251L377.148 323.854L333.008 382.081L334.332 361.697L335.932 336.452L312.149 345.178L271.933 359.93L318.06 297.778L416.658 246.73L432.439 282.473L449.488 321.255L463.118 281.146L476.304 242.473L446.341 232.255L439.777 217.337L432.714 201.206L417.099 209.325L329.921 254.459L300.847 244.627C377.51 183.971 414.959 122.844 435.31 61.4863L435.306 61.4899Z"
           fill="url(#paint1_linear_277_1654)"
-          fill-opacity="0.8"
+          fillOpacity="0.8"
         />
         <g filter="url(#filter0_i_277_1654)">
           <path
@@ -342,7 +342,7 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           rx="12"
           fill="#FFAA54"
         />
-        <path d="M562 982H873V975" stroke="white" stroke-width="8" />
+        <path d="M562 982H873V975" stroke="white" strokeWidth="8" />
         <rect
           x="482.25"
           y="923.795"
@@ -393,9 +393,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           width="87.8037"
           height="105.303"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -428,9 +428,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           width="548.455"
           height="333.135"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -463,9 +463,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           width="670.678"
           height="363.746"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -498,9 +498,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           width="747.794"
           height="390.24"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -533,9 +533,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           width="79.1143"
           height="95.5078"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -568,9 +568,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           width="79.1143"
           height="95.5078"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -603,9 +603,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           width="79.1143"
           height="95.5078"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -638,9 +638,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           width="79.1143"
           height="95.2148"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -673,9 +673,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           width="79.1143"
           height="95.2148"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -709,8 +709,8 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           y2="946.107"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7CEB47" />
-          <stop offset="1" stop-color="#468528" />
+          <stop stopColor="#7CEB47" />
+          <stop offset="1" stopColor="#468528" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_277_1654"
@@ -720,8 +720,8 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           y2="899.629"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7CEB47" />
-          <stop offset="1" stop-color="#468528" />
+          <stop stopColor="#7CEB47" />
+          <stop offset="1" stopColor="#468528" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_277_1654"
@@ -731,9 +731,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           y2="352.334"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="0.505" stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#C47908" />
+          <stop stopColor="#C4B108" />
+          <stop offset="0.505" stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#C47908" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_277_1654"
@@ -743,9 +743,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           y2="549.878"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="0.505" stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#C47908" />
+          <stop stopColor="#C4B108" />
+          <stop offset="0.505" stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#C47908" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_277_1654"
@@ -755,9 +755,9 @@ const TreeImage: React.FC<Props> = ({ className }) => {
           y2="727.248"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="0.505" stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#C47908" />
+          <stop stopColor="#C4B108" />
+          <stop offset="0.505" stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#C47908" />
         </linearGradient>
         <clipPath id="clip0_277_1654">
           <rect width="904" height="1010" fill="white" />

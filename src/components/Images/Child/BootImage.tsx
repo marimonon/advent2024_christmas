@@ -34,7 +34,7 @@ const BootImage: React.FC<Props> = ({ className }) => {
           d="M20.852 40.658L22.7491 21.1562L81.6243 5.38065L91.9105 21.6179L20.852 40.658Z"
           stroke="#49B814"
         />
-        <g clip-path="url(#clip0_283_3518)">
+        <g clipPath="url(#clip0_283_3518)">
           <rect
             x="20.3125"
             y="40.4141"
@@ -165,9 +165,9 @@ const BootImage: React.FC<Props> = ({ className }) => {
           width="106.402"
           height="125.145"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -200,9 +200,9 @@ const BootImage: React.FC<Props> = ({ className }) => {
           width="80.4121"
           height="44.5273"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -236,8 +236,8 @@ const BootImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(65.2102 73.2618) rotate(90) scale(4.82425 37.388)"
         >
-          <stop stop-color="#930606" />
-          <stop offset="1" stop-color="#FF0000" />
+          <stop stopColor="#930606" />
+          <stop offset="1" stopColor="#FF0000" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_283_3518"
@@ -247,8 +247,8 @@ const BootImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(64.7637 72.0755) rotate(90) scale(42.2122 4.82425)"
         >
-          <stop stop-color="#930606" />
-          <stop offset="1" stop-color="#FF0000" />
+          <stop stopColor="#930606" />
+          <stop offset="1" stopColor="#FF0000" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_283_3518"
@@ -258,8 +258,8 @@ const BootImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(72.3635 63.7685) rotate(60) scale(24.7243 15.0758)"
         >
-          <stop stop-color="#930606" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#930606" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_283_3518"
@@ -269,8 +269,8 @@ const BootImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(68.8982 63.788) rotate(120) scale(24.7243 15.0758)"
         >
-          <stop stop-color="#930606" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#930606" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_283_3518"
@@ -280,8 +280,8 @@ const BootImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(70.4239 55.909) rotate(90) scale(5.42462 4.82425)"
         >
-          <stop offset="0.791667" stop-color="#FF0000" />
-          <stop offset="1" stop-color="#FF0000" stop-opacity="0" />
+          <stop offset="0.791667" stopColor="#FF0000" />
+          <stop offset="1" stopColor="#FF0000" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_283_3518"
@@ -291,8 +291,8 @@ const BootImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(62.3511 19.7994) rotate(75) scale(9.34386 4.82766)"
         >
-          <stop stop-color="#FF0000" />
-          <stop offset="1" stop-color="#FF0000" />
+          <stop stopColor="#FF0000" />
+          <stop offset="1" stopColor="#FF0000" />
         </radialGradient>
         <clipPath id="clip0_283_3518">
           <rect
