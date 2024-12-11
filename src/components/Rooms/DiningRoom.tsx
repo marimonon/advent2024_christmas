@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
-import DiningBg from "../Images/Dining/DiningBg"
+import DiningRoomBg from "../Images/Dining/DiningRoomBg"
 import CakeImage from "../Images/Dining/CakeImage"
 import CakeFullImage from "../Images/Dining/CakeFullImage"
 import CookieBagImage from "../Images/Dining/CookieBagImage"
@@ -11,7 +11,7 @@ const DiningRoom: React.FC = () => {
       <CookieBagImage css={cookieBagCss} />
       <CakeImage css={cakeCss} />
       <CakeFullImage css={cakeFullCss} />
-      <DiningBg css={diningBgCss} />
+      <DiningRoomBg css={diningBgCss} />
     </div>
   )
 }

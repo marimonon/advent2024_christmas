@@ -11,7 +11,7 @@ const ArrowImage: React.FC = () => {
         d="M1.28198 48.5L37.9053 2.84476V20.3023V21.3023H38.9053H83V75.6977H38.9053H37.9053V76.6977V94.1552L1.28198 48.5Z"
         fill="#FF0000"
         stroke="white"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   )

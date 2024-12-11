@@ -60,11 +60,11 @@ const CakeImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(94.402 90.6574) rotate(91.1173) scale(66.173 144.054)"
         >
-          <stop offset="0.445" stop-color="#FEEAC9" />
-          <stop offset="0.565" stop-color="#FEE7C2" />
-          <stop offset="0.741" stop-color="#FEDEAE" />
-          <stop offset="0.952" stop-color="#FFCF8D" />
-          <stop offset="1" stop-color="#FFCB85" />
+          <stop offset="0.445" stopColor="#FEEAC9" />
+          <stop offset="0.565" stopColor="#FEE7C2" />
+          <stop offset="0.741" stopColor="#FEDEAE" />
+          <stop offset="0.952" stopColor="#FFCF8D" />
+          <stop offset="1" stopColor="#FFCB85" />
         </radialGradient>
       </defs>
     </svg>

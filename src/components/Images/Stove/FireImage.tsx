@@ -28,12 +28,12 @@ const FireImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(115.518 113.994) scale(114.065 105.248)"
         >
-          <stop offset="0.034" stop-color="#FFE265" stop-opacity="0.7" />
-          <stop offset="0.112" stop-color="#FFE575" stop-opacity="0.643" />
-          <stop offset="0.417" stop-color="#FFF0B0" stop-opacity="0.422" />
-          <stop offset="0.677" stop-color="#FFF8DB" stop-opacity="0.234" />
-          <stop offset="0.88" stop-color="#FFFDF5" stop-opacity="0.087" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop offset="0.034" stopColor="#FFE265" stopOpacity="0.7" />
+          <stop offset="0.112" stopColor="#FFE575" stopOpacity="0.643" />
+          <stop offset="0.417" stopColor="#FFF0B0" stopOpacity="0.422" />
+          <stop offset="0.677" stopColor="#FFF8DB" stopOpacity="0.234" />
+          <stop offset="0.88" stopColor="#FFFDF5" stopOpacity="0.087" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_276_1109"
@@ -43,8 +43,8 @@ const FireImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(125.905 215.834) scale(206.464 145.246)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
       </defs>
     </svg>

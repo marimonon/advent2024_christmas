@@ -11,7 +11,7 @@ const StoveRoomBg: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_276_1110)">
+      <g clipPath="url(#clip0_276_1110)">
         <rect width="1000" height="1240" fill="#045662" />
         <rect y="1050" width="1000" height="190" fill="#DDDDDD" />
         <rect x="914" y="588" width="148" height="462" fill="#D9D9D9" />
