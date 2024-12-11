@@ -25,7 +25,7 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
         <path
           d="M31.4843 66.1288C29.7518 64.1797 33.1133 61.5015 35.8298 59.1958C23.0444 48.8815 43.5355 37.0509 46.0753 53.2806C49.4303 52.0809 52.292 51.1661 53.1138 53.641C54.1409 56.7346 48.8795 56.823 49.5874 59.3636C50.2953 61.9042 56.949 60.668 56.7645 62.5932C55.6841 73.867 49.0071 66.3344 46.7303 67.6489C44.4535 68.9634 45.8659 79.2079 37.4118 73.7665C35.7914 72.7235 40.0497 67.8195 38.2034 65.9361C36.3571 64.0528 33.6498 68.5651 31.4843 66.1288Z"
           fill="#FFE4BB"
-          fill-opacity="0.44"
+          fillOpacity="0.44"
         />
       </g>
       <path
@@ -100,8 +100,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
       </g>
       <g filter="url(#filter6_d_277_1791)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M62.8082 49.5169C61.5975 50.7276 59.5243 49.9563 59.3994 48.2486L58.5571 36.738C58.4681 35.5208 59.4805 34.5083 60.6977 34.5974L72.2084 35.4396C73.916 35.5646 74.6873 37.6378 73.4766 38.8485L73.1449 39.1803L81.9864 39.8604C83.69 39.9914 84.4554 42.0605 83.2472 43.2687L81.4726 45.0432L90.5905 45.3577C92.3382 45.4179 93.1723 47.5341 91.9358 48.7707L73.6154 67.091C72.3789 68.3275 70.2627 67.4934 70.2024 65.7457L69.888 56.6279L68.1147 58.4012C66.9064 59.6094 64.8374 58.8441 64.7064 57.1404L64.0262 48.2989L62.8082 49.5169Z"
           fill="url(#paint6_radial_277_1791)"
         />
@@ -230,9 +230,9 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           width="30.6367"
           height="30.2969"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -265,9 +265,9 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           width="33.7598"
           height="38.0664"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -300,9 +300,9 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           width="27.2871"
           height="28.5625"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -335,9 +335,9 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           width="25.7695"
           height="26.9531"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -370,9 +370,9 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           width="34.2598"
           height="37.1172"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -405,9 +405,9 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           width="30.6367"
           height="30.2969"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -440,9 +440,9 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           width="41.9736"
           height="41.0859"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -476,8 +476,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(48.2412 43.8236) rotate(60) scale(13.1676)"
         >
-          <stop offset="0.4375" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.4375" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_277_1791"
@@ -487,8 +487,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(41.7515 58.9197) rotate(60) scale(14.2156 12.5406)"
         >
-          <stop offset="0.630208" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.630208" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_277_1791"
@@ -498,8 +498,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(64.5564 73.0853) rotate(120) scale(14.2156 12.5406)"
         >
-          <stop offset="0.760417" stop-color="#C47908" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.760417" stopColor="#C47908" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_277_1791"
@@ -509,8 +509,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(39.2914 77.2327) rotate(90) scale(8.77843)"
         >
-          <stop offset="0.723958" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.723958" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_277_1791"
@@ -520,8 +520,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(47.2279 78.4397) rotate(90) scale(8.77843)"
         >
-          <stop offset="0.723958" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.723958" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_277_1791"
@@ -531,8 +531,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(43.4492 85.6908) rotate(60) scale(13.1676)"
         >
-          <stop offset="0.4375" stop-color="#C47908" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.4375" stopColor="#C47908" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint6_radial_277_1791"
@@ -542,8 +542,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(78.8966 53.8692) rotate(-135) scale(24.0271 12.6145)"
         >
-          <stop offset="0.796875" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.796875" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint7_radial_277_1791"
@@ -553,8 +553,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(57.5904 59.0704) rotate(60) scale(31.3164 40.6791)"
         >
-          <stop offset="0.614583" stop-color="#D9D9D9" stop-opacity="0" />
-          <stop offset="1" stop-color="#D9D9D9" />
+          <stop offset="0.614583" stopColor="#D9D9D9" stopOpacity="0" />
+          <stop offset="1" stopColor="#D9D9D9" />
         </radialGradient>
         <radialGradient
           id="paint8_radial_277_1791"
@@ -564,8 +564,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(38.9513 29.0309) rotate(-120) scale(9.38655 22.1254)"
         >
-          <stop offset="0.614583" stop-color="#D9D9D9" stop-opacity="0" />
-          <stop offset="1" stop-color="#D9D9D9" />
+          <stop offset="0.614583" stopColor="#D9D9D9" stopOpacity="0" />
+          <stop offset="1" stopColor="#D9D9D9" />
         </radialGradient>
         <radialGradient
           id="paint9_radial_277_1791"
@@ -575,8 +575,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(42.3281 44.9709) rotate(90) scale(3.9084 19.542)"
         >
-          <stop stop-color="#F5970A" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#F5970A" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint10_radial_277_1791"
@@ -586,8 +586,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(47.5881 31.255) rotate(60) scale(5.8626 6.8397)"
         >
-          <stop stop-color="#F5970A" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#F5970A" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint11_radial_277_1791"
@@ -597,8 +597,8 @@ const CookieBagImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(59.4357 24.415) rotate(60) scale(5.8626 6.8397)"
         >
-          <stop stop-color="#F5970A" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#F5970A" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
       </defs>
     </svg>

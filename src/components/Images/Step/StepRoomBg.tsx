@@ -11,9 +11,9 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_281_3056)">
+      <g clipPath="url(#clip0_281_3056)">
         <rect width="1000" height="1240" fill="#045662" />
-        <rect width="1000" height="1240" fill="#D9D9D9" fill-opacity="0.5" />
+        <rect width="1000" height="1240" fill="#D9D9D9" fillOpacity="0.5" />
         <rect y="913" width="461" height="327" fill="#D18C0C" />
         <rect y="819" width="461" height="94" fill="#E2A610" />
         <rect x="539" y="1149" width="461" height="91" fill="#D9D9D9" />
@@ -34,7 +34,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="51"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -42,7 +42,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="29"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -50,7 +50,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="45"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -58,7 +58,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="26"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -66,7 +66,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="44"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -74,7 +74,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="26"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -82,7 +82,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="43"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -90,7 +90,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="23"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -98,7 +98,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="40"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -106,7 +106,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="18"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -114,7 +114,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="36"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect
           x="539"
@@ -122,7 +122,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="461"
           height="16"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect x="439.5" y="0.5" width="111" height="1239" fill="white" />
         <rect
@@ -131,7 +131,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="111"
           height="1239"
           fill="url(#paint0_linear_281_3056)"
-          fill-opacity="0.1"
+          fillOpacity="0.1"
         />
         <rect x="439.5" y="0.5" width="111" height="1239" stroke="#CCCCCC" />
         <rect x="439" width="112" height="824" fill="#D18C0C" />
@@ -140,7 +140,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="439"
           height="315"
           fill="url(#paint1_linear_281_3056)"
-          fill-opacity="0.1"
+          fillOpacity="0.1"
         />
         <rect x="437" y="819" width="114" height="26" fill="#C47908" />
         <rect x="35" y="951" width="156" height="117" fill="#D18C0C" />
@@ -150,7 +150,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="156"
           height="117"
           fill="black"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <rect x="35" y="1098" width="156" height="117" fill="#D18C0C" />
         <rect
@@ -159,7 +159,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="156"
           height="117"
           fill="black"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <rect x="240" y="951" width="156" height="117" fill="#D18C0C" />
         <rect
@@ -168,7 +168,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="156"
           height="117"
           fill="black"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <rect x="240" y="1098" width="156" height="117" fill="#D18C0C" />
         <rect
@@ -177,7 +177,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="156"
           height="117"
           fill="black"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <rect x="42" y="960" width="27" height="105" fill="#FF0000" />
         <rect
@@ -205,7 +205,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="19"
           height="95"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect x="149.633" y="1118" width="19" height="95" fill="#176E1C" />
         <rect x="316" y="982" width="19" height="86" fill="#FFFF00" />
@@ -217,7 +217,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="19"
           height="73"
           fill="#FFFFFE"
-          fill-opacity="0.996078"
+          fillOpacity="0.996078"
         />
         <rect x="354" y="964" width="19" height="104" fill="#FFC0CB" />
         <rect x="330" y="1130" width="23" height="81" fill="#F5970A" />
@@ -300,9 +300,9 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="586"
           height="586"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -341,9 +341,9 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="586"
           height="586"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -382,9 +382,9 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           width="586"
           height="586"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -424,7 +424,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           y2="1240"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.835" stop-opacity="0" />
+          <stop offset="0.835" stopOpacity="0" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -435,7 +435,7 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           y2="315"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
+          <stop stopOpacity="0" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -446,8 +446,8 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           y2="55.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
-          <stop offset="1" stop-color="#D18C0C" />
+          <stop stopOpacity="0" />
+          <stop offset="1" stopColor="#D18C0C" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_281_3056"
@@ -457,8 +457,8 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           y2="92"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
-          <stop offset="1" stop-color="#D18C0C" />
+          <stop stopOpacity="0" />
+          <stop offset="1" stopColor="#D18C0C" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_281_3056"
@@ -468,8 +468,8 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           y2="147.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
-          <stop offset="1" stop-color="#D18C0C" />
+          <stop stopOpacity="0" />
+          <stop offset="1" stopColor="#D18C0C" />
         </linearGradient>
         <radialGradient
           id="paint5_radial_281_3056"
@@ -479,8 +479,8 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(285 124) rotate(90) scale(53)"
         >
-          <stop stop-color="#F8E647" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#F8E647" />
+          <stop offset="1" stopColor="white" />
         </radialGradient>
         <radialGradient
           id="paint6_radial_281_3056"
@@ -490,8 +490,8 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(411 217) rotate(90) scale(53)"
         >
-          <stop stop-color="#F8E647" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#F8E647" />
+          <stop offset="1" stopColor="white" />
         </radialGradient>
         <radialGradient
           id="paint7_radial_281_3056"
@@ -501,8 +501,8 @@ const StepRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(336 340) rotate(90) scale(53)"
         >
-          <stop stop-color="#F8E647" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#F8E647" />
+          <stop offset="1" stopColor="white" />
         </radialGradient>
         <clipPath id="clip0_281_3056">
           <rect width="1000" height="1240" fill="white" />

@@ -11,7 +11,7 @@ const ExTreeBg: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_283_3817)">
+      <g clipPath="url(#clip0_283_3817)">
         <rect width="1000" height="1240" fill="#045662" />
         <rect y="-81" width="1000" height="1321" fill="#DDDDDD" />
         <rect

@@ -11,7 +11,7 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_283_3470)">
+      <g clipPath="url(#clip0_283_3470)">
         <rect width="1000" height="1240" fill="#045662" />
         <rect x="961" width="39" height="835" fill="#37BED0" />
         <rect x="887" width="38" height="835" fill="#37BED0" />
@@ -25,7 +25,7 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
         <rect x="775" width="39" height="835" fill="white" />
         <rect x="701" width="38" height="835" fill="white" />
         <rect x="626" width="39" height="835" fill="white" />
-        <g clip-path="url(#clip1_283_3470)">
+        <g clipPath="url(#clip1_283_3470)">
           <path
             d="M981.583 832.69L603.408 838.698L574.375 219.168L1039.68 331.693L981.583 832.69Z"
             fill="#D9D9D9"
@@ -115,7 +115,7 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           <path
             d="M798.673 446.178L802.079 456.719C802.928 459.371 801.617 462.335 799.159 463.407C795.513 463.655 789.985 465.503 788.495 460.838C784.705 449.117 781.465 445.628 777.747 440.706L777.093 494.298L757.166 527.222L731.288 521.066C734.179 508.913 741.035 514.077 741.987 513.864L742.076 513.804C746.76 505.606 760.787 511.999 757.7 489.685C759.649 484.037 749.52 482.512 748.566 473.224C747.612 463.937 728.94 475.831 722.434 476.069C708.689 480.841 696.524 479.196 688.356 464.263C680.898 468.027 681.4 478.178 678.585 492.445C676.866 501.161 672.788 507.149 672.788 507.149L647.564 501.149C650.581 488.464 658.91 494.021 658.91 494.021L667.251 481.492L670.273 446.252L665.524 403.111L649.454 417.002C648.427 417.724 647.26 418.223 646.029 418.465C644.797 418.708 643.528 418.69 642.305 418.411L633.455 416.306C630.005 415.485 627.346 412.574 626.604 408.822L624.656 398.89C624.292 397.031 624.41 395.11 624.998 393.309C625.586 391.509 626.624 389.888 628.015 388.602L656.705 362.562C657.359 361.956 658.178 361.69 658.934 361.307C657.956 360.345 656.964 359.444 656.265 358.19C652.81 351.937 657.749 328.626 662.647 323.631C662.89 323.369 663.192 323.168 663.529 323.045C663.865 322.923 664.226 322.883 664.58 322.929C664.935 322.974 665.274 323.104 665.569 323.308C665.863 323.511 666.105 323.782 666.273 324.097C675.465 340.652 669.508 363.822 683.335 369.524L700.463 400.475L767.712 416.472C782.214 419.922 793.777 431.015 798.673 446.178Z"
             fill="url(#paint0_radial_283_3470)"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
         </g>
         <path
@@ -155,26 +155,26 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
         </g>
         <g filter="url(#filter3_d_283_3470)">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M159.376 721.582L156.056 726L172.848 761.875C173.921 764.17 174.145 766.772 173.48 769.218C172.816 771.663 171.305 773.793 169.218 775.23L150.507 788.111C148.656 789.384 146.451 790.043 144.205 789.994C141.959 789.945 139.785 789.19 137.992 787.838L126.003 778.809L116.924 787.173L125.846 860.971L127.889 859.932C129.7 858.992 131.456 857.949 133.148 856.808C135.447 855.201 138.286 854.56 141.053 855.023C143.82 855.486 146.295 857.017 147.945 859.286C149.595 861.556 150.288 864.382 149.876 867.157C149.464 869.932 147.979 872.435 145.741 874.127L137.946 878.841C133.153 881.386 126.217 884.571 117.339 887.364C99.5043 892.959 73.9085 896.947 42.1378 891.084C10.3672 885.221 -12.1299 872.358 -26.7823 860.769C-32.6409 856.168 -38.066 851.041 -42.9899 845.451C-44.3726 843.857 -48.7564 838.05 -48.5894 838.266C-50.0248 836.063 -50.5999 833.409 -50.205 830.81C-49.8101 828.211 -48.4728 825.848 -46.4479 824.171C-44.4231 822.494 -41.8521 821.621 -39.2249 821.718C-36.5976 821.814 -34.0977 822.874 -32.2014 824.695L-11.3452 772.454C-17.8029 776.587 -25.2217 783.45 -33.8104 794.823C-34.6381 795.994 -35.6926 796.987 -36.9113 797.743C-38.13 798.499 -39.4882 799.002 -40.9051 799.223C-42.3221 799.444 -43.769 799.378 -45.16 799.029C-46.551 798.681 -47.8578 798.056 -49.0029 797.192C-50.1479 796.329 -51.1078 795.244 -51.8256 794.003C-52.5434 792.761 -53.0046 791.388 -53.1817 789.965C-53.3588 788.542 -53.2482 787.098 -52.8566 785.718C-52.465 784.339 -51.8002 783.052 -50.9017 781.934C-35.6754 761.735 -21.4362 751.252 -6.93291 747.069C5.22585 743.552 16.4131 744.887 25.8047 746.511L64.6835 753.686C66.3248 750.692 68.0955 747.77 69.9906 744.93C76.1515 735.679 85.8139 723.916 99.7222 714.341C114.179 704.388 127.654 701.822 137.858 701.996C141.949 702.07 146.017 702.612 149.984 703.613C151.159 703.917 154.612 705.087 155.274 705.395C156.732 706.061 158.022 707.045 159.048 708.276C160.075 709.506 160.812 710.951 161.206 712.505C161.599 714.058 161.639 715.68 161.323 717.251C161.006 718.822 160.341 720.302 159.376 721.582ZM16.8189 861.53L32.836 834.922L60.3628 840.001L66.1365 872.384C59.8226 872.079 53.122 871.333 46.0349 870.025C34.9884 867.986 25.2929 864.999 16.84 861.534L16.8189 861.53Z"
             fill="#C47908"
           />
         </g>
         <g filter="url(#filter4_d_283_3470)">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M170.376 731.582L167.056 736L183.848 771.875C184.921 774.17 185.145 776.772 184.48 779.218C183.816 781.663 182.305 783.793 180.218 785.23L161.507 798.111C159.656 799.384 157.451 800.043 155.205 799.994C152.959 799.945 150.785 799.19 148.992 797.838L137.003 788.809L127.924 797.173L136.846 870.971L138.889 869.932C140.7 868.992 142.456 867.949 144.148 866.808C146.447 865.201 149.286 864.56 152.053 865.023C154.82 865.486 157.295 867.017 158.945 869.286C160.595 871.556 161.288 874.382 160.876 877.157C160.464 879.932 158.979 882.435 156.741 884.127L148.946 888.841C144.153 891.386 137.217 894.571 128.339 897.364C110.504 902.959 84.9085 906.947 53.1378 901.084C21.3672 895.221 -1.12993 882.358 -15.7823 870.769C-21.6409 866.168 -27.066 861.041 -31.9899 855.451C-33.3726 853.857 -37.7564 848.05 -37.5894 848.266C-39.0248 846.063 -39.5999 843.409 -39.205 840.81C-38.8101 838.211 -37.4728 835.848 -35.4479 834.171C-33.4231 832.494 -30.8521 831.621 -28.2249 831.718C-25.5976 831.814 -23.0977 832.874 -21.2014 834.695L-0.345166 782.454C-6.80289 786.587 -14.2217 793.45 -22.8104 804.823C-23.6381 805.994 -24.6926 806.987 -25.9113 807.743C-27.13 808.499 -28.4882 809.002 -29.9051 809.223C-31.3221 809.444 -32.769 809.378 -34.16 809.029C-35.551 808.681 -36.8578 808.056 -38.0029 807.192C-39.1479 806.329 -40.1078 805.244 -40.8256 804.003C-41.5434 802.761 -42.0046 801.388 -42.1817 799.965C-42.3588 798.542 -42.2482 797.098 -41.8566 795.718C-41.465 794.339 -40.8002 793.052 -39.9017 791.934C-24.6754 771.735 -10.4362 761.252 4.06709 757.069C16.2258 753.552 27.4131 754.887 36.8047 756.511L75.6835 763.686C77.3248 760.692 79.0955 757.77 80.9906 754.93C87.1515 745.679 96.8139 733.916 110.722 724.341C125.179 714.388 138.654 711.822 148.858 711.996C152.949 712.07 157.017 712.612 160.984 713.613C162.159 713.917 165.612 715.087 166.274 715.395C167.732 716.061 169.022 717.045 170.048 718.276C171.075 719.506 171.812 720.951 172.206 722.505C172.599 724.058 172.639 725.68 172.323 727.251C172.006 728.822 171.341 730.302 170.376 731.582ZM27.8189 871.53L43.836 844.922L71.3628 850.001L77.1365 882.384C70.8226 882.079 64.122 881.333 57.0349 880.025C45.9884 877.986 36.2929 874.999 27.84 871.534L27.8189 871.53Z"
             fill="#C47908"
           />
           <path
             d="M165.579 727.977L165.585 727.97C166.009 727.407 166.302 726.756 166.441 726.066C166.58 725.375 166.563 724.662 166.39 723.979C166.216 723.296 165.892 722.66 165.441 722.119C164.99 721.578 164.423 721.145 163.782 720.852L163.766 720.845C163.781 720.852 163.79 720.856 163.789 720.857C163.789 720.858 163.647 720.8 163.289 720.67C162.906 720.531 162.418 720.362 161.902 720.187C160.815 719.82 159.858 719.52 159.496 719.425C155.981 718.54 152.377 718.061 148.753 717.995C139.699 717.842 127.471 720.095 114.124 729.283C101.022 738.303 91.8605 749.432 85.9846 758.256L85.9816 758.26C84.183 760.956 82.5025 763.728 80.9448 766.57L78.8598 770.373L74.5946 769.586L35.749 762.418C26.5806 760.833 16.523 759.712 5.73412 762.832L5.7301 762.833C-7.08925 766.531 -20.3404 775.952 -35.1105 795.546L-35.1667 795.62L-35.2251 795.693C-35.6202 796.185 -35.9125 796.75 -36.0847 797.357C-36.2569 797.964 -36.3055 798.598 -36.2276 799.224C-36.1498 799.85 -35.947 800.454 -35.6314 801C-35.3157 801.545 -34.8937 802.022 -34.3902 802.402C-33.8868 802.782 -33.3122 803.056 -32.7006 803.21C-32.089 803.363 -31.4528 803.392 -30.8298 803.295C-30.2067 803.198 -29.6096 802.976 -29.0737 802.644C-28.5379 802.312 -28.0742 801.875 -27.7103 801.36L-27.6556 801.283L-27.5985 801.207C-18.7275 789.46 -10.8113 782.029 -3.57958 777.4L12.1527 767.331L5.22718 784.678L-15.629 836.919L-18.9318 845.192L-25.3571 839.023C-26.1909 838.222 -27.29 837.756 -28.4452 837.714C-29.6004 837.671 -30.7308 838.055 -31.6211 838.792C-32.5114 839.53 -33.0994 840.569 -33.2731 841.712C-33.4388 842.802 -33.216 843.915 -32.6466 844.856C-32.5438 844.992 -32.3909 845.194 -32.2002 845.445C-31.7964 845.977 -31.2282 846.723 -30.613 847.524C-29.3364 849.185 -28.0266 850.861 -27.4699 851.505C-22.7927 856.812 -17.6402 861.681 -12.0766 866.05L-12.0684 866.056L-12.0601 866.063C1.92772 877.127 23.5391 889.521 54.2267 895.183C84.9135 900.846 109.515 896.981 126.543 891.639C134.938 888.998 141.483 886 145.986 883.619L153.317 879.186C154.193 878.448 154.772 877.414 154.941 876.276C155.123 875.055 154.818 873.813 154.092 872.815C153.367 871.817 152.278 871.144 151.062 870.941C149.845 870.737 148.597 871.019 147.586 871.726L147.544 871.755L147.502 871.783C145.62 873.052 143.668 874.212 141.654 875.257L141.631 875.269L141.608 875.281L139.565 876.319L131.919 880.207L130.889 871.691L121.967 797.893L121.599 794.843L123.859 792.76L132.937 784.396L136.616 781.006L140.612 784.016L152.601 793.045L152.604 793.047C153.393 793.642 154.349 793.974 155.336 793.995C156.323 794.017 157.292 793.728 158.105 793.169C158.105 793.169 158.105 793.169 158.106 793.168C158.106 793.168 158.107 793.168 158.107 793.167L176.816 780.288L176.816 780.288C177.734 779.656 178.398 778.719 178.69 777.644C178.982 776.57 178.884 775.427 178.413 774.418C178.413 774.417 178.413 774.416 178.412 774.415L161.622 738.543L160.094 735.278L162.259 732.395L165.579 727.977ZM-32.2454 845.541C-32.3497 845.345 -32.5022 845.088 -32.5636 844.99L-37.4439 848.46C-37.1141 848.897 -36.2806 849.996 -35.3421 851.217C-33.0953 849.368 -31.8956 846.646 -32.2454 845.541ZM26.1461 877.323L18.2103 875.858L22.6784 868.436L38.6955 841.827L40.8386 838.267L44.9249 839.021L72.4517 844.101L76.54 844.855L77.2697 848.948L83.0433 881.331L84.3643 888.74L76.8471 888.377C70.265 888.059 63.2973 887.282 55.9461 885.925C44.7345 883.856 34.8335 880.84 26.1461 877.323Z"
             stroke="#C47908"
-            stroke-width="12"
+            strokeWidth="12"
           />
         </g>
-        <g clip-path="url(#clip2_283_3470)" filter="url(#filter5_d_283_3470)">
+        <g clipPath="url(#clip2_283_3470)" filter="url(#filter5_d_283_3470)">
           <path
             d="M122.194 856.999C122.084 860.336 123.891 863.127 126.228 863.236L155.719 864.583C158.047 864.693 160.031 862.074 160.128 858.73C160.237 855.393 158.434 852.599 156.109 852.493L126.791 849.752C124.444 849.649 122.303 853.649 122.194 856.999Z"
             fill="#DF394C"
@@ -296,7 +296,7 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
         </g>
         <circle cx="237" cy="505" r="3" fill="white" />
         <circle cx="196" cy="500" r="3" fill="white" />
-        <g clip-path="url(#clip3_283_3470)">
+        <g clipPath="url(#clip3_283_3470)">
           <g filter="url(#filter8_di_283_3470)">
             <circle cx="958" cy="823" r="35" fill="#CCCCCC" />
             <circle cx="930.5" cy="850.5" r="26.5" fill="#CCCCCC" />
@@ -606,9 +606,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="185.889"
           height="222.312"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -659,9 +659,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="34.5"
           height="25.5938"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -712,9 +712,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="32.7188"
           height="25.2617"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -765,9 +765,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="247.119"
           height="207.984"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -800,9 +800,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="247.119"
           height="207.984"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -835,9 +835,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="220"
           height="220"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -870,9 +870,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="586"
           height="586"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -911,9 +911,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="172.684"
           height="211.828"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -946,9 +946,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="268.223"
           height="288.273"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -999,9 +999,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="40.7188"
           height="11.307"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1034,9 +1034,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="26.4813"
           height="33.8945"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1069,9 +1069,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="7.32578"
           height="36.7227"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1104,9 +1104,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="41.4758"
           height="28.382"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1157,9 +1157,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="29.2789"
           height="38.6555"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1192,9 +1192,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="41.1445"
           height="11.1133"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1227,9 +1227,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="23.5477"
           height="44.0555"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1262,9 +1262,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="41.2488"
           height="27.1758"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1297,9 +1297,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="29.3414"
           height="43.7063"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1332,9 +1332,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="26.2949"
           height="38.5781"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1367,9 +1367,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="32.0961"
           height="36.2633"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1420,9 +1420,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="33.7918"
           height="26.9484"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1455,9 +1455,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="41.5758"
           height="43.4742"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1508,9 +1508,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="34.5855"
           height="36.1953"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1561,9 +1561,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="31.7293"
           height="27.4344"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1596,9 +1596,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           width="39.7977"
           height="44.0797"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -1650,7 +1650,7 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(714.1 437.803) rotate(105.708) scale(77.0883 81.6275)"
         >
-          <stop stop-opacity="0" />
+          <stop stopOpacity="0" />
           <stop offset="1" />
         </radialGradient>
         <linearGradient
@@ -1661,8 +1661,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           y2="17.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
-          <stop offset="1" stop-color="#D18C0C" />
+          <stop stopOpacity="0" />
+          <stop offset="1" stopColor="#D18C0C" />
         </linearGradient>
         <radialGradient
           id="paint2_radial_283_3470"
@@ -1672,8 +1672,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(664 210) rotate(90) scale(53)"
         >
-          <stop stop-color="#F8E647" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#F8E647" />
+          <stop offset="1" stopColor="white" />
         </radialGradient>
         <linearGradient
           id="paint3_linear_283_3470"
@@ -1683,8 +1683,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           y2="587.293"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E0970F" />
-          <stop offset="1" stop-color="#7A5208" />
+          <stop stopColor="#E0970F" />
+          <stop offset="1" stopColor="#7A5208" />
         </linearGradient>
         <radialGradient
           id="paint4_radial_283_3470"
@@ -1694,9 +1694,9 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(223.901 534.684) rotate(29.6148) scale(65.4874 43.9198)"
         >
-          <stop stop-color="white" />
-          <stop offset="0.825" stop-color="#C6850C" />
-          <stop offset="1" stop-color="#604106" />
+          <stop stopColor="white" />
+          <stop offset="0.825" stopColor="#C6850C" />
+          <stop offset="1" stopColor="#604106" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_283_3470"
@@ -1706,10 +1706,10 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(214.312 517.905) rotate(99.2602) scale(55.8628 68.8378)"
         >
-          <stop stop-color="#604106" />
-          <stop offset="0.12" stop-color="#D18C0C" />
-          <stop offset="0.46" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#604106" />
+          <stop offset="0.12" stopColor="#D18C0C" />
+          <stop offset="0.46" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="white" />
         </radialGradient>
         <linearGradient
           id="paint6_linear_283_3470"
@@ -1719,8 +1719,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           y2="879.416"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E6E6E6" />
-          <stop offset="1" stop-color="#D9D9D9" />
+          <stop stopColor="#E6E6E6" />
+          <stop offset="1" stopColor="#D9D9D9" />
         </linearGradient>
         <radialGradient
           id="paint7_radial_283_3470"
@@ -1730,8 +1730,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(939.205 886.639) rotate(-165.401) scale(15.7301 56.9705)"
         >
-          <stop stop-color="#EDEDED" />
-          <stop offset="1" stop-color="#EDEDED" stop-opacity="0" />
+          <stop stopColor="#EDEDED" />
+          <stop offset="1" stopColor="#EDEDED" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint8_linear_283_3470"
@@ -1741,8 +1741,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           y2="951.883"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#8078D1" />
-          <stop offset="1" stop-color="#807AB0" />
+          <stop stopColor="#8078D1" />
+          <stop offset="1" stopColor="#807AB0" />
         </linearGradient>
         <radialGradient
           id="paint9_radial_283_3470"
@@ -1752,8 +1752,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(852.705 951.53) rotate(140.325) scale(2.96655 1.13752)"
         >
-          <stop offset="0.267" stop-color="#07216D" />
-          <stop offset="1" stop-color="#07216D" stop-opacity="0" />
+          <stop offset="0.267" stopColor="#07216D" />
+          <stop offset="1" stopColor="#07216D" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint10_linear_283_3470"
@@ -1763,8 +1763,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           y2="882.726"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#4876CD" />
-          <stop offset="1" stop-color="#4386F5" />
+          <stop stopColor="#4876CD" />
+          <stop offset="1" stopColor="#4386F5" />
         </linearGradient>
         <radialGradient
           id="paint11_radial_283_3470"
@@ -1774,8 +1774,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(894.106 883.379) rotate(-113.199) scale(3.23522 18.9384)"
         >
-          <stop offset="0.287" stop-color="#3496FF" />
-          <stop offset="1" stop-color="#3496FF" stop-opacity="0" />
+          <stop offset="0.287" stopColor="#3496FF" />
+          <stop offset="1" stopColor="#3496FF" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint12_radial_283_3470"
@@ -1785,8 +1785,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(874.124 893.384) rotate(-10.5278) scale(10.6148 3.96867)"
         >
-          <stop offset="0.214" stop-color="#084AA0" />
-          <stop offset="1" stop-color="#084AA0" stop-opacity="0" />
+          <stop offset="0.214" stopColor="#084AA0" />
+          <stop offset="1" stopColor="#084AA0" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint13_radial_283_3470"
@@ -1796,8 +1796,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(934.068 987.175) rotate(58.363) scale(2.38697 13.803)"
         >
-          <stop stop-color="#2C77FF" />
-          <stop offset="1" stop-color="#4A67FF" />
+          <stop stopColor="#2C77FF" />
+          <stop offset="1" stopColor="#4A67FF" />
         </radialGradient>
         <linearGradient
           id="paint14_linear_283_3470"
@@ -1807,8 +1807,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           y2="939.352"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.775" stop-color="#5193FF" />
-          <stop offset="1" stop-color="#125DCE" />
+          <stop offset="0.775" stopColor="#5193FF" />
+          <stop offset="1" stopColor="#125DCE" />
         </linearGradient>
         <radialGradient
           id="paint15_radial_283_3470"
@@ -1818,8 +1818,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(952.616 906.844) rotate(-36.431) scale(2.38004 24.5618)"
         >
-          <stop stop-color="#A2A4B1" />
-          <stop offset="1" stop-color="#A2A4B1" stop-opacity="0" />
+          <stop stopColor="#A2A4B1" />
+          <stop offset="1" stopColor="#A2A4B1" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint16_radial_283_3470"
@@ -1829,8 +1829,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(910.74 900.23) rotate(-155.98) scale(28.5249 40.844)"
         >
-          <stop stop-color="#DFDFE1" />
-          <stop offset="1" stop-color="#BFBEC0" />
+          <stop stopColor="#DFDFE1" />
+          <stop offset="1" stopColor="#BFBEC0" />
         </radialGradient>
         <linearGradient
           id="paint17_linear_283_3470"
@@ -1840,8 +1840,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           y2="913.291"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A09FA2" />
-          <stop offset="1" stop-color="#B7B6BA" />
+          <stop stopColor="#A09FA2" />
+          <stop offset="1" stopColor="#B7B6BA" />
         </linearGradient>
         <linearGradient
           id="paint18_linear_283_3470"
@@ -1851,8 +1851,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           y2="924.307"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#847D9D" />
-          <stop offset="1" stop-color="#847D9D" stop-opacity="0" />
+          <stop stopColor="#847D9D" />
+          <stop offset="1" stopColor="#847D9D" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint19_radial_283_3470"
@@ -1862,8 +1862,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(907.835 991.141) rotate(103.671) scale(2.69599 14.6999)"
         >
-          <stop offset="0.417" stop-color="#6C5DBB" />
-          <stop offset="1" stop-color="#6C5DBB" stop-opacity="0" />
+          <stop offset="0.417" stopColor="#6C5DBB" />
+          <stop offset="1" stopColor="#6C5DBB" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint20_radial_283_3470"
@@ -1873,8 +1873,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(959.111 909.665) rotate(97.998) scale(41.8824 21.6551)"
         >
-          <stop stop-color="#F0EFF3" />
-          <stop offset="1" stop-color="#E0DEF0" />
+          <stop stopColor="#F0EFF3" />
+          <stop offset="1" stopColor="#E0DEF0" />
         </radialGradient>
         <radialGradient
           id="paint21_radial_283_3470"
@@ -1884,8 +1884,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(920.447 969.166) rotate(90.9) scale(22.8285 50.2701)"
         >
-          <stop stop-color="#B2A8F8" />
-          <stop offset="1" stop-color="#8D7FFE" />
+          <stop stopColor="#B2A8F8" />
+          <stop offset="1" stopColor="#8D7FFE" />
         </radialGradient>
         <linearGradient
           id="paint22_linear_283_3470"
@@ -1895,8 +1895,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           y2="951.353"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A39AC6" />
-          <stop offset="1" stop-color="#8A82B2" />
+          <stop stopColor="#A39AC6" />
+          <stop offset="1" stopColor="#8A82B2" />
         </linearGradient>
         <radialGradient
           id="paint23_radial_283_3470"
@@ -1906,8 +1906,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(946.909 980.996) rotate(-70.017) scale(34.152 114.292)"
         >
-          <stop offset="0.341" stop-color="#B3ADEB" />
-          <stop offset="1" stop-color="#DBD8F2" />
+          <stop offset="0.341" stopColor="#B3ADEB" />
+          <stop offset="1" stopColor="#DBD8F2" />
         </radialGradient>
         <radialGradient
           id="paint24_radial_283_3470"
@@ -1917,8 +1917,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(958.817 947.456) rotate(64.0929) scale(2.75486 23.4829)"
         >
-          <stop offset="0.208" stop-color="#E8E7EE" />
-          <stop offset="1" stop-color="#E8E7EE" stop-opacity="0" />
+          <stop offset="0.208" stopColor="#E8E7EE" />
+          <stop offset="1" stopColor="#E8E7EE" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint25_radial_283_3470"
@@ -1928,8 +1928,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(934.462 938.69) rotate(86.1) scale(32.4684 29.0281)"
         >
-          <stop stop-color="#2987FF" />
-          <stop offset="1" stop-color="#1473FF" />
+          <stop stopColor="#2987FF" />
+          <stop offset="1" stopColor="#1473FF" />
         </radialGradient>
         <radialGradient
           id="paint26_radial_283_3470"
@@ -1939,8 +1939,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(890.636 968.768) rotate(136.032) scale(22.2319 20.2801)"
         >
-          <stop stop-color="#1153FF" />
-          <stop offset="1" stop-color="#254DFF" />
+          <stop stopColor="#1153FF" />
+          <stop offset="1" stopColor="#254DFF" />
         </radialGradient>
         <radialGradient
           id="paint27_radial_283_3470"
@@ -1950,8 +1950,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(890.069 969.636) rotate(124.472) scale(1.43853 14.264)"
         >
-          <stop offset="0.277" stop-color="#0D44E2" />
-          <stop offset="1" stop-color="#0D44E2" stop-opacity="0" />
+          <stop offset="0.277" stopColor="#0D44E2" />
+          <stop offset="1" stopColor="#0D44E2" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint28_linear_283_3470"
@@ -1961,8 +1961,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           y2="976.063"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CCC5EB" />
-          <stop offset="1" stop-color="#AB9EEA" />
+          <stop stopColor="#CCC5EB" />
+          <stop offset="1" stopColor="#AB9EEA" />
         </linearGradient>
         <radialGradient
           id="paint29_radial_283_3470"
@@ -1972,8 +1972,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(900.263 908.727) rotate(143.771) scale(35.4593 36.2812)"
         >
-          <stop stop-color="#197AFF" />
-          <stop offset="1" stop-color="#1462E6" />
+          <stop stopColor="#197AFF" />
+          <stop offset="1" stopColor="#1462E6" />
         </radialGradient>
         <radialGradient
           id="paint30_radial_283_3470"
@@ -1983,8 +1983,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(944.444 886.358) rotate(117.699) scale(25.5888 29.5688)"
         >
-          <stop stop-color="#3697FF" />
-          <stop offset="1" stop-color="#2890FF" />
+          <stop stopColor="#3697FF" />
+          <stop offset="1" stopColor="#2890FF" />
         </radialGradient>
         <radialGradient
           id="paint31_radial_283_3470"
@@ -1994,8 +1994,8 @@ const ChildRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(942.174 910.647) rotate(155.871) scale(26.3529 35.1384)"
         >
-          <stop stop-color="#ECEAF2" />
-          <stop offset="1" stop-color="#D5CEEA" />
+          <stop stopColor="#ECEAF2" />
+          <stop offset="1" stopColor="#D5CEEA" />
         </radialGradient>
         <clipPath id="clip0_283_3470">
           <rect width="1000" height="1240" fill="white" />

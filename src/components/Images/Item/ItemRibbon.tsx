@@ -34,7 +34,7 @@ const ItemRibbon: React.FC = () => {
         rx="1.5"
         transform="rotate(0.472714 20.2479 15.8596)"
         fill="black"
-        fill-opacity="0.16"
+        fillOpacity="0.16"
       />
       <rect
         x="20.2479"
@@ -54,8 +54,8 @@ const ItemRibbon: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(23.786 23.5142) rotate(53.0601) scale(19.8835 12.8424)"
         >
-          <stop stop-color="#930606" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#930606" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_293_314"
@@ -65,8 +65,8 @@ const ItemRibbon: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(19.9885 27.2096) rotate(122.783) scale(22.4424 14.2141)"
         >
-          <stop stop-color="#930606" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#930606" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_293_314"
@@ -76,8 +76,8 @@ const ItemRibbon: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(24.3638 20.7771) rotate(90) scale(5.42161 4.61172)"
         >
-          <stop stop-color="#FF0000" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#FF0000" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
       </defs>
     </svg>

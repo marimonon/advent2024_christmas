@@ -11,7 +11,7 @@ const CakeFullImage: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_277_2040)">
+      <g clipPath="url(#clip0_277_2040)">
         <path
           d="M28.4 121.595C28.4 121.595 25.7551 126.48 25.5528 129.529C25.3504 132.579 27.3883 157.41 31.8543 162.902C36.3203 168.394 49.9641 182.847 90.2449 183.252C130.526 183.656 151.078 165.344 153.318 161.688C155.559 158.031 158.406 140.933 158.608 127.506C158.811 114.079 87.1953 123.43 87.1953 123.43L28.4 121.595Z"
           fill="#FBB75A"
@@ -122,11 +122,11 @@ const CakeFullImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(94.402 90.6574) rotate(91.1173) scale(66.173 144.054)"
         >
-          <stop offset="0.445" stop-color="#FEEAC9" />
-          <stop offset="0.565" stop-color="#FEE7C2" />
-          <stop offset="0.741" stop-color="#FEDEAE" />
-          <stop offset="0.952" stop-color="#FFCF8D" />
-          <stop offset="1" stop-color="#FFCB85" />
+          <stop offset="0.445" stopColor="#FEEAC9" />
+          <stop offset="0.565" stopColor="#FEE7C2" />
+          <stop offset="0.741" stopColor="#FEDEAE" />
+          <stop offset="0.952" stopColor="#FFCF8D" />
+          <stop offset="1" stopColor="#FFCB85" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_277_2040"
@@ -136,11 +136,11 @@ const CakeFullImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(94.402 90.6574) rotate(91.1173) scale(66.173 144.054)"
         >
-          <stop offset="0.445" stop-color="#FEEAC9" />
-          <stop offset="0.565" stop-color="#FEE7C2" />
-          <stop offset="0.741" stop-color="#FEDEAE" />
-          <stop offset="0.952" stop-color="#FFCF8D" />
-          <stop offset="1" stop-color="#FFCB85" />
+          <stop offset="0.445" stopColor="#FEEAC9" />
+          <stop offset="0.565" stopColor="#FEE7C2" />
+          <stop offset="0.741" stopColor="#FEDEAE" />
+          <stop offset="0.952" stopColor="#FFCF8D" />
+          <stop offset="1" stopColor="#FFCB85" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_277_2040"
@@ -150,12 +150,12 @@ const CakeFullImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(93.6436 37.9873) scale(56.4019 34.7266)"
         >
-          <stop offset="0.034" stop-color="#FFE265" stop-opacity="0.7" />
-          <stop offset="0.112" stop-color="#FFE575" stop-opacity="0.643" />
-          <stop offset="0.417" stop-color="#FFF0B0" stop-opacity="0.422" />
-          <stop offset="0.677" stop-color="#FFF8DB" stop-opacity="0.234" />
-          <stop offset="0.88" stop-color="#FFFDF5" stop-opacity="0.087" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop offset="0.034" stopColor="#FFE265" stopOpacity="0.7" />
+          <stop offset="0.112" stopColor="#FFE575" stopOpacity="0.643" />
+          <stop offset="0.417" stopColor="#FFF0B0" stopOpacity="0.422" />
+          <stop offset="0.677" stopColor="#FFF8DB" stopOpacity="0.234" />
+          <stop offset="0.88" stopColor="#FFFDF5" stopOpacity="0.087" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_277_2040"
@@ -165,8 +165,8 @@ const CakeFullImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(93.8139 51.9995) scale(28.0795 28.0795)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_277_2040"
@@ -176,8 +176,8 @@ const CakeFullImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(111.595 44.5539) scale(27.5245 27.5245)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_277_2040"
@@ -187,8 +187,8 @@ const CakeFullImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(76.3445 44.5482) scale(27.2485 27.2485)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
         <clipPath id="clip0_277_2040">
           <rect width="185" height="185" fill="white" />

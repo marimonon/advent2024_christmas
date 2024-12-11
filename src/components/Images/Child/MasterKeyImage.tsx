@@ -92,9 +92,9 @@ const MasterKeyImage: React.FC<Props> = ({ className }) => {
           width="72.4688"
           height="88.0703"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -128,8 +128,8 @@ const MasterKeyImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(59.9592 60.4945) rotate(90) scale(59.9476 59.9592)"
         >
-          <stop stop-color="#FFFF00" />
-          <stop offset="1" stop-color="#FFFF00" stop-opacity="0" />
+          <stop stopColor="#FFFF00" />
+          <stop offset="1" stopColor="#FFFF00" stopOpacity="0" />
         </radialGradient>
         <linearGradient
           id="paint1_linear_283_3747"
@@ -139,8 +139,8 @@ const MasterKeyImage: React.FC<Props> = ({ className }) => {
           y2="83.0431"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_283_3747"
@@ -150,8 +150,8 @@ const MasterKeyImage: React.FC<Props> = ({ className }) => {
           y2="67.2991"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_283_3747"
@@ -161,8 +161,8 @@ const MasterKeyImage: React.FC<Props> = ({ className }) => {
           y2="81.3739"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_283_3747"
@@ -172,8 +172,8 @@ const MasterKeyImage: React.FC<Props> = ({ className }) => {
           y2="61.186"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
       </defs>
     </svg>

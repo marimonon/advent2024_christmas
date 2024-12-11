@@ -17,7 +17,7 @@ const ExTreeSwitchImage: React.FC<Props> = ({ className }) => {
         width="74"
         height="144"
         fill="url(#paint0_linear_283_3836)"
-        fill-opacity="0.5"
+        fillOpacity="0.5"
         stroke="#D6D6D6"
       />
       <defs>
@@ -29,7 +29,7 @@ const ExTreeSwitchImage: React.FC<Props> = ({ className }) => {
           y2="145"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#666666" />
+          <stop stopColor="#666666" />
           <stop offset="1" />
         </linearGradient>
       </defs>

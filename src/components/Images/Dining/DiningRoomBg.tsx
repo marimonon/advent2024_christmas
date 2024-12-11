@@ -11,7 +11,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_277_1751)">
+      <g clipPath="url(#clip0_277_1751)">
         <rect width="1000" height="1240" fill="#045662" />
         <rect y="815" width="1000" height="425" fill="#DDDDDD" />
         <path
@@ -21,7 +21,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
         <path
           d="M230 689.592C230 680.453 226.665 671.403 220.185 662.96C213.705 654.517 204.208 646.845 192.235 640.383C180.261 633.921 166.047 628.795 150.404 625.297C134.76 621.8 117.993 620 101.061 620C84.128 620 67.3613 621.8 51.7176 625.297C36.074 628.795 21.8598 633.921 9.88668 640.383C-2.08645 646.845 -11.5841 654.517 -18.0639 662.96C-24.5437 671.403 -27.8788 680.453 -27.8788 689.592L230 689.592Z"
           fill="url(#paint0_linear_277_1751)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <path
           d="M-29 688.469H230L210.939 840H-8.81818L-29 688.469Z"
@@ -30,7 +30,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
         <path
           d="M-29 688.469H230L210.939 840H-8.81818L-29 688.469Z"
           fill="url(#paint1_linear_277_1751)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <path
           d="M-24 859C-24 847.954 -15.0457 839 -4 839H206C217.046 839 226 847.954 226 859V894H-24V859Z"
@@ -39,7 +39,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
         <path
           d="M-24 859C-24 847.954 -15.0457 839 -4 839H206C217.046 839 226 847.954 226 859V894H-24V859Z"
           fill="url(#paint2_linear_277_1751)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <path d="M-17 918H21L5 1058H-17V918Z" fill="#C47908" />
         <path d="M220 918H182L198 1058H220V918Z" fill="#C47908" />
@@ -51,7 +51,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
         <path
           d="M745 635.592C745 626.453 741.665 617.403 735.185 608.96C728.705 600.517 719.208 592.845 707.235 586.383C695.261 579.921 681.047 574.795 665.404 571.297C649.76 567.8 632.993 566 616.061 566C599.128 566 582.361 567.8 566.718 571.297C551.074 574.795 536.86 579.921 524.887 586.383C512.914 592.845 503.416 600.517 496.936 608.96C490.456 617.403 487.121 626.453 487.121 635.592L745 635.592Z"
           fill="url(#paint3_linear_277_1751)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <path
           d="M486 634.469H745L725.939 786H506.182L486 634.469Z"
@@ -60,7 +60,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
         <path
           d="M486 634.469H745L725.939 786H506.182L486 634.469Z"
           fill="url(#paint4_linear_277_1751)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <path
           d="M491 805C491 793.954 499.954 785 511 785H721C732.046 785 741 793.954 741 805V840H491V805Z"
@@ -69,7 +69,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
         <path
           d="M491 805C491 793.954 499.954 785 511 785H721C732.046 785 741 793.954 741 805V840H491V805Z"
           fill="url(#paint5_linear_277_1751)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <path d="M498 864H536L520 1004H498V864Z" fill="#C47908" />
         <path d="M735 864H697L713 1004H735V864Z" fill="#C47908" />
@@ -97,7 +97,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
         <path
           d="M32 1023C32 1011.95 40.9543 1003 52 1003H262C273.046 1003 282 1011.95 282 1023V1058H32V1023Z"
           fill="url(#paint6_linear_277_1751)"
-          fill-opacity="0.1"
+          fillOpacity="0.1"
         />
         <path d="M39 1082H77L61 1222H39V1082Z" fill="#C47908" />
         <path d="M276 1082H238L254 1222H276V1082Z" fill="#C47908" />
@@ -117,7 +117,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
         <path
           d="M391 1023C391 1011.95 399.954 1003 411 1003H621C632.046 1003 641 1011.95 641 1023V1058H391V1023Z"
           fill="url(#paint7_linear_277_1751)"
-          fill-opacity="0.1"
+          fillOpacity="0.1"
         />
         <path d="M398 1082H436L420 1222H398V1082Z" fill="#C47908" />
         <path d="M635 1082H597L613 1222H635V1082Z" fill="#C47908" />
@@ -242,9 +242,9 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           width="586"
           height="586"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -284,7 +284,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="840"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
+          <stop stopOpacity="0" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -295,7 +295,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="840"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
+          <stop stopOpacity="0" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -306,7 +306,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="894"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
+          <stop stopOpacity="0" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -317,7 +317,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="786"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
+          <stop stopOpacity="0" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -328,7 +328,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="786"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
+          <stop stopOpacity="0" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -339,7 +339,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="840"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
+          <stop stopOpacity="0" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -350,7 +350,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="1058"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
+          <stop stopOpacity="0" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -361,7 +361,7 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="1058"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
+          <stop stopOpacity="0" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -372,8 +372,8 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="746.675"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D9D9D9" />
-          <stop offset="1" stop-color="#AAAAAA" />
+          <stop stopColor="#D9D9D9" />
+          <stop offset="1" stopColor="#AAAAAA" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_277_1751"
@@ -383,8 +383,8 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="760.426"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E2A610" />
-          <stop offset="1" stop-color="#C47908" />
+          <stop stopColor="#E2A610" />
+          <stop offset="1" stopColor="#C47908" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_277_1751"
@@ -394,8 +394,8 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           y2="147.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-opacity="0" />
-          <stop offset="1" stop-color="#D18C0C" />
+          <stop stopOpacity="0" />
+          <stop offset="1" stopColor="#D18C0C" />
         </linearGradient>
         <radialGradient
           id="paint11_radial_277_1751"
@@ -405,8 +405,8 @@ const DiningRoomBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(336 340) rotate(90) scale(53)"
         >
-          <stop stop-color="#F8E647" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#F8E647" />
+          <stop offset="1" stopColor="white" />
         </radialGradient>
         <clipPath id="clip0_277_1751">
           <rect width="1000" height="1240" fill="white" />

@@ -182,7 +182,7 @@ const EntranceDoorImage: React.FC<Props> = ({ className }) => {
       <path
         d="M268.863 109.812C319.248 119.368 357.404 164.564 357.404 218.878C357.404 280.141 308.859 329.805 248.976 329.805C189.092 329.805 140.547 280.141 140.547 218.878C140.547 164.564 178.703 119.368 229.088 109.812"
         stroke="#176E1C"
-        stroke-width="20"
+        strokeWidth="20"
       />
       <path
         d="M234.129 106.579C240.241 103.597 249.343 110.077 254.461 121.052C259.578 132.028 258.773 143.343 252.662 146.325C246.551 149.307 237.448 142.827 232.331 131.852C227.213 120.876 228.018 109.561 234.129 106.579Z"
@@ -356,7 +356,7 @@ const EntranceDoorImage: React.FC<Props> = ({ className }) => {
         d="M222.872 83.9173C222.88 82.9586 223.568 82.1394 224.512 81.9712C241.37 78.9678 251.513 78.8108 268.387 82.3166C269.315 82.5095 269.975 83.3343 269.967 84.2824L269.631 125.076C269.62 126.332 268.462 127.266 267.228 127.031C251.073 123.957 241.042 124.035 224.885 126.707C223.654 126.911 222.525 125.96 222.535 124.712L222.872 83.9173Z"
         fill="url(#paint2_radial_277_2391)"
       />
-      <g clip-path="url(#clip0_277_2391)">
+      <g clipPath="url(#clip0_277_2391)">
         <path
           d="M216.71 169.724C206.51 163.835 199.517 156.851 201.09 154.126C202.664 151.401 212.208 153.965 222.408 159.854C232.608 165.743 239.601 172.726 238.027 175.452C236.454 178.177 226.91 175.612 216.71 169.724Z"
           fill="#A06C33"
@@ -374,7 +374,7 @@ const EntranceDoorImage: React.FC<Props> = ({ className }) => {
           fill="#FFD469"
         />
       </g>
-      <g clip-path="url(#clip1_277_2391)">
+      <g clipPath="url(#clip1_277_2391)">
         <path
           d="M278.079 170.71C267.879 176.599 258.335 179.164 256.761 176.439C255.188 173.713 262.181 166.73 272.381 160.841C282.58 154.952 292.125 152.388 293.698 155.113C295.272 157.838 288.279 164.822 278.079 170.71Z"
           fill="#A06C33"
@@ -399,7 +399,7 @@ const EntranceDoorImage: React.FC<Props> = ({ className }) => {
         r="12"
         fill="#D9D9D9"
         stroke="#CCCCCC"
-        stroke-width="6"
+        strokeWidth="6"
       />
       <circle
         cx="50"
@@ -407,7 +407,7 @@ const EntranceDoorImage: React.FC<Props> = ({ className }) => {
         r="12"
         fill="#D9D9D9"
         stroke="#CCCCCC"
-        stroke-width="6"
+        strokeWidth="6"
       />
       <rect x="46" y="307" width="7" height="24" fill="#CCCCCC" />
       <rect x="46" y="530" width="7" height="24" fill="#CCCCCC" />
@@ -417,7 +417,7 @@ const EntranceDoorImage: React.FC<Props> = ({ className }) => {
         x2="76"
         y2="345"
         stroke="#CCCCCC"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <line
         x1="25"
@@ -425,7 +425,7 @@ const EntranceDoorImage: React.FC<Props> = ({ className }) => {
         x2="76"
         y2="517"
         stroke="#CCCCCC"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <defs>
         <radialGradient
@@ -436,8 +436,8 @@ const EntranceDoorImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(243.469 125.849) rotate(53.0601) scale(101.53 65.5764)"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_277_2391"
@@ -447,8 +447,8 @@ const EntranceDoorImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(224.076 144.728) rotate(122.783) scale(114.596 72.5804)"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_277_2391"
@@ -458,8 +458,8 @@ const EntranceDoorImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(249.007 88.5284) rotate(94.161) scale(40.7972 42.7843)"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#FF0000" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#FF0000" />
         </radialGradient>
         <clipPath id="clip0_277_2391">
           <rect

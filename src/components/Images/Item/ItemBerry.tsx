@@ -7,7 +7,7 @@ const ItemBerry: React.FC = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_293_179)">
+      <g clipPath="url(#clip0_293_179)">
         <path
           d="M48 32.7814C48 35.8331 44.4183 38.3069 40 38.3069C35.5817 38.3069 32 35.8331 32 32.7814C32 29.7298 35.5817 22.1367 40 22.1367C44.4183 22.1367 48 29.7298 48 32.7814Z"
           fill="#EE5B4A"

@@ -11,7 +11,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_279_2831)">
+      <g clipPath="url(#clip0_279_2831)">
         <path
           d="M294.102 276.854C323.388 254.245 369.59 199.819 320.108 162.988C358.415 176.577 425.539 212.4 387.584 246.982C355.306 276.39 336.838 282.806 329.153 282.266C337.705 285.029 351.008 292.55 353.495 306.726L201.674 311.646L209.757 281.422L294.102 276.854Z"
           fill="url(#paint0_linear_279_2831)"
@@ -36,7 +36,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           <path
             d="M249.773 105.196C262.99 99.1419 265.225 75.723 254.766 52.8885C244.307 30.0539 231.571 18.1408 226.299 20.5554C213.082 26.6095 196.444 51.9776 206.903 74.8122C217.363 97.6467 236.556 111.25 249.773 105.196Z"
             fill="black"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
           <path
             d="M86.0089 130.77C71.4747 130.459 60.1277 109.851 60.6647 84.7407C61.2017 59.6304 68.1628 43.6409 73.9597 43.7649C88.4939 44.0757 113.835 60.756 113.298 85.8663C112.761 110.977 100.543 131.081 86.0089 130.77Z"
@@ -45,7 +45,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           <path
             d="M86.0089 130.77C71.4747 130.459 60.1277 109.851 60.6647 84.7407C61.2017 59.6304 68.1628 43.6409 73.9597 43.7649C88.4939 44.0757 113.835 60.756 113.298 85.8663C112.761 110.977 100.543 131.081 86.0089 130.77Z"
             fill="black"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
           <ellipse
             cx="179.183"
@@ -60,7 +60,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
             rx="127.923"
             ry="118.083"
             fill="url(#paint6_radial_279_2831)"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
           <ellipse
             cx="103.927"
@@ -93,7 +93,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
             ry="63.7422"
             transform="rotate(-7.00518 193.225 260.734)"
             fill="white"
-            fill-opacity="0.5"
+            fillOpacity="0.5"
           />
           <ellipse
             cx="193.225"
@@ -102,7 +102,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
             ry="63.7422"
             transform="rotate(-7.00518 193.225 260.734)"
             fill="url(#paint8_radial_279_2831)"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <mask id="path-11-inside-1_279_2831" fill="white">
             <path d="M244.392 158.982C246.073 162.333 247.342 165.85 248.126 169.331C248.91 172.813 249.194 176.191 248.962 179.274C248.729 182.357 247.984 185.083 246.77 187.297C245.557 189.511 243.897 191.17 241.887 192.179C239.876 193.188 237.554 193.527 235.054 193.177C232.553 192.827 229.922 191.794 227.312 190.138C224.701 188.482 222.162 186.235 219.839 183.526C217.517 180.816 215.456 177.697 213.774 174.347L229.083 166.665L244.392 158.982Z" />
@@ -111,7 +111,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
             d="M244.392 158.982C246.073 162.333 247.342 165.85 248.126 169.331C248.91 172.813 249.194 176.191 248.962 179.274C248.729 182.357 247.984 185.083 246.77 187.297C245.557 189.511 243.897 191.17 241.887 192.179C239.876 193.188 237.554 193.527 235.054 193.177C232.553 192.827 229.922 191.794 227.312 190.138C224.701 188.482 222.162 186.235 219.839 183.526C217.517 180.816 215.456 177.697 213.774 174.347L229.083 166.665L244.392 158.982Z"
             fill="white"
             stroke="black"
-            stroke-width="10"
+            strokeWidth="10"
             mask="url(#path-11-inside-1_279_2831)"
           />
           <mask id="path-12-inside-2_279_2831" fill="white">
@@ -121,7 +121,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
             d="M128.417 180.771C130.099 184.122 131.368 187.639 132.152 191.12C132.936 194.602 133.22 197.98 132.987 201.063C132.754 204.146 132.01 206.872 130.796 209.086C129.582 211.301 127.922 212.959 125.912 213.968C123.902 214.977 121.58 215.316 119.079 214.966C116.578 214.616 113.947 213.583 111.337 211.927C108.727 210.271 106.187 208.025 103.865 205.315C101.542 202.606 99.4811 199.486 97.7997 196.136L113.108 188.454L128.417 180.771Z"
             fill="white"
             stroke="black"
-            stroke-width="10"
+            strokeWidth="10"
             mask="url(#path-12-inside-2_279_2831)"
           />
           <path
@@ -131,7 +131,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           <path
             d="M199.207 203.799C185.798 198.442 160.884 206.998 156.921 216.921C154.555 225.137 166.393 226.38 172.94 227.41C190.787 224.85 190.232 223.923 194.483 219.79C199.235 215.171 201.002 209.449 199.207 203.799Z"
             fill="black"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
         </g>
         <path
@@ -145,7 +145,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
         <path
           d="M146.811 271.449L170.02 289.956L166.682 261.523M146.811 271.449C151.086 268.732 157.894 265.148 166.682 261.523M146.811 271.449L115.57 289.956M244.933 245.776L240.178 270.75L221.703 245.776M244.933 245.776C238.745 245.783 227.569 245.221 221.703 245.776M244.933 245.776L287.423 245.776M221.703 245.776C197.668 248.051 181.807 255.285 166.682 261.523"
           stroke="black"
-          stroke-width="4"
+          strokeWidth="4"
         />
         <ellipse
           cx="125.061"
@@ -210,11 +210,11 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           fill="#C47908"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M408 0H0V321H49.3853C53.9296 333.28 65.7447 342.033 79.6042 342.033C93.4638 342.033 105.279 333.28 109.823 321H268.573C273.117 333.28 284.932 342.033 298.792 342.033C312.651 342.033 324.466 333.28 329.011 321H408V0ZM329.011 321C330.299 317.518 331.003 313.752 331.003 309.821C331.003 292.031 316.582 277.609 298.792 277.609C281.002 277.609 266.58 292.031 266.58 309.821C266.58 313.752 267.284 317.518 268.573 321H329.011ZM109.823 321C111.112 317.518 111.816 313.752 111.816 309.821C111.816 292.031 97.3943 277.609 79.6042 277.609C61.8142 277.609 47.3926 292.031 47.3926 309.821C47.3926 313.752 48.0965 317.518 49.3853 321H109.823ZM195.379 265.758C243.637 265.758 282.758 226.637 282.758 178.379C282.758 130.121 243.637 91 195.379 91C147.121 91 108 130.121 108 178.379C108 226.637 147.121 265.758 195.379 265.758Z"
           fill="#045662"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
       </g>
       <defs>
@@ -225,9 +225,9 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           width="276.205"
           height="327.715"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -261,8 +261,8 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           y2="182.317"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D18C0C" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop stopColor="#D18C0C" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_279_2831"
@@ -272,8 +272,8 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           y2="201.855"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C47908" />
-          <stop offset="0.305" stop-color="#FFE4BB" />
+          <stop stopColor="#C47908" />
+          <stop offset="0.305" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_279_2831"
@@ -283,8 +283,8 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           y2="140.487"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C47908" />
-          <stop offset="0.305" stop-color="#FFE4BB" />
+          <stop stopColor="#C47908" />
+          <stop offset="0.305" stopColor="#FFE4BB" />
         </linearGradient>
         <radialGradient
           id="paint3_radial_279_2831"
@@ -294,8 +294,8 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(299.296 124.348) rotate(-24.6102) scale(26.3225 45.4766)"
         >
-          <stop offset="0.6875" stop-color="#C47908" />
-          <stop offset="1" stop-color="#C47908" />
+          <stop offset="0.6875" stopColor="#C47908" />
+          <stop offset="1" stopColor="#C47908" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_279_2831"
@@ -305,8 +305,8 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(48.1555 168.005) rotate(-178.775) scale(26.3225 45.4766)"
         >
-          <stop offset="0.6875" stop-color="#C47908" />
-          <stop offset="1" stop-color="#C47908" />
+          <stop offset="0.6875" stopColor="#C47908" />
+          <stop offset="1" stopColor="#C47908" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_279_2831"
@@ -316,9 +316,9 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(179.183 168.96) rotate(90) scale(139.522 151.149)"
         >
-          <stop stop-color="#CF8D29" />
-          <stop offset="0.55" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop stopColor="#CF8D29" />
+          <stop offset="0.55" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </radialGradient>
         <radialGradient
           id="paint6_radial_279_2831"
@@ -329,7 +329,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           gradientTransform="translate(179.183 190.399) rotate(87.6141) scale(84.418 91.4529)"
         >
           <stop offset="0.3" />
-          <stop offset="0.645" stop-opacity="0" />
+          <stop offset="0.645" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint7_radial_279_2831"
@@ -339,8 +339,8 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(193.225 260.734) rotate(90) scale(63.7422 98.4061)"
         >
-          <stop stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </radialGradient>
         <radialGradient
           id="paint8_radial_279_2831"
@@ -350,8 +350,8 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(191.857 275.697) rotate(80.2769) scale(74.8084 116.18)"
         >
-          <stop stop-color="#FFE4BB" />
-          <stop offset="0.77" stop-color="white" />
+          <stop stopColor="#FFE4BB" />
+          <stop offset="0.77" stopColor="white" />
         </radialGradient>
         <linearGradient
           id="paint9_linear_279_2831"
@@ -361,8 +361,8 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           y2="305.592"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_279_2831"
@@ -372,8 +372,8 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
           y2="305.592"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <clipPath id="clip0_279_2831">
           <rect width="408" height="306" fill="white" />

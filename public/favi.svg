@@ -12,8 +12,8 @@
 <path d="M18.6402 2.09748C10.5792 1.31827 5.99311 7.21373 4.63281 10.7657C5.29458 12.1349 5.97472 11.3362 6.23208 10.7657C11.2505 4.47154 14.7799 3.25694 18.6402 3.25694C22.5005 3.25694 25.8644 5.85187 26.6365 7.89469C27.2541 9.52895 27.7762 8.94371 27.96 8.44681C28.1622 6.9929 26.6365 2.87043 18.6402 2.09748Z" fill="white"/>
 <path d="M15.5518 14.1328C16.3973 15.237 18.7062 16.783 21.1768 14.1328" stroke="black"/>
 <defs>
-<filter id="filter0_i_251_96" x="0" y="-16" width="30" height="46.1445" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter0_i_251_96" x="0" y="-16" width="30" height="46.1445" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="-40"/>

@@ -121,7 +121,7 @@ const ChildSleepImage: React.FC<Props> = ({ className }) => {
         d="M407.187 335.563C405.972 331.03 415.653 329.245 420.645 328.92L428.422 338.987C424.167 370.497 402.172 364.242 392.878 348.511C385.442 335.926 393.505 338.216 398.467 340.934C403.399 351.76 411.581 342.484 415.055 336.492C412.938 338.072 408.402 340.097 407.187 335.563Z"
         fill="#F9DDBD"
       />
-      <g clip-path="url(#clip0_283_3764)">
+      <g clipPath="url(#clip0_283_3764)">
         <path
           d="M598.428 139.253C589.813 127.258 592.145 120.558 592.145 120.558C579.073 124.061 580.665 130.002 580.665 130.002C580.665 130.002 563.585 118.021 542.064 123.788C517.109 130.475 511.87 145.239 511.87 145.239C511.376 146.059 510.144 147.497 510.144 147.497C510.144 147.497 508.422 148.341 507.491 148.577C500.957 150.239 493.599 152.058 488.379 161.098C483.16 170.139 485.188 178.753 485.156 182.341C485.079 190.232 496.645 230.259 499.468 238.558C502.987 248.887 508.894 256.767 517.723 261.865C528.933 268.337 539.861 261.397 541.284 261.525C542.718 261.651 564.023 272.143 585.018 265.129C623.596 252.245 614.766 224.043 614.766 224.043C614.766 224.043 631.878 211.803 624.236 183.284C615.32 150.01 601.438 143.452 598.428 139.253Z"
           fill="#312D2D"
@@ -211,8 +211,8 @@ const ChildSleepImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(521.573 227.801) rotate(-133.641) scale(41.4846 26.9441)"
         >
-          <stop offset="0.728" stop-color="#454140" stop-opacity="0" />
-          <stop offset="1" stop-color="#454140" />
+          <stop offset="0.728" stopColor="#454140" stopOpacity="0" />
+          <stop offset="1" stopColor="#454140" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_283_3764"
@@ -222,8 +222,8 @@ const ChildSleepImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(510.965 186.578) rotate(103.641) scale(41.8327 27.1702)"
         >
-          <stop offset="0.728" stop-color="#454140" stop-opacity="0" />
-          <stop offset="1" stop-color="#454140" />
+          <stop offset="0.728" stopColor="#454140" stopOpacity="0" />
+          <stop offset="1" stopColor="#454140" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_283_3764"
@@ -233,8 +233,8 @@ const ChildSleepImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(558.937 148.074) rotate(-10.7217) scale(42.2314 35.1972)"
         >
-          <stop offset="0.699" stop-color="#454140" stop-opacity="0" />
-          <stop offset="1" stop-color="#454140" />
+          <stop offset="0.699" stopColor="#454140" stopOpacity="0" />
+          <stop offset="1" stopColor="#454140" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_283_3764"
@@ -244,8 +244,8 @@ const ChildSleepImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(589.677 184.412) rotate(-82.1904) scale(58.1596 32.6859)"
         >
-          <stop offset="0.699" stop-color="#454140" stop-opacity="0" />
-          <stop offset="1" stop-color="#454140" />
+          <stop offset="0.699" stopColor="#454140" stopOpacity="0" />
+          <stop offset="1" stopColor="#454140" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_283_3764"
@@ -255,8 +255,8 @@ const ChildSleepImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(560.956 233.976) rotate(133.432) scale(59.2093 43.9279)"
         >
-          <stop offset="0.699" stop-color="#454140" stop-opacity="0" />
-          <stop offset="1" stop-color="#454140" />
+          <stop offset="0.699" stopColor="#454140" stopOpacity="0" />
+          <stop offset="1" stopColor="#454140" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_283_3764"
@@ -266,8 +266,8 @@ const ChildSleepImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(598.354 125.327) rotate(79.5657) scale(10.7545 12.7526)"
         >
-          <stop offset="0.58" stop-color="#454140" />
-          <stop offset="1" stop-color="#454140" stop-opacity="0" />
+          <stop offset="0.58" stopColor="#454140" />
+          <stop offset="1" stopColor="#454140" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint6_radial_283_3764"
@@ -277,8 +277,8 @@ const ChildSleepImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(587.219 133.993) rotate(23.3941) scale(8.88287 14.0935)"
         >
-          <stop offset="0.702" stop-color="#454140" stop-opacity="0" />
-          <stop offset="1" stop-color="#454140" />
+          <stop offset="0.702" stopColor="#454140" stopOpacity="0" />
+          <stop offset="1" stopColor="#454140" />
         </radialGradient>
         <clipPath id="clip0_283_3764">
           <rect

@@ -16,7 +16,7 @@ const EntranceRoomBg: React.FC<Props> = ({ className }) => {
         width="1000"
         height="1240"
         fill="url(#paint0_linear_277_2067)"
-        fill-opacity="0.2"
+        fillOpacity="0.2"
       />
       <rect x="282" y="1050" width="58" height="190" fill="white" />
       <rect y="1050" width="282" height="190" fill="#DDDDDD" />
@@ -26,7 +26,7 @@ const EntranceRoomBg: React.FC<Props> = ({ className }) => {
       <rect x="395" y="254" width="21" height="845" fill="#C47908" />
       <rect x="851" y="254" width="21" height="845" fill="#C47908" />
       <rect x="416" y="254" width="435" height="20" fill="#C47908" />
-      <g clip-path="url(#clip0_277_2067)">
+      <g clipPath="url(#clip0_277_2067)">
         <rect x="414" y="272" width="437" height="827" fill="#045662" />
         <path
           d="M839.15 651.562C839.15 642.957 839.604 634.436 840.484 626.486C841.365 618.536 842.655 611.312 844.282 605.228C845.909 599.143 847.841 594.316 849.966 591.023C852.092 587.73 854.37 586.035 856.671 586.035C858.972 586.035 861.251 587.73 863.376 591.023C865.502 594.316 867.434 599.143 869.061 605.228C870.688 611.312 871.978 618.536 872.859 626.486C873.739 634.436 874.192 642.957 874.192 651.562L856.671 651.562L839.15 651.562Z"
@@ -132,12 +132,12 @@ const EntranceRoomBg: React.FC<Props> = ({ className }) => {
         <path
           d="M774.445 551.515C779.409 551.643 789.335 548.845 789.335 536.625"
           stroke="black"
-          stroke-width="7"
+          strokeWidth="7"
         />
         <path
           d="M804.043 551.515C799.08 551.643 789.153 548.845 789.153 536.625"
           stroke="black"
-          stroke-width="7"
+          strokeWidth="7"
         />
         <path
           d="M782.468 588.084C783.926 582.217 788.647 581.074 790.895 581.074C793.144 581.074 797.945 582.217 799.404 588.084C800.862 593.951 801.538 596.646 801.693 597.261L805.36 599.55C803.057 600.462 797.013 601.839 790.895 601.839C784.777 601.839 778.814 600.462 776.512 599.55L780.179 597.261C780.334 596.646 781.009 593.951 782.468 588.084Z"
@@ -206,12 +206,12 @@ const EntranceRoomBg: React.FC<Props> = ({ className }) => {
         <path
           d="M595.514 883.366C586.479 883.599 568.41 878.505 568.41 856.262"
           stroke="black"
-          stroke-width="7"
+          strokeWidth="7"
         />
         <path
           d="M541.637 883.366C550.671 883.599 568.741 878.505 568.741 856.262"
           stroke="black"
-          stroke-width="7"
+          strokeWidth="7"
         />
         <path
           d="M541.637 842.062H593.301L568.409 859.321L541.637 842.062Z"
@@ -265,8 +265,8 @@ const EntranceRoomBg: React.FC<Props> = ({ className }) => {
           y2="1240"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#C4B108" stop-opacity="0.1" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#C4B108" stopOpacity="0.1" />
         </linearGradient>
         <clipPath id="clip0_277_2067">
           <rect

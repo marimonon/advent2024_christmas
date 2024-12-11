@@ -68,7 +68,7 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           <path
             d="M50.4832 31.7575C46.794 30.0677 46.1701 23.531 49.0895 17.1573C52.009 10.7836 55.5638 7.45841 57.0352 8.13239C60.7244 9.82222 65.3687 16.9031 62.4492 23.2767C59.5297 29.6504 54.1724 33.4474 50.4832 31.7575Z"
             fill="black"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
           <path
             d="M96.1932 38.8966C100.25 38.8098 103.417 33.0577 103.267 26.0488C103.117 19.0399 101.174 14.5769 99.5564 14.6115C95.4996 14.6982 88.4264 19.3541 88.5763 26.363C88.7261 33.3719 92.1364 38.9833 96.1932 38.8966Z"
@@ -77,7 +77,7 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           <path
             d="M96.1932 38.8966C100.25 38.8098 103.417 33.0577 103.267 26.0488C103.117 19.0399 101.174 14.5769 99.5564 14.6115C95.4996 14.6982 88.4264 19.3541 88.5763 26.363C88.7261 33.3719 92.1364 38.9833 96.1932 38.8966Z"
             fill="black"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
           <ellipse
             cx="35.7063"
@@ -94,7 +94,7 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
             ry="32.9597"
             transform="matrix(-1 0 0 1 105.893 22.582)"
             fill="url(#paint9_radial_279_2905)"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
           <ellipse
             cx="14.6774"
@@ -119,12 +119,12 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           <path
             d="M38.9413 72.3366C37.708 82.3734 49.5478 86.0085 64.6045 87.8587C79.6611 89.7088 92.2329 89.0732 93.4662 79.0364C94.6994 68.9997 83.4934 59.3635 68.4368 57.5134C53.3802 55.6633 40.1746 62.2999 38.9413 72.3366Z"
             fill="white"
-            fill-opacity="0.5"
+            fillOpacity="0.5"
           />
           <path
             d="M38.9413 72.3366C37.708 82.3734 49.5478 86.0085 64.6045 87.8587C79.6611 89.7088 92.2329 89.0732 93.4662 79.0364C94.6994 68.9997 83.4934 59.3635 68.4368 57.5134C53.3802 55.6633 40.1746 62.2999 38.9413 72.3366Z"
             fill="url(#paint11_radial_279_2905)"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <path
             d="M64.1009 60.3801C67.5011 58.216 74.7777 59.2722 76.3786 61.7888C77.4531 63.9196 74.2706 64.8736 72.5282 65.4952C67.5006 65.7175 67.6049 65.4345 66.225 64.5213C64.6823 63.5003 63.9013 62.0226 64.1009 60.3801Z"
@@ -133,7 +133,7 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           <path
             d="M64.1009 60.3801C67.5011 58.216 74.7777 59.2722 76.3786 61.7888C77.4531 63.9196 74.2706 64.8736 72.5282 65.4952C67.5006 65.7175 67.6049 65.4345 66.225 64.5213C64.6823 63.5003 63.9013 62.0226 64.1009 60.3801Z"
             fill="black"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
           />
         </g>
         <path
@@ -244,8 +244,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
         </g>
         <g filter="url(#filter2_d_279_2905)">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M76.599 89.4451C76.9134 91.1246 75.113 92.3994 73.6332 91.5451L71.4613 90.2912L73.5175 99.1797C73.9116 100.883 72.0834 102.237 70.5689 101.362L48.1312 88.4081C46.6168 87.5337 46.8747 85.2737 48.5473 84.7631L57.2731 82.0996L53.952 80.1821C52.7108 79.4655 52.604 77.7143 53.7491 76.8523L56.8603 74.51C57.5217 74.0121 58.4766 74.3094 58.7384 75.0948C59.0855 76.1362 60.5278 76.2161 60.9878 75.2194L62.1977 72.5978C62.51 71.9212 63.1724 71.4744 63.9167 71.4383L71.4029 71.0748C72.4011 71.0264 73.2819 71.7222 73.4657 72.7045L76.599 89.4451Z"
             fill="url(#paint16_radial_279_2905)"
           />
@@ -303,9 +303,9 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           width="103.734"
           height="113.207"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -338,9 +338,9 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           width="21.9785"
           height="19.0156"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -373,9 +373,9 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           width="37.5039"
           height="38.5625"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -409,8 +409,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           y2="53.2858"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D18C0C" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop stopColor="#D18C0C" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_279_2905"
@@ -420,8 +420,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           y2="24"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_279_2905"
@@ -431,8 +431,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           y2="75.6576"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="0.27" stop-color="#C47908" />
+          <stop stopColor="white" />
+          <stop offset="0.27" stopColor="#C47908" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_279_2905"
@@ -442,8 +442,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           y2="28.3115"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_279_2905"
@@ -453,8 +453,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           y2="58.7396"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C47908" />
-          <stop offset="0.305" stop-color="#FFE4BB" />
+          <stop stopColor="#C47908" />
+          <stop offset="0.305" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_279_2905"
@@ -464,8 +464,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           y2="41.6087"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C47908" />
-          <stop offset="0.305" stop-color="#FFE4BB" />
+          <stop stopColor="#C47908" />
+          <stop offset="0.305" stopColor="#FFE4BB" />
         </linearGradient>
         <radialGradient
           id="paint6_radial_279_2905"
@@ -475,8 +475,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(36.6602 37.1033) rotate(-155.39) scale(7.34724 12.6936)"
         >
-          <stop offset="0.6875" stop-color="#C47908" />
-          <stop offset="1" stop-color="#C47908" />
+          <stop offset="0.6875" stopColor="#C47908" />
+          <stop offset="1" stopColor="#C47908" />
         </radialGradient>
         <radialGradient
           id="paint7_radial_279_2905"
@@ -486,8 +486,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(106.759 49.2898) rotate(-1.22509) scale(7.34724 12.6936)"
         >
-          <stop offset="0.6875" stop-color="#C47908" />
-          <stop offset="1" stop-color="#C47908" />
+          <stop offset="0.6875" stopColor="#C47908" />
+          <stop offset="1" stopColor="#C47908" />
         </radialGradient>
         <radialGradient
           id="paint8_radial_279_2905"
@@ -497,9 +497,9 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(35.7063 26.9754) rotate(90) scale(38.944 42.1893)"
         >
-          <stop stop-color="#CF8D29" />
-          <stop offset="0.55" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop stopColor="#CF8D29" />
+          <stop offset="0.55" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </radialGradient>
         <radialGradient
           id="paint9_radial_279_2905"
@@ -510,7 +510,7 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           gradientTransform="translate(35.7063 32.9597) rotate(87.6141) scale(23.5631 25.5266)"
         >
           <stop offset="0.3" />
-          <stop offset="0.645" stop-opacity="0" />
+          <stop offset="0.645" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint10_radial_279_2905"
@@ -520,8 +520,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(66.2037 75.6865) rotate(97.0052) scale(18.3098 27.4675)"
         >
-          <stop stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </radialGradient>
         <radialGradient
           id="paint11_radial_279_2905"
@@ -531,8 +531,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(66.0584 79.9992) rotate(106.458) scale(21.4715 32.4543)"
         >
-          <stop stop-color="#FFE4BB" />
-          <stop offset="0.77" stop-color="white" />
+          <stop stopColor="#FFE4BB" />
+          <stop offset="0.77" stopColor="white" />
         </radialGradient>
         <linearGradient
           id="paint12_linear_279_2905"
@@ -542,8 +542,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           y2="113.3"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_279_2905"
@@ -553,8 +553,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           y2="112.3"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_279_2905"
@@ -564,8 +564,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           y2="110.298"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.435" stop-color="#C47908" />
-          <stop offset="1" stop-color="#FFE4BB" />
+          <stop offset="0.435" stopColor="#C47908" />
+          <stop offset="1" stopColor="#FFE4BB" />
         </linearGradient>
         <radialGradient
           id="paint15_radial_279_2905"
@@ -575,8 +575,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(88.226 103.494) rotate(120) scale(5.91939 10.5151)"
         >
-          <stop offset="0.4375" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.4375" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint16_radial_279_2905"
@@ -586,8 +586,8 @@ const EatingDogImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(61.546 90.8234) rotate(-60) scale(19.751 12.6145)"
         >
-          <stop offset="0.796875" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.796875" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
       </defs>
     </svg>

@@ -7,7 +7,7 @@ const ItemCandle: React.FC = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_293_259)">
+      <g clipPath="url(#clip0_293_259)">
         <path
           d="M20.6838 22.1191C20.4162 22.347 20.337 46.3953 20.545 46.6033C20.7531 46.8114 22.1502 48.0698 24.8652 48.0005C27.5901 47.9311 28.8385 46.9501 29.0466 46.7421C29.2547 46.534 29.1854 22.1191 28.9773 21.9804C28.7692 21.8318 21.0999 21.7624 20.6838 22.1191Z"
           fill="#EC7FAE"
@@ -26,8 +26,8 @@ const ItemCandle: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(24.8642 20.7863) scale(19.2505 19.2505)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
         <clipPath id="clip0_293_259">
           <rect width="48" height="48" fill="white" />

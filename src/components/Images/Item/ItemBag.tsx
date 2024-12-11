@@ -29,7 +29,7 @@ const ItemBag: React.FC = () => {
         d="M16.8422 9.08407L17.0173 7.28423L24.6196 5.2472L25.5689 6.74576L16.8422 9.08407Z"
         stroke="#49B814"
       />
-      <g clip-path="url(#clip0_293_323)">
+      <g clipPath="url(#clip0_293_323)">
         <rect
           x="16.2789"
           y="9.625"
@@ -122,9 +122,9 @@ const ItemBag: React.FC = () => {
           width="18.0806"
           height="13.0859"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -158,8 +158,8 @@ const ItemBag: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(22.529 14.1989) rotate(90) scale(0.671586 5.2048)"
         >
-          <stop stop-color="#930606" />
-          <stop offset="1" stop-color="#FF0000" />
+          <stop stopColor="#930606" />
+          <stop offset="1" stopColor="#FF0000" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_293_323"
@@ -169,8 +169,8 @@ const ItemBag: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(22.467 14.0326) rotate(90) scale(5.87638 0.671586)"
         >
-          <stop stop-color="#930606" />
-          <stop offset="1" stop-color="#FF0000" />
+          <stop stopColor="#930606" />
+          <stop offset="1" stopColor="#FF0000" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_293_323"
@@ -180,8 +180,8 @@ const ItemBag: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(23.5252 12.8767) rotate(60) scale(3.44188 2.09871)"
         >
-          <stop stop-color="#930606" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#930606" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_293_323"
@@ -191,8 +191,8 @@ const ItemBag: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(23.0425 12.8806) rotate(120) scale(3.44188 2.09871)"
         >
-          <stop stop-color="#930606" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#930606" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_293_323"
@@ -202,8 +202,8 @@ const ItemBag: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(23.2548 11.7825) rotate(90) scale(0.755163 0.671586)"
         >
-          <stop offset="0.791667" stop-color="#FF0000" />
-          <stop offset="1" stop-color="#FF0000" stop-opacity="0" />
+          <stop offset="0.791667" stopColor="#FF0000" />
+          <stop offset="1" stopColor="#FF0000" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_293_323"
@@ -213,8 +213,8 @@ const ItemBag: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(22.131 6.75437) rotate(75) scale(1.30076 0.67206)"
         >
-          <stop stop-color="#FF0000" />
-          <stop offset="1" stop-color="#FF0000" />
+          <stop stopColor="#FF0000" />
+          <stop offset="1" stopColor="#FF0000" />
         </radialGradient>
         <linearGradient
           id="paint6_linear_293_323"
@@ -224,8 +224,8 @@ const ItemBag: React.FC = () => {
           y2="55.0548"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#D7F2F6" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#D7F2F6" />
         </linearGradient>
         <clipPath id="clip0_293_323">
           <rect

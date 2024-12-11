@@ -72,12 +72,12 @@ const ExDecoImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(367.938 237.669) scale(356.399 219.435)"
         >
-          <stop offset="0.034" stop-color="#FFE265" stop-opacity="0.7" />
-          <stop offset="0.112" stop-color="#FFE575" stop-opacity="0.643" />
-          <stop offset="0.417" stop-color="#FFF0B0" stop-opacity="0.422" />
-          <stop offset="0.677" stop-color="#FFF8DB" stop-opacity="0.234" />
-          <stop offset="0.88" stop-color="#FFFDF5" stop-opacity="0.087" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop offset="0.034" stopColor="#FFE265" stopOpacity="0.7" />
+          <stop offset="0.112" stopColor="#FFE575" stopOpacity="0.643" />
+          <stop offset="0.417" stopColor="#FFF0B0" stopOpacity="0.422" />
+          <stop offset="0.677" stopColor="#FFF8DB" stopOpacity="0.234" />
+          <stop offset="0.88" stopColor="#FFFDF5" stopOpacity="0.087" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_283_3907"
@@ -87,8 +87,8 @@ const ExDecoImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(368.587 319.535) scale(177.432 177.432)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_283_3907"
@@ -98,8 +98,8 @@ const ExDecoImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(480.946 272.488) scale(173.925 173.925)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_283_3907"
@@ -109,8 +109,8 @@ const ExDecoImage: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(258.199 272.447) scale(172.181 172.181)"
         >
-          <stop offset="0.17" stop-color="#FF9616" />
-          <stop offset="0.654" stop-color="#FFD429" />
+          <stop offset="0.17" stopColor="#FF9616" />
+          <stop offset="0.654" stopColor="#FFD429" />
         </radialGradient>
       </defs>
     </svg>

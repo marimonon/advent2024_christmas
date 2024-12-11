@@ -7,7 +7,7 @@ const ItemMaster: React.FC = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_293_351)">
+      <g clipPath="url(#clip0_293_351)">
         <g filter="url(#filter0_d_293_351)">
           <path
             d="M31.746 21.141C31.746 22.4182 31.099 23.4538 30.3005 23.4538C29.502 23.4538 28.855 22.4182 28.855 21.141C28.855 19.8637 29.502 18.8281 30.3005 18.8281C31.099 18.8281 31.746 19.8637 31.746 21.141Z"
@@ -81,9 +81,9 @@ const ItemMaster: React.FC = () => {
           width="61.6155"
           height="71.7578"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -117,8 +117,8 @@ const ItemMaster: React.FC = () => {
           y2="40.7593"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_293_351"
@@ -128,8 +128,8 @@ const ItemMaster: React.FC = () => {
           y2="29.8146"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_293_351"
@@ -139,8 +139,8 @@ const ItemMaster: React.FC = () => {
           y2="38.6224"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_293_351"
@@ -150,8 +150,8 @@ const ItemMaster: React.FC = () => {
           y2="25.1899"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4B108" />
-          <stop offset="1" stop-color="#F8E647" />
+          <stop stopColor="#C4B108" />
+          <stop offset="1" stopColor="#F8E647" />
         </linearGradient>
         <clipPath id="clip0_293_351">
           <rect width="48" height="48" fill="white" />

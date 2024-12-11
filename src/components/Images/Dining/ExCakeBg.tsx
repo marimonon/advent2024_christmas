@@ -11,7 +11,7 @@ const ExCakeBg: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_283_3777)">
+      <g clipPath="url(#clip0_283_3777)">
         <rect width="1000" height="1240" fill="#045662" />
         <path
           d="M-103 0H394C542.012 0 662 119.988 662 268V268H-103V0Z"
@@ -57,11 +57,11 @@ const ExCakeBg: React.FC<Props> = ({ className }) => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(537.52 523.856) rotate(91.1173) scale(418.142 910.268)"
         >
-          <stop offset="0.445" stop-color="#FEEAC9" />
-          <stop offset="0.565" stop-color="#FEE7C2" />
-          <stop offset="0.741" stop-color="#FEDEAE" />
-          <stop offset="0.952" stop-color="#FFCF8D" />
-          <stop offset="1" stop-color="#FFCB85" />
+          <stop offset="0.445" stopColor="#FEEAC9" />
+          <stop offset="0.565" stopColor="#FEE7C2" />
+          <stop offset="0.741" stopColor="#FEDEAE" />
+          <stop offset="0.952" stopColor="#FFCF8D" />
+          <stop offset="1" stopColor="#FFCB85" />
         </radialGradient>
         <clipPath id="clip0_283_3777">
           <rect width="1000" height="1240" fill="white" />

@@ -11,13 +11,13 @@ const WindowRoomBg: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_277_2620)">
+      <g clipPath="url(#clip0_277_2620)">
         <rect width="1000" height="1240" fill="white" />
         <rect
           width="1000"
           height="1240"
           fill="url(#paint0_linear_277_2620)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
         <rect x="217" y="204" width="603" height="461" fill="#045662" />
         <rect
@@ -26,7 +26,7 @@ const WindowRoomBg: React.FC<Props> = ({ className }) => {
           width="603"
           height="461"
           stroke="#D9D9D9"
-          stroke-width="34"
+          strokeWidth="34"
         />
         <rect y="1054" width="1000" height="190" fill="#DDDDDD" />
       </g>
@@ -39,8 +39,8 @@ const WindowRoomBg: React.FC<Props> = ({ className }) => {
           y2="1240"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#C4B108" stop-opacity="0.1" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#C4B108" stopOpacity="0.1" />
         </linearGradient>
         <clipPath id="clip0_277_2620">
           <rect width="1000" height="1240" fill="white" />

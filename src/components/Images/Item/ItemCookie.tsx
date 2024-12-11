@@ -7,7 +7,7 @@ const ItemCookie: React.FC = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_293_194)">
+      <g clipPath="url(#clip0_293_194)">
         <g filter="url(#filter0_d_293_194)">
           <path
             d="M22.8235 10.6725C23.1903 9.92921 24.2502 9.92921 24.617 10.6725L25.7707 13.0102C25.9164 13.3054 26.198 13.5099 26.5237 13.5573L29.1035 13.9321C29.9238 14.0513 30.2513 15.0593 29.6578 15.6378L27.7909 17.4575C27.5553 17.6873 27.4477 18.0183 27.5033 18.3427L27.944 20.9121C28.0841 21.729 27.2267 22.352 26.4931 21.9663L24.1856 20.7532C23.8943 20.6 23.5462 20.6 23.2549 20.7532L20.9474 21.9663C20.2138 22.352 19.3563 21.729 19.4964 20.9121L19.9371 18.3427C19.9928 18.0183 19.8852 17.6873 19.6495 17.4575L17.7827 15.6378C17.1892 15.0593 17.5167 14.0513 18.3369 13.9321L20.9168 13.5573C21.2425 13.5099 21.5241 13.3054 21.6697 13.0102L22.8235 10.6725Z"
@@ -22,7 +22,7 @@ const ItemCookie: React.FC = () => {
           <path
             d="M8.57871 23.0768C8.26849 21.5699 10.7761 21.1931 12.8442 20.8164C9.35424 11.7748 23.3139 11.7747 19.824 20.8164C21.8921 21.1931 23.6241 21.5699 23.3139 23.0768C22.9261 24.9605 20.2118 23.4535 19.824 24.9605C19.4362 26.4674 23.2006 27.7986 22.5384 28.7278C18.6607 34.1694 17.4712 28.351 15.9201 28.351C14.369 28.351 12.0686 34.002 9.35424 28.7278C8.83399 27.7169 12.4564 26.4674 12.0686 24.9605C11.6809 23.4535 8.96647 24.9605 8.57871 23.0768Z"
             fill="#FFE4BB"
-            fill-opacity="0.44"
+            fillOpacity="0.44"
           />
         </g>
         <path
@@ -95,8 +95,8 @@ const ItemCookie: React.FC = () => {
         </g>
         <g filter="url(#filter6_d_293_194)">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M28.8977 20.5679C28.258 21.8902 29.2047 23.3327 30.5309 23.4361L28.9763 26.6805C28.2803 28.1333 29.4928 29.725 31.0168 29.532L29.362 32.6409C28.5404 34.1846 29.956 35.9651 31.6451 35.5124L42.7646 32.533C44.4537 32.0804 44.7895 29.8307 43.306 28.9046L40.3187 27.0397C41.7361 26.4455 41.9908 24.4599 40.6613 23.5496L37.3991 21.316C38.0753 20.4649 37.9935 19.111 36.9585 18.408L33.5933 16.1224C32.5837 15.4366 31.2006 15.8072 30.6692 16.9059L28.8977 20.5679Z"
             fill="url(#paint6_radial_293_194)"
           />
@@ -217,9 +217,9 @@ const ItemCookie: React.FC = () => {
           width="20.4812"
           height="19.9688"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -252,9 +252,9 @@ const ItemCookie: React.FC = () => {
           width="22.7975"
           height="25.0156"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -287,9 +287,9 @@ const ItemCookie: React.FC = () => {
           width="19.53"
           height="18.7812"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -322,9 +322,9 @@ const ItemCookie: React.FC = () => {
           width="18.5794"
           height="17.8867"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -357,9 +357,9 @@ const ItemCookie: React.FC = () => {
           width="25.7384"
           height="23.1992"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -392,9 +392,9 @@ const ItemCookie: React.FC = () => {
           width="20.4812"
           height="19.9688"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -427,9 +427,9 @@ const ItemCookie: React.FC = () => {
           width="23.5546"
           height="27.8086"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -463,8 +463,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(23.7202 16.6242) rotate(90) scale(7.7687)"
         >
-          <stop offset="0.4375" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.4375" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_293_194"
@@ -474,8 +474,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(15.9513 22.4221) rotate(90) scale(8.38699 7.39876)"
         >
-          <stop offset="0.630208" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.630208" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_293_194"
@@ -485,8 +485,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(23.4245 36.3823) rotate(150) scale(8.38699 7.39876)"
         >
-          <stop offset="0.760417" stop-color="#C47908" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.760417" stopColor="#C47908" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_293_194"
@@ -496,8 +496,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(9.29296 31.0502) rotate(90) scale(5.17913)"
         >
-          <stop offset="0.723958" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.723958" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_293_194"
@@ -507,8 +507,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(12.9919 34.0112) rotate(90) scale(5.17913)"
         >
-          <stop offset="0.723958" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.723958" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_293_194"
@@ -518,8 +518,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(8.92223 36.6007) rotate(90) scale(7.7687)"
         >
-          <stop offset="0.4375" stop-color="#C47908" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.4375" stopColor="#C47908" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint6_radial_293_194"
@@ -529,8 +529,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(36.4315 30.8776) rotate(-105) scale(13.8566 6.54388)"
         >
-          <stop offset="0.796875" stop-color="#FFE4BB" />
-          <stop offset="1" stop-color="#F5970A" />
+          <stop offset="0.796875" stopColor="#FFE4BB" />
+          <stop offset="1" stopColor="#F5970A" />
         </radialGradient>
         <radialGradient
           id="paint7_radial_293_194"
@@ -540,8 +540,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(24 27.1754) rotate(90) scale(18.4762 24)"
         >
-          <stop offset="0.614583" stop-color="#D9D9D9" stop-opacity="0" />
-          <stop offset="1" stop-color="#D9D9D9" />
+          <stop offset="0.614583" stopColor="#D9D9D9" stopOpacity="0" />
+          <stop offset="1" stopColor="#D9D9D9" />
         </radialGradient>
         <radialGradient
           id="paint8_radial_293_194"
@@ -551,8 +551,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(23.3381 6.32537) rotate(-90) scale(5.53792 13.0537)"
         >
-          <stop offset="0.614583" stop-color="#D9D9D9" stop-opacity="0" />
-          <stop offset="1" stop-color="#D9D9D9" />
+          <stop offset="0.614583" stopColor="#D9D9D9" stopOpacity="0" />
+          <stop offset="1" stopColor="#D9D9D9" />
         </radialGradient>
         <radialGradient
           id="paint9_radial_293_194"
@@ -562,8 +562,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(23.0589 10.0129) rotate(90) scale(2.3059 11.5295)"
         >
-          <stop stop-color="#F5970A" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#F5970A" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint10_radial_293_194"
@@ -573,8 +573,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(27.0948 10.0135) rotate(90) scale(3.45884 4.03532)"
         >
-          <stop stop-color="#F5970A" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#F5970A" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <radialGradient
           id="paint11_radial_293_194"
@@ -584,8 +584,8 @@ const ItemCookie: React.FC = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(35.1658 10.0135) rotate(90) scale(3.45884 4.03532)"
         >
-          <stop stop-color="#F5970A" />
-          <stop offset="1" stop-color="#F50A0A" />
+          <stop stopColor="#F5970A" />
+          <stop offset="1" stopColor="#F50A0A" />
         </radialGradient>
         <clipPath id="clip0_293_194">
           <rect width="48" height="48" fill="white" />
