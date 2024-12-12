@@ -4,14 +4,19 @@ import Btn from "./Btn"
 import TitleImage from "./Images/TitleImage"
 import SantaImage from "./Images/SantaImage"
 import ChimneyImage from "./Images/ChimneyImage"
-import { useState } from "react"
+import { useState, useContext } from "react"
+import { SceneContext } from "../App"
 
 const Start: React.FC = () => {
   const [startClicked, setStartClicked] = useState(false)
+  const sceneContext = useContext(SceneContext)
 
   const clickStart = () => {
     setStartClicked(true)
     console.log("startClick", startClicked)
+    setTimeout(() => {
+      sceneContext.dispatch({ type: "ESCAPE" })
+    }, 5000)
   }
 
   return (
