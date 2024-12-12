@@ -3,10 +3,15 @@ import { css } from "@emotion/react"
 import StepRoomBg from "../Images/Step/StepRoomBg"
 import BearRibbonImage from "../Images/Step/BearRibbonImage"
 import BearImage from "../Images/Step/BearImage"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+const { toChildRoom } = gameStateActions
 
 const StepRoom: React.FC = () => {
+  const { dispatch } = useGameState()
+
   return (
     <div>
+      <div css={toChildCss} onClick={() => dispatch(toChildRoom())}></div>
       <BearImage css={bearCss} />
       <BearRibbonImage css={bearRibbonCss} />
       <StepRoomBg css={stepBgCss} />
@@ -15,6 +20,15 @@ const StepRoom: React.FC = () => {
 }
 
 export default StepRoom
+
+const toChildCss = css`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 14%;
+  z-index: 7;
+`
 
 const bearCss = css`
   position: absolute;
