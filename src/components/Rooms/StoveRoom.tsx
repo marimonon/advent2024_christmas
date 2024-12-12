@@ -27,7 +27,13 @@ const StoveRoom: React.FC = () => {
     <div>
       {comment && <Comment setComment={setComment}>{comment}</Comment>}
       {items.berry === "none" && (
-        <StrawberryImage css={strawCss} onClick={() => dispatch(getBerry())} />
+        <StrawberryImage
+          css={strawCss}
+          onClick={() => {
+            dispatch(getBerry())
+            setComment("苺をgetした")
+          }}
+        />
       )}
       {(items.candle !== "use" || snowSmall) && (
         <BigSnowmanImage
