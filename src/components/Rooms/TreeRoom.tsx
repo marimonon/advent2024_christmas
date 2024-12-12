@@ -8,14 +8,17 @@ import TreeSwitchImage from "../Images/Tree/TreeSwitchImage"
 import DeerballImage from "../Images/Tree/DeerballImage"
 import SwitchImage from "../Images/Tree/SwitchImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { toExTree } = gameStateActions
+const { toExTree, switchTreeLight } = gameStateActions
 
 const TreeRoom: React.FC = () => {
-  const { dispatch } = useGameState()
+  const {
+    gameState: { treelight },
+    dispatch,
+  } = useGameState()
 
   return (
     <div>
-      <SwitchImage css={switchCss} />
+      <SwitchImage css={switchCss(treelight)} />
       <DeerballImage css={deerCss} />
       <TreeSwitchImage
         css={treeSwitchCss}
@@ -31,13 +34,14 @@ const TreeRoom: React.FC = () => {
 
 export default TreeRoom
 
-const switchCss = css`
+const switchCss = (treelight: boolean) => css`
   position: absolute;
   width: 10%;
   height: auto;
   left: 20%;
   top: 40%;
   z-index: 5;
+  display: ${treelight ? "block" : "none"};
 `
 const deerCss = css`
   position: absolute;
