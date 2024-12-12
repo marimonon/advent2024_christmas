@@ -3,26 +3,21 @@ import { css } from "@emotion/react"
 import EntranceRoomBg from "../Images/Entrance/EntranceRoomBg"
 import RibbonImage from "../Images/Entrance/RibbonImage"
 import EntranceDoorImage from "../Images/Entrance/EntranceDoorImage"
-import { useState, useContext } from "react"
-import { SceneContext } from "../../App"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { getRibbon, useMaster } = gameStateActions
+const { getRibbon, useMaster, switchScene } = gameStateActions
 
 const EntranceRoom: React.FC = () => {
-  const sceneContext = useContext(SceneContext)
-
-  const doorOpen = () => {
-    dispatch(useMaster())
-    setTimeout(() => {
-      sceneContext.dispatch({ type: "ENDING" })
-    }, 2000)
-  }
-
   const {
     gameState: { items },
     dispatch,
   } = useGameState()
 
+  const doorOpen = () => {
+    dispatch(useMaster())
+    setTimeout(() => {
+      dispatch(switchScene("ending"))
+    }, 2000)
+  }
   return (
     <div>
       <EntranceDoorImage css={doorCss(items)} onClick={doorOpen} />

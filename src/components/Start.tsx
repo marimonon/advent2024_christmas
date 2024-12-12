@@ -4,18 +4,20 @@ import Btn from "./Btn"
 import TitleImage from "./Images/TitleImage"
 import SantaImage from "./Images/SantaImage"
 import ChimneyImage from "./Images/ChimneyImage"
-import { useState, useContext } from "react"
-import { SceneContext } from "../App"
+import { useState } from "react"
+import { gameStateActions, useGameState } from "./GameStateProvider"
+const { switchScene } = gameStateActions
 
 const Start: React.FC = () => {
   const [startClicked, setStartClicked] = useState(false)
-  const sceneContext = useContext(SceneContext)
+
+  const { dispatch } = useGameState()
 
   const clickStart = () => {
     setStartClicked(true)
-    console.log("startClick", startClicked)
     setTimeout(() => {
-      sceneContext.dispatch({ type: "ESCAPE" })
+      console.log("startClick", true)
+      dispatch(switchScene("escape"))
     }, 1000)
   }
 
