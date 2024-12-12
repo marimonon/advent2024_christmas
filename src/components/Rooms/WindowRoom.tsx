@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
 import WindowRoomBg from "../Images/Window/WindowRoomBg"
 import HungryDogImage from "../Images/Window/HungryDogImage"
 import WindowDeerImage from "../Images/Window/WindowDeerImage"
@@ -61,6 +61,15 @@ const curtainCss = css`
   pointer-events: none;
 `
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
 const bagCss = css`
   position: absolute;
   top: 47%;
@@ -68,6 +77,7 @@ const bagCss = css`
   width: 38%;
   height: auto;
   z-index: 7;
+  animation: ${fadeIn} 2s;
 `
 
 const barCss = css`
@@ -113,6 +123,7 @@ const windowDeerCss = css`
   width: 33%;
   height: auto;
   z-index: 2;
+  animation: ${fadeIn} 2s;
 `
 const windowBgCss = css`
   width: 100%;
