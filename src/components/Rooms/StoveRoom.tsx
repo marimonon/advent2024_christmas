@@ -10,11 +10,13 @@ import SnowmanImage from "../Images/Stove/SnowmanImage"
 import DoorCloseImage from "../Images/Stove/DoorCloseImage"
 import DoorOpenImage from "../Images/Stove/DoorOpenImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-
-const { toEntranceRoom } = gameStateActions
+const { toEntranceRoom, openDoor } = gameStateActions
 
 const StoveRoom: React.FC = () => {
-  const { dispatch } = useGameState()
+  const {
+    gameState: { dooropen },
+    dispatch,
+  } = useGameState()
 
   return (
     <div>
@@ -24,9 +26,12 @@ const StoveRoom: React.FC = () => {
       <FirewoodImage css={fireWoodCss} />
       <FireImage css={fireCss} />
       <SnowmanImage css={smallSnowCss} />
-      <DoorCloseImage css={doorCloseCss} />
+      <DoorCloseImage
+        css={doorCloseCss(dooropen)}
+        onClick={() => dispatch(openDoor())}
+      />
       <DoorOpenImage
-        css={doorOpenCss}
+        css={doorOpenCss(dooropen)}
         onClick={() => dispatch(toEntranceRoom())}
       />
       <StoveRoomBg css={stoveBgCss} />
@@ -96,22 +101,24 @@ const smallSnowCss = css`
   z-index: 1;
 `
 
-const doorCloseCss = css`
+const doorCloseCss = (dooropen: boolean) => css`
   position: absolute;
   width: 32%;
   height: auto;
   top: 28%;
   left: 0%;
   z-index: 2;
+  display: ${dooropen ? "none" : "block"};
 `
 
-const doorOpenCss = css`
+const doorOpenCss = (dooropen: boolean) => css`
   position: absolute;
   width: 32%;
   height: auto;
   top: 28%;
   left: 0%;
   z-index: 2;
+  display: ${dooropen ? "block" : "none"};
 `
 
 const stoveBgCss = css`
