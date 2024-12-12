@@ -6,15 +6,13 @@ import EntranceDoorImage from "../Images/Entrance/EntranceDoorImage"
 import { useState, useContext } from "react"
 import { SceneContext } from "../../App"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { getRibbon } = gameStateActions
+const { getRibbon, useMaster } = gameStateActions
 
 const EntranceRoom: React.FC = () => {
-  const [doorOpened, setDoorOpened] = useState(false)
-
   const sceneContext = useContext(SceneContext)
 
   const doorOpen = () => {
-    setDoorOpened(true)
+    dispatch(useMaster())
     setTimeout(() => {
       sceneContext.dispatch({ type: "ENDING" })
     }, 2000)
@@ -27,7 +25,7 @@ const EntranceRoom: React.FC = () => {
 
   return (
     <div>
-      <EntranceDoorImage css={doorCss(doorOpened, items)} onClick={doorOpen} />
+      <EntranceDoorImage css={doorCss(items)} onClick={doorOpen} />
       <RibbonImage
         css={ribbonCss(items)}
         onClick={() => dispatch(getRibbon())}
@@ -39,16 +37,16 @@ const EntranceRoom: React.FC = () => {
 
 export default EntranceRoom
 
-const doorCss = (doorOpened: boolean, items: { master: string }) => css`
+const doorCss = (items: { master: string }) => css`
   position: absolute;
   width: 45.2%;
   height: auto;
   bottom: 11%;
   right: 13.5%;
   z-index: 3;
-  opacity: ${doorOpened ? 0 : 1};
+  opacity: ${items.master === "use" ? 0 : 1};
   transition: opacity 1s;
-  pointer-events: ${items.master === "use" ? "auto" : "none"};
+  pointer-events: ${items.master === "get" ? "auto" : "none"};
 `
 
 const ribbonCss = (items: { ribbon: string }) => css`
