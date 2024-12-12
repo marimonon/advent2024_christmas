@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const BearRibbonImage: React.FC<Props> = ({ className }) => {
+const BearRibbonImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="321"
@@ -10,6 +11,7 @@ const BearRibbonImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <g filter="url(#filter0_d_281_3210)">
         <circle

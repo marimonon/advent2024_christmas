@@ -4,16 +4,21 @@ import StepRoomBg from "../Images/Step/StepRoomBg"
 import BearRibbonImage from "../Images/Step/BearRibbonImage"
 import BearImage from "../Images/Step/BearImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { toChildRoom } = gameStateActions
+const { toChildRoom, useRibbon } = gameStateActions
 
 const StepRoom: React.FC = () => {
-  const { dispatch } = useGameState()
+  const {
+    gameState: { items },
+    dispatch,
+  } = useGameState()
 
   return (
     <div>
       <div css={toChildCss} onClick={() => dispatch(toChildRoom())}></div>
-      <BearImage css={bearCss} />
-      <BearRibbonImage css={bearRibbonCss} />
+      {items.ribbon !== "use" && (
+        <BearImage css={bearCss} onClick={() => dispatch(useRibbon())} />
+      )}
+      {items.ribbon === "use" && <BearRibbonImage css={bearRibbonCss} />}
       <StepRoomBg css={stepBgCss} />
     </div>
   )

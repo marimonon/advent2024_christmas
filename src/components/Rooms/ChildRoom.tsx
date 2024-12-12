@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
 import ChildRoomBg from "../Images/Child/ChildRoomBg"
 import HomeWorkImage from "../Images/Child/HomeWorkImage"
 import ChildSleepImage from "../Images/Child/ChildSleepImage"
@@ -8,21 +8,31 @@ import BootEmptyImage from "../Images/Child/BootEmptyImage"
 import ChildImage from "../Images/Child/ChildImage"
 import MasterKeyImage from "../Images/Child/MasterKeyImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { toExHomeWork } = gameStateActions
+const { toExHomeWork, useBag, getMaster } = gameStateActions
 
 const ChildRoom: React.FC = () => {
   const {
-    gameState: { workdone },
+    gameState: { workdone, items },
     dispatch,
   } = useGameState()
 
   return (
     <div>
-      <MasterKeyImage css={masterKeyCss} />
-      <ChildImage css={childCss(workdone)} />
-      <BootEmptyImage css={bootEmptyCss(workdone)} />
-      <BootImage css={bootCss} />
-      <ChildSleepImage css={childSleepCss(workdone)} />
+      {items.bag === "use" && items.master === "none" && (
+        <MasterKeyImage
+          css={masterKeyCss}
+          onClick={() => dispatch(getMaster())}
+        />
+      )}
+      {!workdone && <ChildImage css={childCss} />}
+      {items.bag !== "use" && (
+        <BootEmptyImage
+          css={bootEmptyCss(workdone)}
+          onClick={() => dispatch(useBag())}
+        />
+      )}
+      {items.bag === "use" && <BootImage css={bootCss} />}
+      {workdone && <ChildSleepImage css={childSleepCss} />}
       <HomeWorkImage
         css={homeWorkCss}
         onClick={() => dispatch(toExHomeWork())}
@@ -34,6 +44,15 @@ const ChildRoom: React.FC = () => {
 
 export default ChildRoom
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
 const masterKeyCss = css`
   position: absolute;
   top: 39%;
@@ -41,16 +60,16 @@ const masterKeyCss = css`
   width: 14%;
   height: auto;
   z-index: 4;
+  animation: ${fadeIn} 1s ease;
 `
 
-const childCss = (workdone: boolean) => css`
+const childCss = css`
   position: absolute;
   top: 16%;
   left: 32%;
   width: 32%;
   height: auto;
   z-index: 3;
-  display: ${workdone ? "none" : "block"};
 `
 
 const bootEmptyCss = (workdone: boolean) => css`
@@ -72,14 +91,13 @@ const bootCss = css`
   z-index: 1;
 `
 
-const childSleepCss = (workdone: boolean) => css`
+const childSleepCss = css`
   position: absolute;
   top: 26%;
   left: 28%;
   width: 76%;
   height: auto;
   z-index: 1;
-  display: ${workdone ? "block" : "none"};
 `
 
 const homeWorkCss = css`

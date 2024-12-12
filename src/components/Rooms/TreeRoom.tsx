@@ -18,17 +18,19 @@ const TreeRoom: React.FC = () => {
 
   return (
     <div>
-      <SwitchImage
-        css={switchCss(treelight)}
-        onClick={() => dispatch(switchDiningLight())}
-      />
+      {treelight && (
+        <SwitchImage
+          css={switchCss}
+          onClick={() => dispatch(switchDiningLight())}
+        />
+      )}
       <DeerballImage css={deerCss} />
       <TreeSwitchImage
         css={treeSwitchCss}
         onClick={() => dispatch(toExTree())}
       />
-      <TreeWhiteImage css={treeWhiteCss(treelight)} />
-      <TreeLightImage css={treeLightCss(treelight)} />
+      {treelight && <TreeWhiteImage css={treeWhiteCss} />}
+      {treelight && <TreeLightImage css={treeLightCss} />}
       <TreeImage css={treeCss(treelight)} />
       <TreeRoomBg css={treeBgCss} />
     </div>
@@ -37,14 +39,13 @@ const TreeRoom: React.FC = () => {
 
 export default TreeRoom
 
-const switchCss = (treelight: boolean) => css`
+const switchCss = css`
   position: absolute;
   width: 10%;
   height: auto;
   left: 20%;
   top: 40%;
   z-index: 5;
-  display: ${treelight ? "block" : "none"};
 `
 const deerCss = css`
   position: absolute;
@@ -76,7 +77,7 @@ const lightWhiteAnime = keyframes`
   }
 `
 
-const treeWhiteCss = (treelight: boolean) => css`
+const treeWhiteCss = css`
   position: absolute;
   width: 60%;
   height: auto;
@@ -84,7 +85,6 @@ const treeWhiteCss = (treelight: boolean) => css`
   bottom: 20%;
   z-index: 3;
   animation: ${lightWhiteAnime} 3s infinite;
-  display: ${treelight ? "block" : "none"};
 `
 
 const lightAnime = keyframes`
@@ -99,7 +99,7 @@ const lightAnime = keyframes`
   }
 `
 
-const treeLightCss = (treelight: boolean) => css`
+const treeLightCss = css`
   position: absolute;
   width: 64%;
   height: auto;
@@ -107,7 +107,6 @@ const treeLightCss = (treelight: boolean) => css`
   bottom: 16%;
   z-index: 2;
   animation: ${lightAnime} 2s infinite;
-  display: ${treelight ? "block" : "none"};
 `
 
 const treeCss = (treelight: boolean) => css`

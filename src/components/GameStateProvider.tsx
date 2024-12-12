@@ -19,9 +19,19 @@ type Room =
   | "ExCake"
   | "ExHomeWork"
 
+type Item = "Berry" | "Cookie" | "Candle" | "Ribbon" | "Bag" | "Master"
+type ItemStatus = "none" | "get" | "use"
 type GameState = {
   scene: Scene
   room: Room
+  items: {
+    berry: ItemStatus
+    cookie: ItemStatus
+    candle: ItemStatus
+    ribbon: ItemStatus
+    bag: ItemStatus
+    master: ItemStatus
+  }
   treelight: boolean
   dininglight: boolean
   dooropen: boolean
@@ -31,6 +41,14 @@ type GameState = {
 const initialGameState: GameState = {
   scene: "start",
   room: "Stove",
+  items: {
+    berry: "none",
+    cookie: "none",
+    candle: "none",
+    ribbon: "none",
+    bag: "none",
+    master: "none",
+  },
   treelight: false,
   dininglight: false,
   dooropen: false,
@@ -112,6 +130,57 @@ export const gameStateSlice = createSlice({
     toExHomeWork: (state, _: PayloadAction) => {
       state.room = "ExHomeWork"
     },
+    // アイテムの追加
+    getBerry: (state, _: PayloadAction) => {
+      state.items.berry = "get"
+    },
+    getCookie: (state, _: PayloadAction) => {
+      state.items.cookie = "get"
+    },
+    getCandle: (state, _: PayloadAction) => {
+      state.items.candle = "get"
+    },
+    getRibbon: (state, _: PayloadAction) => {
+      state.items.ribbon = "get"
+    },
+    getBag: (state, _: PayloadAction) => {
+      state.items.bag = "get"
+    },
+    getMaster: (state, _: PayloadAction) => {
+      state.items.master = "get"
+    },
+    // アイテムの使用
+    useBerry: (state, _: PayloadAction) => {
+      if (state.items.berry === "get") {
+        state.items.berry = "use"
+      }
+    },
+    useCookie: (state, _: PayloadAction) => {
+      if (state.items.cookie === "get") {
+        state.items.cookie = "use"
+      }
+    },
+    useCandle: (state, _: PayloadAction) => {
+      if (state.items.candle === "get") {
+        state.items.candle = "use"
+      }
+    },
+    useRibbon: (state, _: PayloadAction) => {
+      if (state.items.ribbon === "get") {
+        state.items.ribbon = "use"
+      }
+    },
+    useBag: (state, _: PayloadAction) => {
+      if (state.items.bag === "get") {
+        state.items.bag = "use"
+      }
+    },
+    useMaster: (state, _: PayloadAction) => {
+      if (state.items.master === "get") {
+        state.items.master = "use"
+      }
+    },
+
     // 木の灯りの切り替え
     switchTreeLight: (state, _: PayloadAction) => {
       state.treelight = true

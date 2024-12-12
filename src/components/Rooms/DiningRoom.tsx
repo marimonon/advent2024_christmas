@@ -5,19 +5,28 @@ import CakeImage from "../Images/Dining/CakeImage"
 import CakeFullImage from "../Images/Dining/CakeFullImage"
 import CookieBagImage from "../Images/Dining/CookieBagImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { toExCake } = gameStateActions
+const { toExCake, getCookie } = gameStateActions
 
 const DiningRoom: React.FC = () => {
   const {
-    gameState: { dininglight },
+    gameState: { dininglight, items },
     dispatch,
   } = useGameState()
 
   return (
     <div css={offDiningCss(dininglight)}>
-      <CookieBagImage css={cookieBagCss} />
-      <CakeImage css={cakeCss} onClick={() => dispatch(toExCake())} />
-      <CakeFullImage css={cakeFullCss} onClick={() => dispatch(toExCake())} />
+      {items.cookie === "none" && (
+        <CookieBagImage
+          css={cookieBagCss}
+          onClick={() => dispatch(getCookie())}
+        />
+      )}
+      {items.berry !== "use" && (
+        <CakeImage css={cakeCss} onClick={() => dispatch(toExCake())} />
+      )}
+      {items.berry === "use" && (
+        <CakeFullImage css={cakeFullCss} onClick={() => dispatch(toExCake())} />
+      )}
       <DiningRoomBg css={diningBgCss} />
     </div>
   )

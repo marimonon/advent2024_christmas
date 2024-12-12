@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const HungryDogImage: React.FC<Props> = ({ className }) => {
+const HungryDogImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="408"
@@ -10,6 +11,7 @@ const HungryDogImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <g clipPath="url(#clip0_279_2831)">
         <path

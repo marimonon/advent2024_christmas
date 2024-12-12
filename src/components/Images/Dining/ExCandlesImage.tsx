@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const ExCandlesImage: React.FC<Props> = ({ className }) => {
+const ExCandlesImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="584"
@@ -10,6 +11,7 @@ const ExCandlesImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <path
         d="M571.284 262.452C555.522 240.608 525.749 221.041 485.272 205.924C444.796 190.808 395.201 180.735 342.001 176.824C288.801 172.913 234.079 175.318 183.917 183.772C133.755 192.225 90.1167 206.396 57.8534 224.709C25.59 243.022 5.96478 264.761 1.15884 287.508C-3.6471 310.256 6.55447 333.121 30.6298 353.564C54.7051 374.006 91.7111 391.225 137.535 403.306C183.359 415.387 236.206 421.857 290.203 421.998L292 298.5L571.284 262.452Z"
