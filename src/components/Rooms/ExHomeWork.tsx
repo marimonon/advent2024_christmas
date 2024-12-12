@@ -5,6 +5,16 @@ import { useState } from "react"
 
 const ExHomeWork: React.FC = () => {
   const [work, setWork] = useState(false)
+
+  const handleClick = () => {
+    const selects = document.querySelectorAll("select")
+    const values = Array.from(selects).map((select) => select.value)
+    if (values.join(",") === "3,1,2,2,4") {
+      setWork(true)
+      console.log("work", work)
+    }
+  }
+
   return (
     <div css={deskBgCss}>
       <div css={paperCss}>
@@ -46,7 +56,7 @@ const ExHomeWork: React.FC = () => {
         </select>
       </div>
       <div css={workBtnCss}>
-        <Btn onClick={workClick}>これでよし⭐︎</Btn>
+        <Btn onClick={handleClick}>これでよし⭐︎</Btn>
       </div>
     </div>
   )
@@ -79,7 +89,3 @@ const deskBgCss = css`
 const workBtnCss = css`
   margin-top: 40px;
 `
-
-const workClick = () => {
-  console.log("workClick")
-}
