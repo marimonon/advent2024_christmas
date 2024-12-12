@@ -61,6 +61,7 @@ const itemBoxCss = css`
   bor1der-radius: 10px;
   border: 4px solid #930606;
   text-align: center;
+  min-height: 116px;
 `
 const itemTextCss = css`
   font-size: 14px;

@@ -15,7 +15,7 @@ const { toEntranceRoom, openDoor, getItem } = gameStateActions
 
 const StoveRoom: React.FC = () => {
   const {
-    gameState: { dooropen },
+    gameState: { dooropen, items },
     dispatch,
   } = useGameState()
 
@@ -25,7 +25,7 @@ const StoveRoom: React.FC = () => {
     <div>
       {/* <Comment>雪だるま「お外に出たーい！」</Comment> */}
       <StrawberryImage
-        css={strawCss}
+        css={strawCss(items)}
         onClick={() => dispatch(getItem("Berry"))}
       />
       {/* <BigSnowmanImage css={bigSnowCss} /> */}
@@ -50,13 +50,14 @@ const StoveRoom: React.FC = () => {
 
 export default StoveRoom
 
-const strawCss = css`
+const strawCss = (items: { berry: string }) => css`
   position: absolute;
   width: 6%;
   height: auto;
   top: 40%;
   left: 28%;
   z-index: 5;
+  display: ${items.berry !== "none" ? "none" : "block"};
 `
 
 const bigSnowCss = css`
