@@ -23,6 +23,7 @@ type GameState = {
   scene: Scene
   room: Room
   treelight: boolean
+  dininglight: boolean
 }
 
 const initialGameState: GameState = {
@@ -109,6 +110,10 @@ export const gameStateSlice = createSlice({
     // 木の灯りの切り替え
     switchTreeLight: (state, _: PayloadAction) => {
       state.treelight = true
+    },
+    // ダイニングの灯りの切り替え
+    switchDiningLight: (state, _: PayloadAction) => {
+      state.dininglight = true
     },
   },
 })

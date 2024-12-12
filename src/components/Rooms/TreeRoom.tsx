@@ -8,7 +8,7 @@ import TreeSwitchImage from "../Images/Tree/TreeSwitchImage"
 import DeerballImage from "../Images/Tree/DeerballImage"
 import SwitchImage from "../Images/Tree/SwitchImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { toExTree, switchTreeLight } = gameStateActions
+const { toExTree, switchDiningLight } = gameStateActions
 
 const TreeRoom: React.FC = () => {
   const {
@@ -18,7 +18,10 @@ const TreeRoom: React.FC = () => {
 
   return (
     <div>
-      <SwitchImage css={switchCss(treelight)} />
+      <SwitchImage
+        css={switchCss(treelight)}
+        onClick={() => dispatch(switchDiningLight())}
+      />
       <DeerballImage css={deerCss} />
       <TreeSwitchImage
         css={treeSwitchCss}
