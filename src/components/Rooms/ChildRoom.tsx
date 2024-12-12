@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
 import ChildRoomBg from "../Images/Child/ChildRoomBg"
 import HomeWorkImage from "../Images/Child/HomeWorkImage"
 import ChildSleepImage from "../Images/Child/ChildSleepImage"
@@ -44,6 +44,15 @@ const ChildRoom: React.FC = () => {
 
 export default ChildRoom
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
 const masterKeyCss = css`
   position: absolute;
   top: 39%;
@@ -51,6 +60,7 @@ const masterKeyCss = css`
   width: 14%;
   height: auto;
   z-index: 4;
+  animation: ${fadeIn} 1s ease;
 `
 
 const childCss = (workdone: boolean) => css`
