@@ -151,22 +151,34 @@ export const gameStateSlice = createSlice({
     },
     // アイテムの使用
     useBerry: (state, _: PayloadAction) => {
-      state.items.berry = "use"
+      if (state.items.berry === "get") {
+        state.items.berry = "use"
+      }
     },
     useCookie: (state, _: PayloadAction) => {
-      state.items.cookie = "use"
+      if (state.items.cookie === "get") {
+        state.items.cookie = "use"
+      }
     },
     useCandle: (state, _: PayloadAction) => {
-      state.items.candle = "use"
+      if (state.items.candle === "get") {
+        state.items.candle = "use"
+      }
     },
     useRibbon: (state, _: PayloadAction) => {
-      state.items.ribbon = "use"
+      if (state.items.ribbon === "get") {
+        state.items.ribbon = "use"
+      }
     },
     useBag: (state, _: PayloadAction) => {
-      state.items.bag = "use"
+      if (state.items.bag === "get") {
+        state.items.bag = "use"
+      }
     },
     useMaster: (state, _: PayloadAction) => {
-      state.items.master = "use"
+      if (state.items.master === "get") {
+        state.items.master = "use"
+      }
     },
 
     // 木の灯りの切り替え
