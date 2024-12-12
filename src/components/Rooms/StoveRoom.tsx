@@ -11,7 +11,7 @@ import SnowmanImage from "../Images/Stove/SnowmanImage"
 import DoorCloseImage from "../Images/Stove/DoorCloseImage"
 import DoorOpenImage from "../Images/Stove/DoorOpenImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { toEntranceRoom, openDoor } = gameStateActions
+const { toEntranceRoom, openDoor, getItem } = gameStateActions
 
 const StoveRoom: React.FC = () => {
   const {
@@ -24,7 +24,10 @@ const StoveRoom: React.FC = () => {
   return (
     <div>
       {/* <Comment>雪だるま「お外に出たーい！」</Comment> */}
-      <StrawberryImage css={strawCss} />
+      <StrawberryImage
+        css={strawCss}
+        onClick={() => dispatch(getItem("Berry"))}
+      />
       {/* <BigSnowmanImage css={bigSnowCss} /> */}
       <FirewoodImage css={fireWoodCss} />
       <FireImage css={fireCss} />

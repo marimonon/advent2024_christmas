@@ -6,21 +6,47 @@ import ItemCandle from "./Images/Item/ItemCandle"
 import ItemRibbon from "./Images/Item/ItemRibbon"
 import ItemBag from "./Images/Item/ItemBag"
 import ItemMaster from "./Images/Item/ItemMaster"
+import { useGameState } from "./GameStateProvider"
 
 const ItemBox: React.FC = () => {
+  const {
+    gameState: { items },
+  } = useGameState()
+
   return (
     <div css={itemBoxCss}>
       <p css={itemTextCss}>アイテムを選択できるよ</p>
       <ul css={itemListCss}>
-        <li css={itemCss}>
-          <ItemBerry />
-        </li>
-        <li css={itemCss}>
-          <ItemCookie />
-        </li>
-        <li css={itemCss}>
-          <ItemCandle />
-        </li>
+        {items.berry === "get" && (
+          <li css={itemCss}>
+            <ItemBerry />
+          </li>
+        )}
+        {items.cookie === "get" && (
+          <li css={itemCss}>
+            <ItemCookie />
+          </li>
+        )}
+        {items.candle === "get" && (
+          <li css={itemCss}>
+            <ItemCandle />
+          </li>
+        )}
+        {items.ribbon === "get" && (
+          <li css={itemCss}>
+            <ItemRibbon />
+          </li>
+        )}
+        {items.bag === "get" && (
+          <li css={itemCss}>
+            <ItemBag />
+          </li>
+        )}
+        {items.master === "get" && (
+          <li css={itemCss}>
+            <ItemMaster />
+          </li>
+        )}
       </ul>
     </div>
   )

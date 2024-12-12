@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const StrawberryImage: React.FC<Props> = ({ className }) => {
+const StrawberryImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="41"
@@ -10,6 +11,7 @@ const StrawberryImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <path
         d="M41 27.2771C41 35.0969 31.8218 41.4362 20.5 41.4362C9.17816 41.4362 0 35.0969 0 27.2771C0 19.4572 9.17816 0 20.5 0C31.8218 0 41 19.4572 41 27.2771Z"

@@ -19,9 +19,19 @@ type Room =
   | "ExCake"
   | "ExHomeWork"
 
+type Item = "Berry" | "Cookie" | "Candle" | "Ribbon" | "Bag" | "Master"
+type ItemStatus = "none" | "get" | "use"
 type GameState = {
   scene: Scene
   room: Room
+  items: {
+    berry: ItemStatus
+    cookie: ItemStatus
+    candle: ItemStatus
+    ribbon: ItemStatus
+    bag: ItemStatus
+    master: ItemStatus
+  }
   treelight: boolean
   dininglight: boolean
   dooropen: boolean
@@ -31,6 +41,14 @@ type GameState = {
 const initialGameState: GameState = {
   scene: "start",
   room: "Stove",
+  items: {
+    berry: "none",
+    cookie: "none",
+    candle: "none",
+    ribbon: "none",
+    bag: "none",
+    master: "none",
+  },
   treelight: false,
   dininglight: false,
   dooropen: false,
@@ -111,6 +129,16 @@ export const gameStateSlice = createSlice({
     },
     toExHomeWork: (state, _: PayloadAction) => {
       state.room = "ExHomeWork"
+    },
+    // アイテムの追加
+    getItem: (state, action: PayloadAction<Item>) => {
+      state.items[action.payload.toLowerCase() as keyof typeof state.items] =
+        "get"
+    },
+    // アイテムの使用
+    useItem: (state, action: PayloadAction<Item>) => {
+      state.items[action.payload.toLowerCase() as keyof typeof state.items] =
+        "use"
     },
     // 木の灯りの切り替え
     switchTreeLight: (state, _: PayloadAction) => {
