@@ -1,14 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
 import ArrowImage from "./Images/ArrowImage"
+import { gameStateActions, useGameState } from "./GameStateProvider"
+
+const { toLeftRoom, toRightRoom } = gameStateActions
 
 const Arrows: React.FC = () => {
+  const { dispatch } = useGameState()
   return (
     <>
-      <div css={leftCss}>
+      <div css={leftCss} onClick={() => dispatch(toLeftRoom())}>
         <ArrowImage />
       </div>
-      <div css={rightCss}>
+      <div css={rightCss} onClick={() => dispatch(toRightRoom())}>
         <ArrowImage />
       </div>
       <div css={bottomCss}>

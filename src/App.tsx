@@ -1,11 +1,12 @@
 import Container from "./components/Container"
 import Ending from "./components/Ending"
 import Escape from "./components/Escape"
+import { GameStateProvider } from "./components/GameStateProvider"
 import Start from "./components/Start"
 import React, { useReducer } from "react"
 
 // シーンの変更
-const initialSceneState = { scene: "start" }
+const initialSceneState = { scene: "escape" }
 
 type SceneState = { scene: string }
 type SceneAction = { type: "START" | "ESCAPE" | "ENDING" }
@@ -35,11 +36,13 @@ function App() {
     <SceneContext.Provider
       value={{ state: sceneState, dispatch: sceneDispatch }}
     >
-      <Container>
-        {sceneState.scene === "start" && <Start />}
-        {sceneState.scene === "escape" && <Escape />}
-        {sceneState.scene === "ending" && <Ending />}
-      </Container>
+      <GameStateProvider>
+        <Container>
+          {sceneState.scene === "start" && <Start />}
+          {sceneState.scene === "escape" && <Escape />}
+          {sceneState.scene === "ending" && <Ending />}
+        </Container>
+      </GameStateProvider>
     </SceneContext.Provider>
   )
 }
