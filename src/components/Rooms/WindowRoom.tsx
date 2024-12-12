@@ -9,9 +9,11 @@ import WindowBarImage from "../Images/Window/WindowBarImage"
 import CurtainImage from "../Images/Window/CurtainImage"
 import SantaBagImage from "../Images/Window/SantaBagImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { getBag } = gameStateActions
+import { useState } from "react"
+const { getBag, useCookie } = gameStateActions
 
 const WindowRoom: React.FC = () => {
+  const [dogaway, setDogaway] = useState(false)
   const {
     gameState: { items },
     dispatch,
@@ -20,12 +22,28 @@ const WindowRoom: React.FC = () => {
   return (
     <div>
       <CurtainImage css={curtainCss} />
-      <SantaBagImage css={bagCss} />
+      {items.cookie === "use" && items.bag === "none" && (
+        <SantaBagImage
+          css={bagCss}
+          onClick={() => {
+            dispatch(getBag())
+            setDogaway(true)
+          }}
+        />
+      )}
       <WindowBarImage css={barCss} />
-      <EatingDogImage css={eatingCss} />
-      <SweatDeerImage css={sweatCss} />
-      <HungryDogImage css={hungryCss} />
-      <WindowDeerImage css={windowDeerCss} />
+      {items.cookie === "use" && <EatingDogImage css={eatingCss} />}
+      {items.cookie !== "use" && <SweatDeerImage css={sweatCss} />}
+      {items.cookie !== "use" && (
+        <HungryDogImage
+          css={hungryCss}
+          onClick={() => {
+            dispatch(useCookie())
+            setDogaway(true)
+          }}
+        />
+      )}
+      {items.cookie === "use" && <WindowDeerImage css={windowDeerCss} />}
       <WindowRoomBg css={windowBgCss} />
     </div>
   )
@@ -40,6 +58,7 @@ const curtainCss = css`
   width: 70%;
   height: auto;
   z-index: 6;
+  pointer-events: none;
 `
 
 const bagCss = css`
