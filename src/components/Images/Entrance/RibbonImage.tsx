@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const RibbonImage: React.FC<Props> = ({ className }) => {
+const RibbonImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="466"
@@ -10,6 +11,7 @@ const RibbonImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <path
         d="M98.6768 265.857L182.483 208.494L320.251 120.165L319.606 153.047L373.539 185.677L224.326 223.328L173.167 333.479C137.781 323.837 117.347 304.558 98.6768 265.857Z"

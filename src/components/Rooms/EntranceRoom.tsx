@@ -5,9 +5,12 @@ import RibbonImage from "../Images/Entrance/RibbonImage"
 import EntranceDoorImage from "../Images/Entrance/EntranceDoorImage"
 import { useState, useContext } from "react"
 import { SceneContext } from "../../App"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+const { getItem } = gameStateActions
 
 const EntranceRoom: React.FC = () => {
   const [doorOpened, setDoorOpened] = useState(false)
+
   const sceneContext = useContext(SceneContext)
 
   const doorOpen = () => {
@@ -18,10 +21,18 @@ const EntranceRoom: React.FC = () => {
     }, 2000)
   }
 
+  const {
+    gameState: { items },
+    dispatch,
+  } = useGameState()
+
   return (
     <div>
       <EntranceDoorImage css={doorCss(doorOpened)} onClick={doorOpen} />
-      <RibbonImage css={ribbonCss} />
+      <RibbonImage
+        css={ribbonCss(items)}
+        onClick={() => dispatch(getItem("Ribbon"))}
+      />
       <EntranceRoomBg css={entranceBg} />
     </div>
   )
@@ -40,13 +51,14 @@ const doorCss = (doorOpened: boolean) => css`
   transition: opacity 1s;
 `
 
-const ribbonCss = css`
+const ribbonCss = (items: { ribbon: string }) => css`
   position: absolute;
   width: 30%;
   height: auto;
   bottom: 0%;
   left: 8%;
   z-index: 2;
+  display: ${items.ribbon !== "none" ? "none" : "block"};
 `
 
 const entranceBg = css`
