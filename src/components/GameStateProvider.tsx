@@ -94,6 +94,15 @@ export const gameStateSlice = createSlice({
     toEntranceRoom: (state, _: PayloadAction) => {
       state.room = "Entrance"
     },
+    toExTree: (state, _: PayloadAction) => {
+      state.room = "ExTree"
+    },
+    toExCake: (state, _: PayloadAction) => {
+      state.room = "ExCake"
+    },
+    toExHomeWork: (state, _: PayloadAction) => {
+      state.room = "ExHomeWork"
+    },
   },
 })
 

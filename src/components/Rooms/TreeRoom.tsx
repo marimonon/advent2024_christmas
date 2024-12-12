@@ -7,13 +7,20 @@ import TreeWhiteImage from "../Images/Tree/TreeWhiteImage"
 import TreeSwitchImage from "../Images/Tree/TreeSwitchImage"
 import DeerballImage from "../Images/Tree/DeerballImage"
 import SwitchImage from "../Images/Tree/SwitchImage"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+const { toExTree } = gameStateActions
 
 const TreeRoom: React.FC = () => {
+  const { dispatch } = useGameState()
+
   return (
     <div>
       <SwitchImage css={switchCss} />
       <DeerballImage css={deerCss} />
-      <TreeSwitchImage css={treeSwitchCss} />
+      <TreeSwitchImage
+        css={treeSwitchCss}
+        onClick={() => dispatch(toExTree())}
+      />
       <TreeWhiteImage css={treeWhiteCss} />
       <TreeLightImage css={treeLightCss} />
       <TreeImage css={treeCss} />
