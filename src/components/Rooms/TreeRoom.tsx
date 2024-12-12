@@ -24,9 +24,9 @@ const TreeRoom: React.FC = () => {
         css={treeSwitchCss}
         onClick={() => dispatch(toExTree())}
       />
-      <TreeWhiteImage css={treeWhiteCss} />
-      <TreeLightImage css={treeLightCss} />
-      <TreeImage css={treeCss} />
+      <TreeWhiteImage css={treeWhiteCss(treelight)} />
+      <TreeLightImage css={treeLightCss(treelight)} />
+      <TreeImage css={treeCss(treelight)} />
       <TreeRoomBg css={treeBgCss} />
     </div>
   )
@@ -73,7 +73,7 @@ const lightWhiteAnime = keyframes`
   }
 `
 
-const treeWhiteCss = css`
+const treeWhiteCss = (treelight: boolean) => css`
   position: absolute;
   width: 60%;
   height: auto;
@@ -81,6 +81,7 @@ const treeWhiteCss = css`
   bottom: 20%;
   z-index: 3;
   animation: ${lightWhiteAnime} 3s infinite;
+  display: ${treelight ? "block" : "none"};
 `
 
 const lightAnime = keyframes`
@@ -95,7 +96,7 @@ const lightAnime = keyframes`
   }
 `
 
-const treeLightCss = css`
+const treeLightCss = (treelight: boolean) => css`
   position: absolute;
   width: 64%;
   height: auto;
@@ -103,16 +104,17 @@ const treeLightCss = css`
   bottom: 16%;
   z-index: 2;
   animation: ${lightAnime} 2s infinite;
+  display: ${treelight ? "block" : "none"};
 `
 
-const treeCss = css`
+const treeCss = (treelight: boolean) => css`
   position: absolute;
   width: 90%;
   height: auto;
   right: -10%;
   bottom: 8%;
   z-index: 1;
-  filter: drop-shadow(0 0 80px #ff0);
+  filter: ${treelight ? "drop-shadow(0 0 80px #ff0)" : "none"};
 `
 
 const treeBgCss = css`
