@@ -5,7 +5,7 @@ import CakeImage from "../Images/Dining/CakeImage"
 import CakeFullImage from "../Images/Dining/CakeFullImage"
 import CookieBagImage from "../Images/Dining/CookieBagImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { toExCake, getItem } = gameStateActions
+const { toExCake, getCookie } = gameStateActions
 
 const DiningRoom: React.FC = () => {
   const {
@@ -17,7 +17,7 @@ const DiningRoom: React.FC = () => {
     <div css={offDiningCss(dininglight)}>
       <CookieBagImage
         css={cookieBagCss(items)}
-        onClick={() => dispatch(getItem("Cookie"))}
+        onClick={() => dispatch(getCookie())}
       />
       <CakeImage css={cakeCss} onClick={() => dispatch(toExCake())} />
       <CakeFullImage

@@ -6,7 +6,7 @@ import EntranceDoorImage from "../Images/Entrance/EntranceDoorImage"
 import { useState, useContext } from "react"
 import { SceneContext } from "../../App"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { getItem } = gameStateActions
+const { getRibbon } = gameStateActions
 
 const EntranceRoom: React.FC = () => {
   const [doorOpened, setDoorOpened] = useState(false)
@@ -31,7 +31,7 @@ const EntranceRoom: React.FC = () => {
       <EntranceDoorImage css={doorCss(doorOpened)} onClick={doorOpen} />
       <RibbonImage
         css={ribbonCss(items)}
-        onClick={() => dispatch(getItem("Ribbon"))}
+        onClick={() => dispatch(getRibbon())}
       />
       <EntranceRoomBg css={entranceBg} />
     </div>

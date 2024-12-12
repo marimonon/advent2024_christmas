@@ -4,7 +4,7 @@ import ExCakeBg from "../Images/Dining/ExCakeBg"
 import ExCandlesImage from "../Images/Dining/ExCandlesImage"
 import ExDecoImage from "../Images/Dining/ExDecoImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { getItem, useItem } = gameStateActions
+const { getCandle, useBerry } = gameStateActions
 
 const ExCake: React.FC = () => {
   const {
@@ -15,12 +15,9 @@ const ExCake: React.FC = () => {
     <div>
       <ExDecoImage
         css={exDecoCss(items)}
-        onClick={() => dispatch(getItem("Candle"))}
+        onClick={() => dispatch(getCandle())}
       />
-      <ExCandlesImage
-        css={exCandlesCss}
-        onClick={() => dispatch(useItem("Berry"))}
-      />
+      <ExCandlesImage css={exCandlesCss} onClick={() => dispatch(useBerry())} />
       <ExCakeBg css={exCakeBgCss} />
     </div>
   )

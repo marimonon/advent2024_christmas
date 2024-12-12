@@ -8,8 +8,15 @@ import EatingDogImage from "../Images/Window/EatingDogImage"
 import WindowBarImage from "../Images/Window/WindowBarImage"
 import CurtainImage from "../Images/Window/CurtainImage"
 import SantaBagImage from "../Images/Window/SantaBagImage"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+const { getBag } = gameStateActions
 
 const WindowRoom: React.FC = () => {
+  const {
+    gameState: { items },
+    dispatch,
+  } = useGameState()
+
   return (
     <div>
       <CurtainImage css={curtainCss} />

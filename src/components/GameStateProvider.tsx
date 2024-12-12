@@ -131,15 +131,44 @@ export const gameStateSlice = createSlice({
       state.room = "ExHomeWork"
     },
     // アイテムの追加
-    getItem: (state, action: PayloadAction<Item>) => {
-      state.items[action.payload.toLowerCase() as keyof typeof state.items] =
-        "get"
+    getBerry: (state, _: PayloadAction) => {
+      state.items.berry = "get"
+    },
+    getCookie: (state, _: PayloadAction) => {
+      state.items.cookie = "get"
+    },
+    getCandle: (state, _: PayloadAction) => {
+      state.items.candle = "get"
+    },
+    getRibbon: (state, _: PayloadAction) => {
+      state.items.ribbon = "get"
+    },
+    getBag: (state, _: PayloadAction) => {
+      state.items.bag = "get"
+    },
+    getMaster: (state, _: PayloadAction) => {
+      state.items.master = "get"
     },
     // アイテムの使用
-    useItem: (state, action: PayloadAction<Item>) => {
-      state.items[action.payload.toLowerCase() as keyof typeof state.items] =
-        "use"
+    useBerry: (state, _: PayloadAction) => {
+      state.items.berry = "use"
     },
+    useCookie: (state, _: PayloadAction) => {
+      state.items.cookie = "use"
+    },
+    useCandle: (state, _: PayloadAction) => {
+      state.items.candle = "use"
+    },
+    useRibbon: (state, _: PayloadAction) => {
+      state.items.ribbon = "use"
+    },
+    useBag: (state, _: PayloadAction) => {
+      state.items.bag = "use"
+    },
+    useMaster: (state, _: PayloadAction) => {
+      state.items.master = "use"
+    },
+
     // 木の灯りの切り替え
     switchTreeLight: (state, _: PayloadAction) => {
       state.treelight = true
