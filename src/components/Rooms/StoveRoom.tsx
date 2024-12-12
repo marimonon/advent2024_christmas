@@ -20,7 +20,7 @@ const StoveRoom: React.FC = () => {
     <div>
       {/* <Comment>雪だるま「お外に出たーい！」</Comment> */}
       <StrawberryImage css={strawCss} />
-      <BigSnowmanImage css={bigSnowCss} />
+      {/* <BigSnowmanImage css={bigSnowCss} /> */}
       <FirewoodImage css={fireWoodCss} />
       <FireImage css={fireCss} />
       <SnowmanImage css={smallSnowCss} />

@@ -3,7 +3,7 @@ import { css } from "@emotion/react"
 import ArrowImage from "./Images/ArrowImage"
 import { gameStateActions, useGameState } from "./GameStateProvider"
 
-const { toLeftRoom, toRightRoom } = gameStateActions
+const { toLeftRoom, toRightRoom, toBottomRoom } = gameStateActions
 
 const Arrows: React.FC = () => {
   const {
@@ -34,7 +34,7 @@ const Arrows: React.FC = () => {
         room === "ExTree" ||
         room === "ExCake" ||
         room === "ExHomeWork") && (
-        <div css={bottomCss}>
+        <div css={bottomCss} onClick={() => dispatch(toBottomRoom())}>
           <ArrowImage />
         </div>
       )}
