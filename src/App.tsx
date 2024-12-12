@@ -4,12 +4,13 @@ import Escape from "./components/Escape"
 import Start from "./components/Start"
 import React, { useReducer } from "react"
 
-const initialState = { scene: "start" }
+// シーンの変更
+const initialSceneState = { scene: "start" }
 
-type State = { scene: string }
-type Action = { type: "START" | "ESCAPE" | "ENDING" }
+type SceneState = { scene: string }
+type SceneAction = { type: "START" | "ESCAPE" | "ENDING" }
 
-function reducer(state: State, action: Action): State {
+function sceneReducer(state: SceneState, action: SceneAction): SceneState {
   switch (action.type) {
     case "START":
       return { scene: "start" }
@@ -25,14 +26,19 @@ function reducer(state: State, action: Action): State {
 const SceneContext = React.createContext()
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, initialState)
+  const [sceneState, sceneDispatch] = useReducer(
+    sceneReducer,
+    initialSceneState
+  )
 
   return (
-    <SceneContext.Provider value={{ state, dispatch }}>
+    <SceneContext.Provider
+      value={{ state: sceneState, dispatch: sceneDispatch }}
+    >
       <Container>
-        {state.scene === "start" && <Start />}
-        {state.scene === "escape" && <Escape />}
-        {state.scene === "ending" && <Ending />}
+        {sceneState.scene === "start" && <Start />}
+        {sceneState.scene === "escape" && <Escape />}
+        {sceneState.scene === "ending" && <Ending />}
       </Container>
     </SceneContext.Provider>
   )
