@@ -6,7 +6,10 @@ import React, { useReducer } from "react"
 
 const initialState = { scene: "start" }
 
-function reducer(state, action) {
+type State = { scene: string }
+type Action = { type: "START" | "ESCAPE" | "ENDING" }
+
+function reducer(state: State, action: Action): State {
   switch (action.type) {
     case "START":
       return { scene: "start" }
