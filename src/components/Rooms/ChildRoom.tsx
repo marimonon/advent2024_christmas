@@ -24,7 +24,7 @@ const ChildRoom: React.FC = () => {
           onClick={() => dispatch(getMaster())}
         />
       )}
-      <ChildImage css={childCss(workdone)} />
+      {!workdone && <ChildImage css={childCss} />}
       {items.bag !== "use" && (
         <BootEmptyImage
           css={bootEmptyCss(workdone)}
@@ -32,7 +32,7 @@ const ChildRoom: React.FC = () => {
         />
       )}
       {items.bag === "use" && <BootImage css={bootCss} />}
-      <ChildSleepImage css={childSleepCss(workdone)} />
+      {workdone && <ChildSleepImage css={childSleepCss} />}
       <HomeWorkImage
         css={homeWorkCss}
         onClick={() => dispatch(toExHomeWork())}
@@ -63,14 +63,13 @@ const masterKeyCss = css`
   animation: ${fadeIn} 1s ease;
 `
 
-const childCss = (workdone: boolean) => css`
+const childCss = css`
   position: absolute;
   top: 16%;
   left: 32%;
   width: 32%;
   height: auto;
   z-index: 3;
-  display: ${workdone ? "none" : "block"};
 `
 
 const bootEmptyCss = (workdone: boolean) => css`
@@ -92,14 +91,13 @@ const bootCss = css`
   z-index: 1;
 `
 
-const childSleepCss = (workdone: boolean) => css`
+const childSleepCss = css`
   position: absolute;
   top: 26%;
   left: 28%;
   width: 76%;
   height: auto;
   z-index: 1;
-  display: ${workdone ? "block" : "none"};
 `
 
 const homeWorkCss = css`

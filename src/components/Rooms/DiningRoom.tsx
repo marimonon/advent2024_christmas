@@ -15,15 +15,18 @@ const DiningRoom: React.FC = () => {
 
   return (
     <div css={offDiningCss(dininglight)}>
-      <CookieBagImage
-        css={cookieBagCss(items)}
-        onClick={() => dispatch(getCookie())}
-      />
-      <CakeImage css={cakeCss} onClick={() => dispatch(toExCake())} />
-      <CakeFullImage
-        css={cakeFullCss(items)}
-        onClick={() => dispatch(toExCake())}
-      />
+      {items.cookie === "none" && (
+        <CookieBagImage
+          css={cookieBagCss}
+          onClick={() => dispatch(getCookie())}
+        />
+      )}
+      {items.berry !== "use" && (
+        <CakeImage css={cakeCss} onClick={() => dispatch(toExCake())} />
+      )}
+      {items.berry === "use" && (
+        <CakeFullImage css={cakeFullCss} onClick={() => dispatch(toExCake())} />
+      )}
       <DiningRoomBg css={diningBgCss} />
     </div>
   )
@@ -36,13 +39,12 @@ const offDiningCss = (dininglight: boolean) => css`
   pointer-events: ${dininglight ? "auto" : "none"};
 `
 
-const cookieBagCss = (items: { cookie: string }) => css`
+const cookieBagCss = css`
   position: absolute;
   top: 56%;
   left: 61%;
   width: 12%;
   z-index: 2;
-  display: ${items.cookie !== "none" ? "none" : "block"};
 `
 
 const cakeCss = css`
@@ -53,13 +55,12 @@ const cakeCss = css`
   z-index: 3;
 `
 
-const cakeFullCss = (items: { berry: string }) => css`
+const cakeFullCss = css`
   position: absolute;
   top: 42%;
   left: 10%;
   width: 20%;
   z-index: 4;
-  display: ${items.berry !== "use" ? "none" : "block"};
 `
 
 const diningBgCss = css`
