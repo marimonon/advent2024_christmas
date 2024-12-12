@@ -25,6 +25,7 @@ type GameState = {
   treelight: boolean
   dininglight: boolean
   dooropen: boolean
+  workdone: boolean
 }
 
 const initialGameState: GameState = {
@@ -33,6 +34,7 @@ const initialGameState: GameState = {
   treelight: false,
   dininglight: false,
   dooropen: false,
+  workdone: false,
 }
 
 export const gameStateSlice = createSlice({
@@ -121,6 +123,10 @@ export const gameStateSlice = createSlice({
     // ドアの開閉
     openDoor: (state, _: PayloadAction) => {
       state.dooropen = true
+    },
+    // 宿題の完了
+    finishWork: (state, _: PayloadAction) => {
+      state.workdone = true
     },
   },
 })
