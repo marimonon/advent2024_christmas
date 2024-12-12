@@ -24,25 +24,28 @@ const StoveRoom: React.FC = () => {
   return (
     <div>
       {/* <Comment>雪だるま「お外に出たーい！」</Comment> */}
-      <StrawberryImage
-        css={strawCss(items)}
-        onClick={() => dispatch(getBerry())}
-      />
+      {items.berry === "none" && (
+        <StrawberryImage css={strawCss} onClick={() => dispatch(getBerry())} />
+      )}
       {/* <BigSnowmanImage css={bigSnowCss} /> */}
       <FirewoodImage css={fireWoodCss} />
       <FireImage css={fireCss} />
       {(!dooropen || snowman) && <SnowmanImage css={smallSnowCss(snowman)} />}
-      <DoorCloseImage
-        css={doorCloseCss(dooropen)}
-        onClick={() => {
-          dispatch(openDoor())
-          setSnowman(true)
-        }}
-      />
-      <DoorOpenImage
-        css={doorOpenCss(dooropen)}
-        onClick={() => dispatch(toEntranceRoom())}
-      />
+      {!dooropen && (
+        <DoorCloseImage
+          css={doorCloseCss}
+          onClick={() => {
+            dispatch(openDoor())
+            setSnowman(true)
+          }}
+        />
+      )}
+      {dooropen && (
+        <DoorOpenImage
+          css={doorOpenCss}
+          onClick={() => dispatch(toEntranceRoom())}
+        />
+      )}
       <StoveRoomBg css={stoveBgCss} />
     </div>
   )
@@ -50,14 +53,13 @@ const StoveRoom: React.FC = () => {
 
 export default StoveRoom
 
-const strawCss = (items: { berry: string }) => css`
+const strawCss = css`
   position: absolute;
   width: 6%;
   height: auto;
   top: 40%;
   left: 28%;
   z-index: 5;
-  display: ${items.berry !== "none" ? "none" : "block"};
 `
 
 const bigSnowCss = css`
@@ -124,24 +126,22 @@ const smallSnowCss = (snowman: boolean) => css`
   `};
 `
 
-const doorCloseCss = (dooropen: boolean) => css`
+const doorCloseCss = css`
   position: absolute;
   width: 32%;
   height: auto;
   top: 28%;
   left: 0%;
   z-index: 2;
-  display: ${dooropen ? "none" : "block"};
 `
 
-const doorOpenCss = (dooropen: boolean) => css`
+const doorOpenCss = css`
   position: absolute;
   width: 32%;
   height: auto;
   top: 28%;
   left: 0%;
   z-index: 2;
-  display: ${dooropen ? "block" : "none"};
 `
 
 const stoveBgCss = css`

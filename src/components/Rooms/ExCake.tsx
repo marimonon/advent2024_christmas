@@ -13,10 +13,9 @@ const ExCake: React.FC = () => {
   } = useGameState()
   return (
     <div>
-      <ExDecoImage
-        css={exDecoCss(items)}
-        onClick={() => dispatch(getCandle())}
-      />
+      {items.berry === "use" && (
+        <ExDecoImage css={exDecoCss} onClick={() => dispatch(getCandle())} />
+      )}
       <ExCandlesImage css={exCandlesCss} onClick={() => dispatch(useBerry())} />
       <ExCakeBg css={exCakeBgCss} />
     </div>
@@ -25,14 +24,13 @@ const ExCake: React.FC = () => {
 
 export default ExCake
 
-const exDecoCss = (items: { berry: string }) => css`
+const exDecoCss = css`
   position: absolute;
   top: -2%;
   left: 18%;
   width: 70%;
   height: auto;
   z-index: 3;
-  display: ${items.berry === "use" ? "block" : "none"};
 `
 
 const exCandlesCss = css`

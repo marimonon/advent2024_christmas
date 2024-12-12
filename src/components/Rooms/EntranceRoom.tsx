@@ -15,7 +15,6 @@ const EntranceRoom: React.FC = () => {
 
   const doorOpen = () => {
     setDoorOpened(true)
-    console.log("doorOpened", doorOpened)
     setTimeout(() => {
       sceneContext.dispatch({ type: "ENDING" })
     }, 2000)
@@ -28,7 +27,7 @@ const EntranceRoom: React.FC = () => {
 
   return (
     <div>
-      <EntranceDoorImage css={doorCss(doorOpened)} onClick={doorOpen} />
+      <EntranceDoorImage css={doorCss(doorOpened, items)} onClick={doorOpen} />
       <RibbonImage
         css={ribbonCss(items)}
         onClick={() => dispatch(getRibbon())}
@@ -40,7 +39,7 @@ const EntranceRoom: React.FC = () => {
 
 export default EntranceRoom
 
-const doorCss = (doorOpened: boolean) => css`
+const doorCss = (doorOpened: boolean, items: { master: string }) => css`
   position: absolute;
   width: 45.2%;
   height: auto;
@@ -49,6 +48,7 @@ const doorCss = (doorOpened: boolean) => css`
   z-index: 3;
   opacity: ${doorOpened ? 0 : 1};
   transition: opacity 1s;
+  pointer-events: ${items.master === "use" ? "auto" : "none"};
 `
 
 const ribbonCss = (items: { ribbon: string }) => css`
