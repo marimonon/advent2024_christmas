@@ -8,20 +8,30 @@ import BootEmptyImage from "../Images/Child/BootEmptyImage"
 import ChildImage from "../Images/Child/ChildImage"
 import MasterKeyImage from "../Images/Child/MasterKeyImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { toExHomeWork } = gameStateActions
+const { toExHomeWork, useBag, getMaster } = gameStateActions
 
 const ChildRoom: React.FC = () => {
   const {
-    gameState: { workdone },
+    gameState: { workdone, items },
     dispatch,
   } = useGameState()
 
   return (
     <div>
-      <MasterKeyImage css={masterKeyCss} />
+      {items.bag === "use" && items.master === "none" && (
+        <MasterKeyImage
+          css={masterKeyCss}
+          onClick={() => dispatch(getMaster())}
+        />
+      )}
       <ChildImage css={childCss(workdone)} />
-      <BootEmptyImage css={bootEmptyCss(workdone)} />
-      <BootImage css={bootCss} />
+      {items.bag !== "use" && (
+        <BootEmptyImage
+          css={bootEmptyCss(workdone)}
+          onClick={() => dispatch(useBag())}
+        />
+      )}
+      {items.bag === "use" && <BootImage css={bootCss} />}
       <ChildSleepImage css={childSleepCss(workdone)} />
       <HomeWorkImage
         css={homeWorkCss}
