@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css, keyframes } from "@emotion/react"
+import { useState } from "react"
 import Comment from "../Comment"
 import StoveRoomBg from "../Images/Stove/StoveRoomBg"
 import BigSnowmanImage from "../Images/Stove/BigSnowmanImage"
@@ -18,6 +19,8 @@ const StoveRoom: React.FC = () => {
     dispatch,
   } = useGameState()
 
+  const [snowman, setSnowman] = useState(false)
+
   return (
     <div>
       {/* <Comment>雪だるま「お外に出たーい！」</Comment> */}
@@ -25,10 +28,13 @@ const StoveRoom: React.FC = () => {
       {/* <BigSnowmanImage css={bigSnowCss} /> */}
       <FirewoodImage css={fireWoodCss} />
       <FireImage css={fireCss} />
-      <SnowmanImage css={smallSnowCss} />
+      {(!dooropen || snowman) && <SnowmanImage css={smallSnowCss(snowman)} />}
       <DoorCloseImage
         css={doorCloseCss(dooropen)}
-        onClick={() => dispatch(openDoor())}
+        onClick={() => {
+          dispatch(openDoor())
+          setSnowman(true)
+        }}
       />
       <DoorOpenImage
         css={doorOpenCss(dooropen)}
@@ -92,13 +98,26 @@ const fireCss = css`
   animation: ${fireMoveAnime} 2s infinite;
 `
 
-const smallSnowCss = css`
+const smallSnowMoveAnime = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-140%);
+  }
+`
+
+const smallSnowCss = (snowman: boolean) => css`
   position: absolute;
   width: 36%;
   height: auto;
   bottom: 15%;
   left: 32%;
   z-index: 1;
+  ${snowman &&
+  css`
+    animation: ${smallSnowMoveAnime} 2s forwards;
+  `};
 `
 
 const doorCloseCss = (dooropen: boolean) => css`
