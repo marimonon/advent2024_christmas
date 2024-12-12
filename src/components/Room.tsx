@@ -18,10 +18,10 @@ const Room: React.FC = () => {
   return (
     <div css={roomCss}>
       <Arrows />
-      <StoveRoom />
+      {/* <StoveRoom /> */}
       {/* <TreeRoom /> */}
       {/* <DiningRoom /> */}
-      {/* <EntranceRoom /> */}
+      <EntranceRoom />
       {/* <WindowRoom /> */}
       {/* <StepRoom /> */}
       {/* <ChildRoom /> */}
