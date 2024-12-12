@@ -20,23 +20,26 @@ type Room =
   | "ExHomeWork"
 
 type GameState = {
-  // Define your game state properties here
   scene: Scene
   room: Room
+  treelight: boolean
 }
 
 const initialGameState: GameState = {
   scene: "start",
   room: "Stove",
+  treelight: false,
 }
 
 export const gameStateSlice = createSlice({
   name: "gameState",
   initialState: initialGameState,
   reducers: {
+    // シーンの切り替え
     switchScene: (state, action: PayloadAction<Scene>) => {
       state.scene = action.payload
     },
+    // 部屋の切り替え
     toLeftRoom: (state, _: PayloadAction) => {
       switch (state.room) {
         case "Tree":
@@ -102,6 +105,10 @@ export const gameStateSlice = createSlice({
     },
     toExHomeWork: (state, _: PayloadAction) => {
       state.room = "ExHomeWork"
+    },
+    // 木の灯りの切り替え
+    switchTreeLight: (state, _: PayloadAction) => {
+      state.treelight = true
     },
   },
 })

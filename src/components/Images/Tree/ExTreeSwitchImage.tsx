@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const ExTreeSwitchImage: React.FC<Props> = ({ className }) => {
+const ExTreeSwitchImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="75"
@@ -10,6 +11,7 @@ const ExTreeSwitchImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <rect
         x="0.5"
