@@ -6,18 +6,37 @@ import { gameStateActions, useGameState } from "./GameStateProvider"
 const { toLeftRoom, toRightRoom } = gameStateActions
 
 const Arrows: React.FC = () => {
+  const {
+    gameState: { room },
+  } = useGameState()
+
   const { dispatch } = useGameState()
   return (
     <>
-      <div css={leftCss} onClick={() => dispatch(toLeftRoom())}>
-        <ArrowImage />
-      </div>
-      <div css={rightCss} onClick={() => dispatch(toRightRoom())}>
-        <ArrowImage />
-      </div>
-      <div css={bottomCss}>
-        <ArrowImage />
-      </div>
+      {(room === "Tree" ||
+        room === "Dining" ||
+        room === "Window" ||
+        room === "Entrance") && (
+        <div css={leftCss} onClick={() => dispatch(toLeftRoom())}>
+          <ArrowImage />
+        </div>
+      )}
+      {(room === "Stove" ||
+        room === "Tree" ||
+        room === "Step" ||
+        room === "Window") && (
+        <div css={rightCss} onClick={() => dispatch(toRightRoom())}>
+          <ArrowImage />
+        </div>
+      )}
+      {(room === "Entrance" ||
+        room === "Child" ||
+        room === "ExTree" ||
+        room === "ExHomeWork") && (
+        <div css={bottomCss}>
+          <ArrowImage />
+        </div>
+      )}
     </>
   )
 }

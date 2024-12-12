@@ -39,15 +39,21 @@ export const gameStateSlice = createSlice({
     },
     toLeftRoom: (state, _: PayloadAction) => {
       switch (state.room) {
-        case "Stove":
+        case "Tree":
+          state.room = "Stove"
+          break
+        case "Dining":
           state.room = "Tree"
           break
       }
     },
     toRightRoom: (state, _: PayloadAction) => {
       switch (state.room) {
+        case "Stove":
+          state.room = "Tree"
+          break
         case "Tree":
-          state.room = "Stove"
+          state.room = "Dining"
           break
       }
     },
