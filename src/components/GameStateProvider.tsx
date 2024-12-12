@@ -45,6 +45,12 @@ export const gameStateSlice = createSlice({
         case "Dining":
           state.room = "Tree"
           break
+        case "Window":
+          state.room = "Step"
+          break
+        case "Entrance":
+          state.room = "Window"
+          break
       }
     },
     toRightRoom: (state, _: PayloadAction) => {
@@ -54,6 +60,31 @@ export const gameStateSlice = createSlice({
           break
         case "Tree":
           state.room = "Dining"
+          break
+        case "Step":
+          state.room = "Window"
+          break
+        case "Window":
+          state.room = "Entrance"
+          break
+      }
+    },
+    toBottomRoom: (state, _: PayloadAction) => {
+      switch (state.room) {
+        case "Entrance":
+          state.room = "Stove"
+          break
+        case "Child":
+          state.room = "Step"
+          break
+        case "ExTree":
+          state.room = "Tree"
+          break
+        case "ExCake":
+          state.room = "Dining"
+          break
+        case "ExHomeWork":
+          state.room = "Child"
           break
       }
     },

@@ -32,6 +32,7 @@ const Arrows: React.FC = () => {
       {(room === "Entrance" ||
         room === "Child" ||
         room === "ExTree" ||
+        room === "ExCake" ||
         room === "ExHomeWork") && (
         <div css={bottomCss}>
           <ArrowImage />
