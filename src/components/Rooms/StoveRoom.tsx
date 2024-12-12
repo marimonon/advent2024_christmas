@@ -21,15 +21,19 @@ const StoveRoom: React.FC = () => {
 
   const [snowSmall, setSnowSmall] = useState(false)
   const [snowrun, setSnowrun] = useState(false)
+  const [comment, setComment] = useState("")
 
   return (
     <div>
-      {/* <Comment>雪だるま「お外に出たーい！」</Comment> */}
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
       {items.berry === "none" && (
         <StrawberryImage css={strawCss} onClick={() => dispatch(getBerry())} />
       )}
       {(items.candle !== "use" || snowSmall) && (
-        <BigSnowmanImage css={bigSnowCss(items)} />
+        <BigSnowmanImage
+          css={bigSnowCss(items)}
+          onClick={() => setComment("雪だるま「お外に出たーい」")}
+        />
       )}
       <FirewoodImage css={fireWoodCss} />
       <FireImage
