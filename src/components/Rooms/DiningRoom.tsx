@@ -5,17 +5,20 @@ import CakeImage from "../Images/Dining/CakeImage"
 import CakeFullImage from "../Images/Dining/CakeFullImage"
 import CookieBagImage from "../Images/Dining/CookieBagImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { toExCake } = gameStateActions
+const { toExCake, getItem } = gameStateActions
 
 const DiningRoom: React.FC = () => {
   const {
-    gameState: { dininglight },
+    gameState: { dininglight, items },
     dispatch,
   } = useGameState()
 
   return (
     <div css={offDiningCss(dininglight)}>
-      <CookieBagImage css={cookieBagCss} />
+      <CookieBagImage
+        css={cookieBagCss(items)}
+        onClick={() => dispatch(getItem("Cookie"))}
+      />
       <CakeImage css={cakeCss} onClick={() => dispatch(toExCake())} />
       <CakeFullImage css={cakeFullCss} onClick={() => dispatch(toExCake())} />
       <DiningRoomBg css={diningBgCss} />
@@ -30,12 +33,13 @@ const offDiningCss = (dininglight: boolean) => css`
   pointer-events: ${dininglight ? "auto" : "none"};
 `
 
-const cookieBagCss = css`
+const cookieBagCss = (items: { cookie: string }) => css`
   position: absolute;
   top: 56%;
   left: 61%;
   width: 12%;
   z-index: 2;
+  display: ${items.cookie !== "none" ? "none" : "block"};
 `
 
 const cakeCss = css`
