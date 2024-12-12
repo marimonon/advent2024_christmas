@@ -88,6 +88,9 @@ export const gameStateSlice = createSlice({
           break
       }
     },
+    toEntranceRoom: (state, _: PayloadAction) => {
+      state.room = "Entrance"
+    },
   },
 })
 

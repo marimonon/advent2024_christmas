@@ -8,9 +8,9 @@ const { toLeftRoom, toRightRoom } = gameStateActions
 const Arrows: React.FC = () => {
   const {
     gameState: { room },
+    dispatch,
   } = useGameState()
 
-  const { dispatch } = useGameState()
   return (
     <>
       {(room === "Tree" ||
