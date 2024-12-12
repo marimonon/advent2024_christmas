@@ -20,7 +20,10 @@ const DiningRoom: React.FC = () => {
         onClick={() => dispatch(getItem("Cookie"))}
       />
       <CakeImage css={cakeCss} onClick={() => dispatch(toExCake())} />
-      <CakeFullImage css={cakeFullCss} onClick={() => dispatch(toExCake())} />
+      <CakeFullImage
+        css={cakeFullCss(items)}
+        onClick={() => dispatch(toExCake())}
+      />
       <DiningRoomBg css={diningBgCss} />
     </div>
   )
@@ -50,12 +53,13 @@ const cakeCss = css`
   z-index: 3;
 `
 
-const cakeFullCss = css`
+const cakeFullCss = (items: { berry: string }) => css`
   position: absolute;
   top: 42%;
   left: 10%;
   width: 20%;
   z-index: 4;
+  display: ${items.berry !== "use" ? "none" : "block"};
 `
 
 const diningBgCss = css`
