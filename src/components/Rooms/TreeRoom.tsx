@@ -8,22 +8,28 @@ import TreeSwitchImage from "../Images/Tree/TreeSwitchImage"
 import DeerballImage from "../Images/Tree/DeerballImage"
 import SwitchImage from "../Images/Tree/SwitchImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { toExTree } = gameStateActions
+const { toExTree, switchDiningLight } = gameStateActions
 
 const TreeRoom: React.FC = () => {
-  const { dispatch } = useGameState()
+  const {
+    gameState: { treelight },
+    dispatch,
+  } = useGameState()
 
   return (
     <div>
-      <SwitchImage css={switchCss} />
+      <SwitchImage
+        css={switchCss(treelight)}
+        onClick={() => dispatch(switchDiningLight())}
+      />
       <DeerballImage css={deerCss} />
       <TreeSwitchImage
         css={treeSwitchCss}
         onClick={() => dispatch(toExTree())}
       />
-      <TreeWhiteImage css={treeWhiteCss} />
-      <TreeLightImage css={treeLightCss} />
-      <TreeImage css={treeCss} />
+      <TreeWhiteImage css={treeWhiteCss(treelight)} />
+      <TreeLightImage css={treeLightCss(treelight)} />
+      <TreeImage css={treeCss(treelight)} />
       <TreeRoomBg css={treeBgCss} />
     </div>
   )
@@ -31,13 +37,14 @@ const TreeRoom: React.FC = () => {
 
 export default TreeRoom
 
-const switchCss = css`
+const switchCss = (treelight: boolean) => css`
   position: absolute;
   width: 10%;
   height: auto;
   left: 20%;
   top: 40%;
   z-index: 5;
+  display: ${treelight ? "block" : "none"};
 `
 const deerCss = css`
   position: absolute;
@@ -69,7 +76,7 @@ const lightWhiteAnime = keyframes`
   }
 `
 
-const treeWhiteCss = css`
+const treeWhiteCss = (treelight: boolean) => css`
   position: absolute;
   width: 60%;
   height: auto;
@@ -77,6 +84,7 @@ const treeWhiteCss = css`
   bottom: 20%;
   z-index: 3;
   animation: ${lightWhiteAnime} 3s infinite;
+  display: ${treelight ? "block" : "none"};
 `
 
 const lightAnime = keyframes`
@@ -91,7 +99,7 @@ const lightAnime = keyframes`
   }
 `
 
-const treeLightCss = css`
+const treeLightCss = (treelight: boolean) => css`
   position: absolute;
   width: 64%;
   height: auto;
@@ -99,16 +107,17 @@ const treeLightCss = css`
   bottom: 16%;
   z-index: 2;
   animation: ${lightAnime} 2s infinite;
+  display: ${treelight ? "block" : "none"};
 `
 
-const treeCss = css`
+const treeCss = (treelight: boolean) => css`
   position: absolute;
   width: 90%;
   height: auto;
   right: -10%;
   bottom: 8%;
   z-index: 1;
-  filter: drop-shadow(0 0 80px #ff0);
+  filter: ${treelight ? "drop-shadow(0 0 80px #ff0)" : "none"};
 `
 
 const treeBgCss = css`

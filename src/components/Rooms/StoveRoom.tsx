@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css, keyframes } from "@emotion/react"
+import { useState } from "react"
 import Comment from "../Comment"
 import StoveRoomBg from "../Images/Stove/StoveRoomBg"
 import BigSnowmanImage from "../Images/Stove/BigSnowmanImage"
@@ -10,11 +11,15 @@ import SnowmanImage from "../Images/Stove/SnowmanImage"
 import DoorCloseImage from "../Images/Stove/DoorCloseImage"
 import DoorOpenImage from "../Images/Stove/DoorOpenImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-
-const { toEntranceRoom } = gameStateActions
+const { toEntranceRoom, openDoor } = gameStateActions
 
 const StoveRoom: React.FC = () => {
-  const { dispatch } = useGameState()
+  const {
+    gameState: { dooropen },
+    dispatch,
+  } = useGameState()
+
+  const [snowman, setSnowman] = useState(false)
 
   return (
     <div>
@@ -23,10 +28,16 @@ const StoveRoom: React.FC = () => {
       {/* <BigSnowmanImage css={bigSnowCss} /> */}
       <FirewoodImage css={fireWoodCss} />
       <FireImage css={fireCss} />
-      <SnowmanImage css={smallSnowCss} />
-      <DoorCloseImage css={doorCloseCss} />
+      {(!dooropen || snowman) && <SnowmanImage css={smallSnowCss(snowman)} />}
+      <DoorCloseImage
+        css={doorCloseCss(dooropen)}
+        onClick={() => {
+          dispatch(openDoor())
+          setSnowman(true)
+        }}
+      />
       <DoorOpenImage
-        css={doorOpenCss}
+        css={doorOpenCss(dooropen)}
         onClick={() => dispatch(toEntranceRoom())}
       />
       <StoveRoomBg css={stoveBgCss} />
@@ -87,31 +98,46 @@ const fireCss = css`
   animation: ${fireMoveAnime} 2s infinite;
 `
 
-const smallSnowCss = css`
+const smallSnowMoveAnime = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-140%);
+  }
+`
+
+const smallSnowCss = (snowman: boolean) => css`
   position: absolute;
   width: 36%;
   height: auto;
   bottom: 15%;
   left: 32%;
   z-index: 1;
+  ${snowman &&
+  css`
+    animation: ${smallSnowMoveAnime} 2s forwards;
+  `};
 `
 
-const doorCloseCss = css`
+const doorCloseCss = (dooropen: boolean) => css`
   position: absolute;
   width: 32%;
   height: auto;
   top: 28%;
   left: 0%;
   z-index: 2;
+  display: ${dooropen ? "none" : "block"};
 `
 
-const doorOpenCss = css`
+const doorOpenCss = (dooropen: boolean) => css`
   position: absolute;
   width: 32%;
   height: auto;
   top: 28%;
   left: 0%;
   z-index: 2;
+  display: ${dooropen ? "block" : "none"};
 `
 
 const stoveBgCss = css`

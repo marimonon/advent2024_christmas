@@ -11,15 +11,18 @@ import { gameStateActions, useGameState } from "../GameStateProvider"
 const { toExHomeWork } = gameStateActions
 
 const ChildRoom: React.FC = () => {
-  const { dispatch } = useGameState()
+  const {
+    gameState: { workdone },
+    dispatch,
+  } = useGameState()
 
   return (
     <div>
       <MasterKeyImage css={masterKeyCss} />
-      <ChildImage css={childCss} />
-      <BootEmptyImage css={bootEmptyCss} />
+      <ChildImage css={childCss(workdone)} />
+      <BootEmptyImage css={bootEmptyCss(workdone)} />
       <BootImage css={bootCss} />
-      <ChildSleepImage css={childSleepCss} />
+      <ChildSleepImage css={childSleepCss(workdone)} />
       <HomeWorkImage
         css={homeWorkCss}
         onClick={() => dispatch(toExHomeWork())}
@@ -40,22 +43,24 @@ const masterKeyCss = css`
   z-index: 4;
 `
 
-const childCss = css`
+const childCss = (workdone: boolean) => css`
   position: absolute;
   top: 16%;
   left: 32%;
   width: 32%;
   height: auto;
   z-index: 3;
+  display: ${workdone ? "none" : "block"};
 `
 
-const bootEmptyCss = css`
+const bootEmptyCss = (workdone: boolean) => css`
   position: absolute;
   top: 18%;
   left: 47%;
   width: 13%;
   height: auto;
   z-index: 2;
+  pointer-events: ${workdone ? "auto" : "none"};
 `
 
 const bootCss = css`
@@ -67,13 +72,14 @@ const bootCss = css`
   z-index: 1;
 `
 
-const childSleepCss = css`
+const childSleepCss = (workdone: boolean) => css`
   position: absolute;
   top: 26%;
   left: 28%;
   width: 76%;
   height: auto;
   z-index: 1;
+  display: ${workdone ? "block" : "none"};
 `
 
 const homeWorkCss = css`

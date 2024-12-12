@@ -8,10 +8,13 @@ import { gameStateActions, useGameState } from "../GameStateProvider"
 const { toExCake } = gameStateActions
 
 const DiningRoom: React.FC = () => {
-  const { dispatch } = useGameState()
+  const {
+    gameState: { dininglight },
+    dispatch,
+  } = useGameState()
 
   return (
-    <div css={offDiningCss}>
+    <div css={offDiningCss(dininglight)}>
       <CookieBagImage css={cookieBagCss} />
       <CakeImage css={cakeCss} onClick={() => dispatch(toExCake())} />
       <CakeFullImage css={cakeFullCss} onClick={() => dispatch(toExCake())} />
@@ -22,9 +25,9 @@ const DiningRoom: React.FC = () => {
 
 export default DiningRoom
 
-const offDiningCss = css`
-  // opacity: 0.1;
-  /* pointer-events: none; */
+const offDiningCss = (dininglight: boolean) => css`
+  opacity: ${dininglight ? 1 : 0.1};
+  pointer-events: ${dininglight ? "auto" : "none"};
 `
 
 const cookieBagCss = css`
