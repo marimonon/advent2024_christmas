@@ -7,8 +7,12 @@ import BootImage from "../Images/Child/BootImage"
 import BootEmptyImage from "../Images/Child/BootEmptyImage"
 import ChildImage from "../Images/Child/ChildImage"
 import MasterKeyImage from "../Images/Child/MasterKeyImage"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+const { toExHomeWork } = gameStateActions
 
 const ChildRoom: React.FC = () => {
+  const { dispatch } = useGameState()
+
   return (
     <div>
       <MasterKeyImage css={masterKeyCss} />
@@ -16,7 +20,10 @@ const ChildRoom: React.FC = () => {
       <BootEmptyImage css={bootEmptyCss} />
       <BootImage css={bootCss} />
       <ChildSleepImage css={childSleepCss} />
-      <HomeWorkImage css={homeWorkCss} />
+      <HomeWorkImage
+        css={homeWorkCss}
+        onClick={() => dispatch(toExHomeWork())}
+      />
       <ChildRoomBg css={childBgCss} />
     </div>
   )

@@ -16,7 +16,7 @@ const Start: React.FC = () => {
     console.log("startClick", startClicked)
     setTimeout(() => {
       sceneContext.dispatch({ type: "ESCAPE" })
-    }, 5000)
+    }, 1000)
   }
 
   return (

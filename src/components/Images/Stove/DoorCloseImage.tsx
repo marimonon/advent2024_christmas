@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const DoorCloseImage: React.FC<Props> = ({ className }) => {
+const DoorCloseImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="314"
@@ -10,6 +11,7 @@ const DoorCloseImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <rect width="314" height="690" fill="#C47908" />
       <circle cx="266.5" cy="346.5" r="23.5" fill="#E2A610" />

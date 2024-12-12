@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const CakeImage: React.FC<Props> = ({ className }) => {
+const CakeImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="185"
@@ -10,6 +11,7 @@ const CakeImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <path
         d="M28.4 121.595C28.4 121.595 25.7551 126.48 25.5528 129.529C25.3504 132.579 27.3883 157.41 31.8543 162.902C36.3203 168.394 49.9641 182.847 90.2449 183.252C130.526 183.656 151.078 165.344 153.318 161.688C155.559 158.031 158.406 140.933 158.608 127.506C158.811 114.079 87.1953 123.43 87.1953 123.43L28.4 121.595Z"

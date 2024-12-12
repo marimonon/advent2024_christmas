@@ -4,13 +4,17 @@ import DiningRoomBg from "../Images/Dining/DiningRoomBg"
 import CakeImage from "../Images/Dining/CakeImage"
 import CakeFullImage from "../Images/Dining/CakeFullImage"
 import CookieBagImage from "../Images/Dining/CookieBagImage"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+const { toExCake } = gameStateActions
 
 const DiningRoom: React.FC = () => {
+  const { dispatch } = useGameState()
+
   return (
     <div css={offDiningCss}>
       <CookieBagImage css={cookieBagCss} />
-      <CakeImage css={cakeCss} />
-      <CakeFullImage css={cakeFullCss} />
+      <CakeImage css={cakeCss} onClick={() => dispatch(toExCake())} />
+      <CakeFullImage css={cakeFullCss} onClick={() => dispatch(toExCake())} />
       <DiningRoomBg css={diningBgCss} />
     </div>
   )
@@ -20,7 +24,7 @@ export default DiningRoom
 
 const offDiningCss = css`
   // opacity: 0.1;
-  pointer-events: none;
+  /* pointer-events: none; */
 `
 
 const cookieBagCss = css`

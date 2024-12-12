@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const SwitchImage: React.FC<Props> = ({ className }) => {
+const SwitchImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="135"
@@ -10,6 +11,7 @@ const SwitchImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <g opacity="0.3">
         <rect width="135" height="150" rx="10" fill="#D9D9D9" />
