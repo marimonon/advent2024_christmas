@@ -1,9 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import { useState } from "react"
 import StepRoomBg from "../Images/Step/StepRoomBg"
 import BearRibbonImage from "../Images/Step/BearRibbonImage"
 import BearImage from "../Images/Step/BearImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
+import Comment from "../Comment"
 const { toChildRoom, useRibbon } = gameStateActions
 
 const StepRoom: React.FC = () => {
@@ -12,13 +14,33 @@ const StepRoom: React.FC = () => {
     dispatch,
   } = useGameState()
 
+  const [comment, setComment] = useState("")
+
   return (
     <div>
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
       <div css={toChildCss} onClick={() => dispatch(toChildRoom())}></div>
       {items.ribbon !== "use" && (
-        <BearImage css={bearCss} onClick={() => dispatch(useRibbon())} />
+        <BearImage
+          css={bearCss}
+          onClick={() => {
+            dispatch(useRibbon())
+            if (items.ribbon === "get") {
+              setComment("くま「ありがとう！！」")
+            } else {
+              setComment("くま「...リボンがあったような...。」")
+            }
+          }}
+        />
       )}
-      {items.ribbon === "use" && <BearRibbonImage css={bearRibbonCss} />}
+      {items.ribbon === "use" && (
+        <BearRibbonImage
+          css={bearRibbonCss}
+          onClick={() =>
+            setComment("くま「マスタリ...図表...身近...みんな...楽しい」")
+          }
+        />
+      )}
       <StepRoomBg css={stepBgCss} />
     </div>
   )
