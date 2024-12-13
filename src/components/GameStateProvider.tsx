@@ -1,5 +1,4 @@
 import {
-  bindActionCreators,
   createSlice,
   UnknownAction,
   type PayloadAction,
@@ -19,7 +18,6 @@ type Room =
   | "ExCake"
   | "ExHomeWork"
 
-type Item = "Berry" | "Cookie" | "Candle" | "Ribbon" | "Bag" | "Master"
 type ItemStatus = "none" | "get" | "use"
 type GameState = {
   scene: Scene
