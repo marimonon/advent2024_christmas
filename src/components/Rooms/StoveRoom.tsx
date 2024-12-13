@@ -50,7 +50,10 @@ const StoveRoom: React.FC = () => {
         }}
       />
       {(!dooropen || snowrun) && items.candle === "use" && (
-        <SnowmanImage css={smallSnowCss(snowrun)} />
+        <SnowmanImage
+          css={smallSnowCss(snowrun)}
+          onClick={() => setComment("雪だるま「ヒャッホー！」")}
+        />
       )}
       {!dooropen && (
         <DoorCloseImage
