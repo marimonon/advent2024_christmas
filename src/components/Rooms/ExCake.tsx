@@ -1,15 +1,42 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import { useState } from "react"
 import ExCakeBg from "../Images/Dining/ExCakeBg"
 import ExCandlesImage from "../Images/Dining/ExCandlesImage"
 import ExDecoImage from "../Images/Dining/ExDecoImage"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+import Comment from "../Comment"
+const { getCandle, useBerry } = gameStateActions
 
 const ExCake: React.FC = () => {
+  const [comment, setComment] = useState("")
+  const {
+    gameState: { items },
+    dispatch,
+  } = useGameState()
   return (
     <div>
-      <ExDecoImage css={exDecoCss} />
-      <ExCandlesImage css={exCandlesCss} />
-      <ExCandlesImage css={exCandlesCss} />
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
+      {items.berry === "use" && (
+        <ExDecoImage
+          css={exDecoCss}
+          onClick={() => {
+            dispatch(getCandle())
+            setComment("キャンドルをgetした")
+          }}
+        />
+      )}
+      <ExCandlesImage
+        css={exCandlesCss}
+        onClick={() => {
+          dispatch(useBerry())
+          if (items.berry === "get") {
+            setComment("ケーキが完成した！")
+          } else {
+            setComment("なにか足りない...")
+          }
+        }}
+      />
       <ExCakeBg css={exCakeBgCss} />
     </div>
   )

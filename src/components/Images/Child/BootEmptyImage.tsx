@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const BootEmptyImage: React.FC<Props> = ({ className }) => {
+const BootEmptyImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="132"
@@ -10,6 +11,7 @@ const BootEmptyImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <path
         d="M30.7044 69L114.704 2.5L121.205 185C92.7048 196 30.1044 215.5 7.70436 205.5C-14.6956 195.5 17.0377 168 35.7044 155.5L30.7044 69Z"

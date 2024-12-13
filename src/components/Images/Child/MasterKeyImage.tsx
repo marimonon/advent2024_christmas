@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const MasterKeyImage: React.FC<Props> = ({ className }) => {
+const MasterKeyImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="120"
@@ -10,6 +11,7 @@ const MasterKeyImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <ellipse
         cx="59.9592"

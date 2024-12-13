@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css, keyframes } from "@emotion/react"
+import { useState } from "react"
 import Comment from "../Comment"
 import StoveRoomBg from "../Images/Stove/StoveRoomBg"
 import BigSnowmanImage from "../Images/Stove/BigSnowmanImage"
@@ -9,18 +10,66 @@ import FirewoodImage from "../Images/Stove/FirewoodImage"
 import SnowmanImage from "../Images/Stove/SnowmanImage"
 import DoorCloseImage from "../Images/Stove/DoorCloseImage"
 import DoorOpenImage from "../Images/Stove/DoorOpenImage"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+const { toEntranceRoom, openDoor, getBerry, useCandle } = gameStateActions
 
 const StoveRoom: React.FC = () => {
+  const {
+    gameState: { dooropen, items },
+    dispatch,
+  } = useGameState()
+
+  const [snowSmall, setSnowSmall] = useState(false)
+  const [snowrun, setSnowrun] = useState(false)
+  const [comment, setComment] = useState("")
+
   return (
     <div>
-      <Comment>雪だるま「お外に出たーい！」</Comment>
-      <StrawberryImage css={strawCss} />
-      <BigSnowmanImage css={bigSnowCss} />
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
+      {items.berry === "none" && (
+        <StrawberryImage
+          css={strawCss}
+          onClick={() => {
+            dispatch(getBerry())
+            setComment("イチゴをgetした")
+          }}
+        />
+      )}
+      {(items.candle !== "use" || snowSmall) && (
+        <BigSnowmanImage
+          css={bigSnowCss(items)}
+          onClick={() => setComment("雪だるま「お外に出たーい」")}
+        />
+      )}
       <FirewoodImage css={fireWoodCss} />
-      <FireImage css={fireCss} />
-      <SnowmanImage css={smallSnowCss} />
-      <DoorCloseImage css={doorCloseCss} />
-      <DoorOpenImage css={doorOpenCss} />
+      <FireImage
+        css={fireCss(items)}
+        onClick={() => {
+          dispatch(useCandle())
+          setSnowSmall(true)
+        }}
+      />
+      {(!dooropen || snowrun) && items.candle === "use" && (
+        <SnowmanImage
+          css={smallSnowCss(snowrun)}
+          onClick={() => setComment("雪だるま「ヒャッホー！」")}
+        />
+      )}
+      {!dooropen && (
+        <DoorCloseImage
+          css={doorCloseCss(items)}
+          onClick={() => {
+            dispatch(openDoor())
+            setSnowrun(true)
+          }}
+        />
+      )}
+      {dooropen && (
+        <DoorOpenImage
+          css={doorOpenCss}
+          onClick={() => dispatch(toEntranceRoom())}
+        />
+      )}
       <StoveRoomBg css={stoveBgCss} />
     </div>
   )
@@ -36,15 +85,31 @@ const strawCss = css`
   left: 28%;
   z-index: 5;
 `
+const fadeOut = keyframes`
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(40% , 40%);
+    scale: 0.5;
+    opacity: 0;
+  }
+`
 
-const bigSnowCss = css`
+const bigSnowCss = (items: { candle: string }) => css`
   position: absolute;
   width: 54%;
   height: auto;
   top: 0%;
   left: 5%;
   z-index: 4;
+  ${items.candle === "use" &&
+  css`
+    animation: ${fadeOut} 2s forwards;
+    pointer-events: none;
+  `};
 `
+
 const fireWoodCss = css`
   position: absolute;
   width: 20%;
@@ -69,32 +134,47 @@ const fireMoveAnime = keyframes`
   }
 `
 
-const fireCss = css`
+const fireCss = (items: { candle: string }) => css`
   position: absolute;
   width: 30%;
   height: auto;
   bottom: 16%;
   right: 6%;
   z-index: 2;
+  opacity: ${items.candle !== "use" ? 0 : 1};
   animation: ${fireMoveAnime} 2s infinite;
 `
 
-const smallSnowCss = css`
+const smallSnowMoveAnime = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-140%);
+  }
+`
+
+const smallSnowCss = (snowrun: boolean) => css`
   position: absolute;
   width: 36%;
   height: auto;
   bottom: 15%;
   left: 32%;
   z-index: 1;
+  ${snowrun &&
+  css`
+    animation: ${smallSnowMoveAnime} 2s forwards;
+  `};
 `
 
-const doorCloseCss = css`
+const doorCloseCss = (items: { candle: string }) => css`
   position: absolute;
   width: 32%;
   height: auto;
   top: 28%;
   left: 0%;
   z-index: 2;
+  pointer-events: ${items.candle !== "use" ? "none" : "auto"};
 `
 
 const doorOpenCss = css`

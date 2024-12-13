@@ -13,21 +13,26 @@ import ChildRoom from "./Rooms/ChildRoom"
 import ExTree from "./Rooms/ExTree"
 import ExCake from "./Rooms/ExCake"
 import ExHomeWork from "./Rooms/ExHomeWork"
+import { useGameState } from "./GameStateProvider"
 
 const Room: React.FC = () => {
+  const {
+    gameState: { room },
+  } = useGameState()
+
   return (
     <div css={roomCss}>
       <Arrows />
-      <StoveRoom />
-      {/* <TreeRoom /> */}
-      {/* <DiningRoom /> */}
-      {/* <EntranceRoom /> */}
-      {/* <WindowRoom /> */}
-      {/* <StepRoom /> */}
-      {/* <ChildRoom /> */}
-      {/* <ExTree /> */}
-      {/* <ExCake /> */}
-      {/* <ExHomeWork /> */}
+      {room === "Stove" && <StoveRoom />}
+      {room === "Tree" && <TreeRoom />}
+      {room === "Dining" && <DiningRoom />}
+      {room === "Entrance" && <EntranceRoom />}
+      {room === "Window" && <WindowRoom />}
+      {room === "Step" && <StepRoom />}
+      {room === "Child" && <ChildRoom />}
+      {room === "ExTree" && <ExTree />}
+      {room === "ExCake" && <ExCake />}
+      {room === "ExHomeWork" && <ExHomeWork />}
     </div>
   )
 }

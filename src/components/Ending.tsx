@@ -119,6 +119,15 @@ const endBgCss = css`
   background: linear-gradient(to bottom, #045662, #fff);
 `
 
+const testExpandAnime = keyframes`
+  0% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+`
+
 const endTextCss = css`
   position: absolute;
   top: 2%;
@@ -126,9 +135,10 @@ const endTextCss = css`
   width: 80%;
   height: auto;
   z-index: 5;
+  animation: ${testExpandAnime} 2s forwards;
 `
 
-const SantasExpandAnime = keyframes`
+const santasExpandAnime = keyframes`
   0% {
     transform: scale(4);
   }
@@ -148,7 +158,7 @@ const santasAnime = keyframes`
 const expandCss = css`
   position: relative;
   top: 10%;
-  animation: ${SantasExpandAnime} 2s forwards;
+  animation: ${santasExpandAnime} 3s forwards;
   z-index: 5;
 `
 const santasCss = css`

@@ -1,16 +1,39 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import { useState } from "react"
 import DiningRoomBg from "../Images/Dining/DiningRoomBg"
 import CakeImage from "../Images/Dining/CakeImage"
 import CakeFullImage from "../Images/Dining/CakeFullImage"
 import CookieBagImage from "../Images/Dining/CookieBagImage"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+import Comment from "../Comment"
+const { toExCake, getCookie } = gameStateActions
 
 const DiningRoom: React.FC = () => {
+  const [comment, setComment] = useState("")
+  const {
+    gameState: { dininglight, items },
+    dispatch,
+  } = useGameState()
+
   return (
-    <div css={offDiningCss}>
-      <CookieBagImage css={cookieBagCss} />
-      <CakeImage css={cakeCss} />
-      <CakeFullImage css={cakeFullCss} />
+    <div css={offDiningCss(dininglight)}>
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
+      {items.cookie === "none" && (
+        <CookieBagImage
+          css={cookieBagCss}
+          onClick={() => {
+            dispatch(getCookie())
+            setComment("クッキーをgetした")
+          }}
+        />
+      )}
+      {items.berry !== "use" && (
+        <CakeImage css={cakeCss} onClick={() => dispatch(toExCake())} />
+      )}
+      {items.berry === "use" && (
+        <CakeFullImage css={cakeFullCss} onClick={() => dispatch(toExCake())} />
+      )}
       <DiningRoomBg css={diningBgCss} />
     </div>
   )
@@ -18,9 +41,9 @@ const DiningRoom: React.FC = () => {
 
 export default DiningRoom
 
-const offDiningCss = css`
-  // opacity: 0.1;
-  pointer-events: none;
+const offDiningCss = (dininglight: boolean) => css`
+  opacity: ${dininglight ? 1 : 0.1};
+  pointer-events: ${dininglight ? "auto" : "none"};
 `
 
 const cookieBagCss = css`

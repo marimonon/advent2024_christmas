@@ -5,13 +5,20 @@ import TitleImage from "./Images/TitleImage"
 import SantaImage from "./Images/SantaImage"
 import ChimneyImage from "./Images/ChimneyImage"
 import { useState } from "react"
+import { gameStateActions, useGameState } from "./GameStateProvider"
+const { switchScene } = gameStateActions
 
 const Start: React.FC = () => {
   const [startClicked, setStartClicked] = useState(false)
 
+  const { dispatch } = useGameState()
+
   const clickStart = () => {
     setStartClicked(true)
-    console.log("startClick", startClicked)
+    setTimeout(() => {
+      console.log("startClick", true)
+      dispatch(switchScene("escape"))
+    }, 2500)
   }
 
   return (

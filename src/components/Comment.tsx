@@ -1,26 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
-import { useState } from "react"
 
 type CommentProps = {
   children: React.ReactNode
+  setComment: (comment: string) => void
 }
 
-const Comment: React.FC<CommentProps> = ({ children }) => {
-  const [commentClick, setCommentClick] = useState(true)
-
-  const CommentClick = () => {
-    setCommentClick(false)
-  }
-
+const Comment: React.FC<CommentProps> = ({ children, setComment }) => {
   return (
-    <>
-      {commentClick ? (
-        <div onClick={CommentClick} css={commentCss}>
-          <p css={commentTextCss}>{children}</p>
-        </div>
-      ) : null}
-    </>
+    <div onClick={() => setComment("")} css={commentCss}>
+      <p css={commentTextCss}>{children}</p>
+    </div>
   )
 }
 

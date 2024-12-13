@@ -1,18 +1,11 @@
-import Container from "./components/Container"
-import Ending from "./components/Ending"
-import Escape from "./components/Escape"
-import Start from "./components/Start"
+import { GameStateProvider } from "./components/GameStateProvider"
+import SceneSwitcher from "./components/SceneSwtcher"
 
 function App() {
   return (
-    <>
-      <Container>
-        {/* StartとEscapeとEndingの３シーンはだし分ける */}
-        {/* <Start /> */}
-        {/* <Escape /> */}
-        <Ending />
-      </Container>
-    </>
+    <GameStateProvider>
+      <SceneSwitcher />
+    </GameStateProvider>
   )
 }
 

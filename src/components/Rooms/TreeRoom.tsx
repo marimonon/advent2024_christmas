@@ -7,16 +7,44 @@ import TreeWhiteImage from "../Images/Tree/TreeWhiteImage"
 import TreeSwitchImage from "../Images/Tree/TreeSwitchImage"
 import DeerballImage from "../Images/Tree/DeerballImage"
 import SwitchImage from "../Images/Tree/SwitchImage"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+import Comment from "../Comment"
+import { useState } from "react"
+const { toExTree, switchDiningLight } = gameStateActions
 
 const TreeRoom: React.FC = () => {
+  const {
+    gameState: { treelight },
+    dispatch,
+  } = useGameState()
+
+  const [comment, setComment] = useState("")
+
   return (
     <div>
-      <SwitchImage css={switchCss} />
-      <DeerballImage css={deerCss} />
-      <TreeSwitchImage css={treeSwitchCss} />
-      <TreeWhiteImage css={treeWhiteCss} />
-      <TreeLightImage css={treeLightCss} />
-      <TreeImage css={treeCss} />
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
+      {treelight && (
+        <SwitchImage
+          css={switchCss}
+          onClick={() => {
+            dispatch(switchDiningLight())
+            setComment("どこかの照明がついたようだ")
+          }}
+        />
+      )}
+      <DeerballImage
+        css={deerCss}
+        onClick={() =>
+          setComment("トナカイ玉「ツリーの下の方にスイッチがあるよ」")
+        }
+      />
+      <TreeSwitchImage
+        css={treeSwitchCss}
+        onClick={() => dispatch(toExTree())}
+      />
+      {treelight && <TreeWhiteImage css={treeWhiteCss} />}
+      {treelight && <TreeLightImage css={treeLightCss} />}
+      <TreeImage css={treeCss(treelight)} />
       <TreeRoomBg css={treeBgCss} />
     </div>
   )
@@ -94,14 +122,14 @@ const treeLightCss = css`
   animation: ${lightAnime} 2s infinite;
 `
 
-const treeCss = css`
+const treeCss = (treelight: boolean) => css`
   position: absolute;
   width: 90%;
   height: auto;
   right: -10%;
   bottom: 8%;
   z-index: 1;
-  filter: drop-shadow(0 0 80px #ff0);
+  filter: ${treelight ? "drop-shadow(0 0 80px #ff0)" : "none"};
 `
 
 const treeBgCss = css`

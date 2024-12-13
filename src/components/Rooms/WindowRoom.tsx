@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
+import { useState } from "react"
 import WindowRoomBg from "../Images/Window/WindowRoomBg"
 import HungryDogImage from "../Images/Window/HungryDogImage"
 import WindowDeerImage from "../Images/Window/WindowDeerImage"
@@ -8,17 +9,47 @@ import EatingDogImage from "../Images/Window/EatingDogImage"
 import WindowBarImage from "../Images/Window/WindowBarImage"
 import CurtainImage from "../Images/Window/CurtainImage"
 import SantaBagImage from "../Images/Window/SantaBagImage"
+import { gameStateActions, useGameState } from "../GameStateProvider"
+import Comment from "../Comment"
+const { getBag, useCookie } = gameStateActions
 
 const WindowRoom: React.FC = () => {
+  const [comment, setComment] = useState("")
+  const {
+    gameState: { items },
+    dispatch,
+  } = useGameState()
+
   return (
     <div>
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
       <CurtainImage css={curtainCss} />
-      <SantaBagImage css={bagCss} />
+      {items.cookie === "use" && items.bag === "none" && (
+        <SantaBagImage
+          css={bagCss}
+          onClick={() => {
+            dispatch(getBag())
+            setComment("トナカイからふくろをgetした")
+          }}
+        />
+      )}
       <WindowBarImage css={barCss} />
-      <EatingDogImage css={eatingCss} />
-      <SweatDeerImage css={sweatCss} />
-      <HungryDogImage css={hungryCss} />
-      <WindowDeerImage css={windowDeerCss} />
+      {items.cookie === "use" && <EatingDogImage css={eatingCss} />}
+      {items.cookie !== "use" && <SweatDeerImage css={sweatCss} />}
+      {items.cookie !== "use" && (
+        <HungryDogImage
+          css={hungryCss}
+          onClick={() => {
+            dispatch(useCookie())
+            if (items.cookie === "get") {
+              setComment("クッキーをあげたら窓からはなれた！")
+            } else {
+              setComment("怖そうな犬がこちらを見ている")
+            }
+          }}
+        />
+      )}
+      {items.cookie === "use" && <WindowDeerImage css={windowDeerCss} />}
       <WindowRoomBg css={windowBgCss} />
     </div>
   )
@@ -33,6 +64,19 @@ const curtainCss = css`
   width: 70%;
   height: auto;
   z-index: 6;
+  pointer-events: none;
+`
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 `
 
 const bagCss = css`
@@ -42,6 +86,7 @@ const bagCss = css`
   width: 38%;
   height: auto;
   z-index: 7;
+  animation: ${fadeIn} 4s;
 `
 
 const barCss = css`
@@ -87,6 +132,7 @@ const windowDeerCss = css`
   width: 33%;
   height: auto;
   z-index: 2;
+  animation: ${fadeIn} 4s;
 `
 const windowBgCss = css`
   width: 100%;
