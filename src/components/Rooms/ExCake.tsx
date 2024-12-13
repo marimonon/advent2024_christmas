@@ -30,7 +30,11 @@ const ExCake: React.FC = () => {
         css={exCandlesCss}
         onClick={() => {
           dispatch(useBerry())
-          setComment("ケーキが完成した！")
+          if (items.berry === "get") {
+            setComment("ケーキが完成した！")
+          } else {
+            setComment("なにか足りない...")
+          }
         }}
       />
       <ExCakeBg css={exCakeBgCss} />
