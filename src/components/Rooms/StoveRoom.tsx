@@ -31,7 +31,7 @@ const StoveRoom: React.FC = () => {
           css={strawCss}
           onClick={() => {
             dispatch(getBerry())
-            setComment("苺をgetした")
+            setComment("イチゴをgetした")
           }}
         />
       )}
