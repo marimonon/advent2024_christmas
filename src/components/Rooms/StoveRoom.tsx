@@ -106,6 +106,7 @@ const bigSnowCss = (items: { candle: string }) => css`
   ${items.candle === "use" &&
   css`
     animation: ${fadeOut} 2s forwards;
+    pointer-events: none;
   `};
 `
 
