@@ -1,7 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import { useState } from "react"
 import Btn from "../Btn"
 import { gameStateActions, useGameState } from "../GameStateProvider"
+import Comment from "../Comment"
 const { finishWork } = gameStateActions
 
 const ExHomeWork: React.FC = () => {
@@ -15,11 +17,17 @@ const ExHomeWork: React.FC = () => {
     const values = Array.from(selects).map((select) => select.value)
     if (values.join(",") === "3,1,2,2,4") {
       dispatch(finishWork())
+      setComment("子供「完成！おわったー！！」")
+    } else {
+      setComment("子供「...書き直そう。」")
     }
   }
 
+  const [comment, setComment] = useState("")
+
   return (
     <div css={deskBgCss}>
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
       <div css={paperCss}>
         <h2>感想文</h2>
         <select css={paperLineCss} defaultValue={workdone ? "3" : "0"}>

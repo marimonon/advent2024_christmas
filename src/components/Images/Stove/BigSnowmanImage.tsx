@@ -1,7 +1,8 @@
 type Props = {
   className?: string
+  onClick?: () => void
 }
-const BigSnowmanImage: React.FC<Props> = ({ className }) => {
+const BigSnowmanImage: React.FC<Props> = ({ className, onClick }) => {
   return (
     <svg
       width="512"
@@ -10,6 +11,7 @@ const BigSnowmanImage: React.FC<Props> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      onClick={onClick}
     >
       <rect
         width="19.0797"

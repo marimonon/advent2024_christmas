@@ -1,34 +1,37 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import { useState } from "react"
 import EntranceRoomBg from "../Images/Entrance/EntranceRoomBg"
 import RibbonImage from "../Images/Entrance/RibbonImage"
 import EntranceDoorImage from "../Images/Entrance/EntranceDoorImage"
-import { useState, useContext } from "react"
-import { SceneContext } from "../../App"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-const { getRibbon, useMaster } = gameStateActions
+import Comment from "../Comment"
+const { getRibbon, useMaster, switchScene } = gameStateActions
 
 const EntranceRoom: React.FC = () => {
-  const sceneContext = useContext(SceneContext)
-
-  const doorOpen = () => {
-    dispatch(useMaster())
-    setTimeout(() => {
-      sceneContext.dispatch({ type: "ENDING" })
-    }, 2000)
-  }
-
   const {
     gameState: { items },
     dispatch,
   } = useGameState()
 
+  const doorOpen = () => {
+    dispatch(useMaster())
+    setTimeout(() => {
+      dispatch(switchScene("ending"))
+    }, 2000)
+  }
+  const [comment, setComment] = useState("")
+
   return (
     <div>
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
       <EntranceDoorImage css={doorCss(items)} onClick={doorOpen} />
       <RibbonImage
         css={ribbonCss(items)}
-        onClick={() => dispatch(getRibbon())}
+        onClick={() => {
+          dispatch(getRibbon())
+          setComment("リボンをgetした")
+        }}
       />
       <EntranceRoomBg css={entranceBg} />
     </div>

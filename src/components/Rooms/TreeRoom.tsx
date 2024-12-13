@@ -8,6 +8,8 @@ import TreeSwitchImage from "../Images/Tree/TreeSwitchImage"
 import DeerballImage from "../Images/Tree/DeerballImage"
 import SwitchImage from "../Images/Tree/SwitchImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
+import Comment from "../Comment"
+import { useState } from "react"
 const { toExTree, switchDiningLight } = gameStateActions
 
 const TreeRoom: React.FC = () => {
@@ -16,15 +18,26 @@ const TreeRoom: React.FC = () => {
     dispatch,
   } = useGameState()
 
+  const [comment, setComment] = useState("")
+
   return (
     <div>
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
       {treelight && (
         <SwitchImage
           css={switchCss}
-          onClick={() => dispatch(switchDiningLight())}
+          onClick={() => {
+            dispatch(switchDiningLight())
+            setComment("どこかの照明がついたようだ")
+          }}
         />
       )}
-      <DeerballImage css={deerCss} />
+      <DeerballImage
+        css={deerCss}
+        onClick={() =>
+          setComment("トナカイ玉「ツリーの下の方にスイッチがあるよ」")
+        }
+      />
       <TreeSwitchImage
         css={treeSwitchCss}
         onClick={() => dispatch(toExTree())}

@@ -21,15 +21,25 @@ const StoveRoom: React.FC = () => {
 
   const [snowSmall, setSnowSmall] = useState(false)
   const [snowrun, setSnowrun] = useState(false)
+  const [comment, setComment] = useState("")
 
   return (
     <div>
-      {/* <Comment>雪だるま「お外に出たーい！」</Comment> */}
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
       {items.berry === "none" && (
-        <StrawberryImage css={strawCss} onClick={() => dispatch(getBerry())} />
+        <StrawberryImage
+          css={strawCss}
+          onClick={() => {
+            dispatch(getBerry())
+            setComment("イチゴをgetした")
+          }}
+        />
       )}
       {(items.candle !== "use" || snowSmall) && (
-        <BigSnowmanImage css={bigSnowCss(items)} />
+        <BigSnowmanImage
+          css={bigSnowCss(items)}
+          onClick={() => setComment("雪だるま「お外に出たーい」")}
+        />
       )}
       <FirewoodImage css={fireWoodCss} />
       <FireImage
@@ -40,7 +50,10 @@ const StoveRoom: React.FC = () => {
         }}
       />
       {(!dooropen || snowrun) && items.candle === "use" && (
-        <SnowmanImage css={smallSnowCss(snowrun)} />
+        <SnowmanImage
+          css={smallSnowCss(snowrun)}
+          onClick={() => setComment("雪だるま「ヒャッホー！」")}
+        />
       )}
       {!dooropen && (
         <DoorCloseImage
@@ -93,6 +106,7 @@ const bigSnowCss = (items: { candle: string }) => css`
   ${items.candle === "use" &&
   css`
     animation: ${fadeOut} 2s forwards;
+    pointer-events: none;
   `};
 `
 

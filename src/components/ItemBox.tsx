@@ -15,7 +15,7 @@ const ItemBox: React.FC = () => {
 
   return (
     <div css={itemBoxCss}>
-      <p css={itemTextCss}>アイテムを選択できるよ</p>
+      <p css={itemTextCss}>アイテムBOX</p>
       <ul css={itemListCss}>
         {items.berry === "get" && (
           <li css={itemCss}>
@@ -82,7 +82,4 @@ const itemCss = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover {
-    background-color: #0ff;
-  }
 `

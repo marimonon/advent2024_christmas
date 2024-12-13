@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css, keyframes } from "@emotion/react"
+import { useState } from "react"
 import WindowRoomBg from "../Images/Window/WindowRoomBg"
 import HungryDogImage from "../Images/Window/HungryDogImage"
 import WindowDeerImage from "../Images/Window/WindowDeerImage"
@@ -9,11 +10,11 @@ import WindowBarImage from "../Images/Window/WindowBarImage"
 import CurtainImage from "../Images/Window/CurtainImage"
 import SantaBagImage from "../Images/Window/SantaBagImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
-import { useState } from "react"
+import Comment from "../Comment"
 const { getBag, useCookie } = gameStateActions
 
 const WindowRoom: React.FC = () => {
-  const [dogaway, setDogaway] = useState(false)
+  const [comment, setComment] = useState("")
   const {
     gameState: { items },
     dispatch,
@@ -21,13 +22,14 @@ const WindowRoom: React.FC = () => {
 
   return (
     <div>
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
       <CurtainImage css={curtainCss} />
       {items.cookie === "use" && items.bag === "none" && (
         <SantaBagImage
           css={bagCss}
           onClick={() => {
             dispatch(getBag())
-            setDogaway(true)
+            setComment("トナカイからふくろをgetした")
           }}
         />
       )}
@@ -39,7 +41,11 @@ const WindowRoom: React.FC = () => {
           css={hungryCss}
           onClick={() => {
             dispatch(useCookie())
-            setDogaway(true)
+            if (items.cookie === "get") {
+              setComment("クッキーをあげたら窓からはなれた！")
+            } else {
+              setComment("怖そうな犬がこちらを見ている")
+            }
           }}
         />
       )}
@@ -62,10 +68,13 @@ const curtainCss = css`
 `
 
 const fadeIn = keyframes`
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  50% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 `
@@ -77,7 +86,7 @@ const bagCss = css`
   width: 38%;
   height: auto;
   z-index: 7;
-  animation: ${fadeIn} 2s;
+  animation: ${fadeIn} 4s;
 `
 
 const barCss = css`
@@ -123,7 +132,7 @@ const windowDeerCss = css`
   width: 33%;
   height: auto;
   z-index: 2;
-  animation: ${fadeIn} 2s;
+  animation: ${fadeIn} 4s;
 `
 const windowBgCss = css`
   width: 100%;

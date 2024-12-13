@@ -1,13 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import { useState } from "react"
 import DiningRoomBg from "../Images/Dining/DiningRoomBg"
 import CakeImage from "../Images/Dining/CakeImage"
 import CakeFullImage from "../Images/Dining/CakeFullImage"
 import CookieBagImage from "../Images/Dining/CookieBagImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
+import Comment from "../Comment"
 const { toExCake, getCookie } = gameStateActions
 
 const DiningRoom: React.FC = () => {
+  const [comment, setComment] = useState("")
   const {
     gameState: { dininglight, items },
     dispatch,
@@ -15,10 +18,14 @@ const DiningRoom: React.FC = () => {
 
   return (
     <div css={offDiningCss(dininglight)}>
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
       {items.cookie === "none" && (
         <CookieBagImage
           css={cookieBagCss}
-          onClick={() => dispatch(getCookie())}
+          onClick={() => {
+            dispatch(getCookie())
+            setComment("クッキーをgetした")
+          }}
         />
       )}
       {items.berry !== "use" && (
