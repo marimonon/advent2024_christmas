@@ -26,7 +26,10 @@ const TreeRoom: React.FC = () => {
       {treelight && (
         <SwitchImage
           css={switchCss}
-          onClick={() => dispatch(switchDiningLight())}
+          onClick={() => {
+            dispatch(switchDiningLight())
+            setComment("どこかの照明がついたようだ")
+          }}
         />
       )}
       <DeerballImage
