@@ -75,7 +75,7 @@ const Ending: React.FC = () => {
             <p>
               テストや応援
               <br />
-              なかまるさん　うつぼさん
+              よこまるさん　うつぼさん
             </p>
           </li>
           <li css={rollItemCss}>
