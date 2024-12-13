@@ -18,7 +18,7 @@ const Start: React.FC = () => {
     setTimeout(() => {
       console.log("startClick", true)
       dispatch(switchScene("escape"))
-    }, 1000)
+    }, 2500)
   }
 
   return (

@@ -68,10 +68,13 @@ const curtainCss = css`
 `
 
 const fadeIn = keyframes`
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  50% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 `
@@ -83,7 +86,7 @@ const bagCss = css`
   width: 38%;
   height: auto;
   z-index: 7;
-  animation: ${fadeIn} 2s;
+  animation: ${fadeIn} 4s;
 `
 
 const barCss = css`
@@ -129,7 +132,7 @@ const windowDeerCss = css`
   width: 33%;
   height: auto;
   z-index: 2;
-  animation: ${fadeIn} 2s;
+  animation: ${fadeIn} 4s;
 `
 const windowBgCss = css`
   width: 100%;
