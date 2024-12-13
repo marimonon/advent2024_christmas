@@ -26,7 +26,10 @@ const ChildRoom: React.FC = () => {
       {items.bag === "use" && items.master === "none" && (
         <MasterKeyImage
           css={masterKeyCss}
-          onClick={() => dispatch(getMaster())}
+          onClick={() => {
+            dispatch(getMaster())
+            setComment("ねこからサンタ・マスターキーをもらった")
+          }}
         />
       )}
       {!workdone && (
@@ -38,11 +41,23 @@ const ChildRoom: React.FC = () => {
       {items.bag !== "use" && (
         <BootEmptyImage
           css={bootEmptyCss(workdone)}
-          onClick={() => dispatch(useBag())}
+          onClick={() => {
+            dispatch(useBag())
+            if (items.bag === "get") {
+              setComment("いい子？にはプレゼントを置いておこう...")
+            } else {
+              setComment("あれ？何か忘れているような...。")
+            }
+          }}
         />
       )}
       {items.bag === "use" && <BootImage css={bootCss} />}
-      {workdone && <ChildSleepImage css={childSleepCss} />}
+      {workdone && (
+        <ChildSleepImage
+          css={childSleepCss}
+          onClick={() => setComment("子供「ZZZ...すやぁ」")}
+        />
+      )}
       <HomeWorkImage
         css={homeWorkCss}
         onClick={() => dispatch(toExHomeWork())}
