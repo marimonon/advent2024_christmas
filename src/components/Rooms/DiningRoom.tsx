@@ -48,25 +48,28 @@ const offDiningCss = (dininglight: boolean) => css`
 
 const cookieBagCss = css`
   position: absolute;
-  top: 56%;
+  top: 60%;
   left: 61%;
   width: 12%;
+  height: auto;
   z-index: 2;
 `
 
 const cakeCss = css`
   position: absolute;
-  top: 42%;
+  top: 46%;
   left: 10%;
   width: 20%;
+  height: auto;
   z-index: 3;
 `
 
 const cakeFullCss = css`
   position: absolute;
-  top: 42%;
+  top: 46%;
   left: 10%;
   width: 20%;
+  height: auto;
   z-index: 4;
 `
 

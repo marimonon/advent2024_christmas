@@ -143,6 +143,7 @@ const fireCss = (items: { candle: string }) => css`
   z-index: 2;
   opacity: ${items.candle !== "use" ? 0 : 1};
   animation: ${fireMoveAnime} 2s infinite;
+  pointer-events: ${items.candle === "use" ? "none" : "auto"};
 `
 
 const smallSnowMoveAnime = keyframes`
