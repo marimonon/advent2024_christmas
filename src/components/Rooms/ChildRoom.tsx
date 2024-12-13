@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css, keyframes } from "@emotion/react"
+import { useState } from "react"
 import ChildRoomBg from "../Images/Child/ChildRoomBg"
 import HomeWorkImage from "../Images/Child/HomeWorkImage"
 import ChildSleepImage from "../Images/Child/ChildSleepImage"
@@ -8,6 +9,7 @@ import BootEmptyImage from "../Images/Child/BootEmptyImage"
 import ChildImage from "../Images/Child/ChildImage"
 import MasterKeyImage from "../Images/Child/MasterKeyImage"
 import { gameStateActions, useGameState } from "../GameStateProvider"
+import Comment from "../Comment"
 const { toExHomeWork, useBag, getMaster } = gameStateActions
 
 const ChildRoom: React.FC = () => {
@@ -16,15 +18,23 @@ const ChildRoom: React.FC = () => {
     dispatch,
   } = useGameState()
 
+  const [comment, setComment] = useState("")
+
   return (
     <div>
+      {comment && <Comment setComment={setComment}>{comment}</Comment>}
       {items.bag === "use" && items.master === "none" && (
         <MasterKeyImage
           css={masterKeyCss}
           onClick={() => dispatch(getMaster())}
         />
       )}
-      {!workdone && <ChildImage css={childCss} />}
+      {!workdone && (
+        <ChildImage
+          css={childCss}
+          onClick={() => setComment("子供「宿題.....。」")}
+        />
+      )}
       {items.bag !== "use" && (
         <BootEmptyImage
           css={bootEmptyCss(workdone)}
